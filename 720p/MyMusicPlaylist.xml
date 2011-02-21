@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<window id="500">
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<include>Background</include>
+		<control type="group">
+			<animation effect="slide" start="0" end="250" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus">Conditional</animation>
+			<include>Header</include>
+			<include>HeaderPlaylist</include>
+			<include>InfoList</include>
+			<include>List</include>
+			<include>Poster</include>
+			<include>Info</include>
+			<include>Horizon</include>
+		</control>
+		<include>SideMenuBackground</include>
+		<control type="grouplist" id="9000">
+			<animation effect="slide" start="0" end="-250" time="400" tween="cubic" easing="inout" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
+			<posx>20</posx>
+			<posy>90</posy>
+			<width>175</width>
+			<height>480</height>
+			<itemgap>2</itemgap>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<orientation>vertical</orientation>
+			<include>SideMenuViews</include>
+			<control type="radiobutton" id="20">
+				<description>shuffle</description>
+				<label>$LOCALIZE[191]</label>
+			</control>
+			<control type="radiobutton" id="28">
+				<description>randomize</description>
+				<label>$LOCALIZE[13319]</label>
+			</control>
+			<control type="button" id="26">
+				<description>repeat</description>
+				<label>-</label>
+			</control>
+			<control type="button" id="21">
+				<description>save</description>
+				<label>$LOCALIZE[190]</label>
+			</control>
+			<control type="button" id="22">
+				<description>clear</description>
+				<label>$LOCALIZE[192]</label>
+			</control>
+		</control>
+	</controls>
+</window>

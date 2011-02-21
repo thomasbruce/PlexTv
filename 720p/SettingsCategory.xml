@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<window id="12">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<include>Background</include>
+		<include>HeaderSettings</include>
+		<control type="grouplist" id="3">
+			<description>Button Area</description>
+			<posx>30</posx>
+			<posy>100</posy>
+			<width>300</width>
+			<height>480</height>
+			<itemgap>-20</itemgap>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<orientation>vertical</orientation>
+		</control>
+		<control type="grouplist" id="5">
+			<description>Control Area</description>
+			<posx>370</posx>
+			<posy>100</posy>
+			<width>800</width>
+			<height>480</height>
+			<itemgap>-20</itemgap>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+			<orientation>vertical</orientation>
+		</control>
+		<control type="button" id="7">
+		</control>
+		<control type="radiobutton" id="8">
+			
+		</control>
+		<control type="spincontrolex" id="9">
+		</control>
+		<control type="button" id="10">
+			<description>Default Category Button</description>
+			<textcolor>White</textcolor>
+			<focusedcolor>White</focusedcolor>
+			<texturenofocus border="-30">-</texturenofocus>
+			<texturefocus border="0">button_home.png</texturefocus>
+			<height>86</height>
+			<align>left</align>
+			<textoffsety>63</textoffsety>
+			<textoffsetx>30</textoffsetx>
+			<width>300</width>
+			<pulseonselect>false</pulseonselect>
+		</control>
+	</controls>
+</window>

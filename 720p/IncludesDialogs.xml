@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<includes>
+	<include name="notificationTop">
+		<posy>9</posy>
+		<width>400</width>
+		<align>right</align>
+		<height>40</height>
+		<font>info1</font>
+		<aligny>center</aligny>
+		<textcolor>White</textcolor>
+		<animation effect="slide" start="0" end="-45" time="100" tween="Cubic" condition="Window.IsActive(107)">Conditional</animation>
+	</include>
+	<include name="notificationBottom">
+		<posy>28</posy>
+		<width>400</width>
+		<align>right</align>
+		<font>info1</font>
+		<height>40</height>
+		<aligny>center</aligny>
+		<textcolor>White</textcolor>
+		<animation effect="slide" start="0" end="-45" time="100" tween="Cubic" condition="Window.IsActive(107)">Conditional</animation>
+	</include>
+	<include name="notificationSide">
+		<posx>115r</posx>
+		<posy>10</posy>
+		<align>left</align>
+		<aligny>top</aligny>
+		<font>info1</font>
+		<textcolor>White</textcolor>
+	</include>
+	<include name="dialogOpen">
+		<animation type="WindowOpen">
+			<effect type="fade" start="0" end="100" time="300"/>
+		</animation>
+		<animation type="WindowClose">
+			<effect type="fade" start="100" end="0" time="300"/>
+		</animation>
+	</include>
+	<include name="dialogWindow">
+		<texture border="29">dialogs/dialogWindow.png</texture>
+	</include>
+	<include name="contextMenuButton">
+		<font>list1</font>
+		<textcolor>WhiteTrans</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<texturenofocus border="4">-</texturenofocus>
+		<texturefocus border="40">button_media.png</texturefocus>
+		<height>70</height>
+		<align>left</align>
+		<textoffsety>63</textoffsety>
+		<textoffsetx>60</textoffsetx>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogLabel">
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>10</textoffsety>
+		<height>40</height>
+		<align>left</align>
+		<aligny>-</aligny>
+		<font>info1</font>
+		<textcolor>White</textcolor>
+	</include>
+	<include name="dialogHeading">
+		<posx>34</posx>
+		<posy>28</posy>
+		<font>title1</font>
+		<align>center</align>
+		<aligny>center</aligny>
+		<height>30</height>
+		<textcolor>White</textcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="dialogLine">
+		<posx>34</posx>
+		<height>22</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>info1</font>
+		<textcolor>White</textcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="dialogSubHeading">
+		<height>22</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>list1</font>
+		<textcolor>White</textcolor>
+	</include>
+	<include name="dialogButton">
+		<width>120</width>
+		<height>42</height>
+		<font>info1</font>
+		<align>center</align>
+		<aligny>-</aligny>
+		<textoffsety>6</textoffsety>
+		<texturenofocus border="20">dialogs/buttonD.png</texturenofocus>
+		<texturefocus border="20">dialogs/buttonD-focus.png</texturefocus>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogConfirmButton">
+		<width>120</width>
+		<height>42</height>
+		<font>info1</font>
+		<align>center</align>
+		<aligny>-</aligny>
+		<textoffsety>6</textoffsety>
+		<texturenofocus border="20">dialogs/buttonD.png</texturenofocus>
+		<texturefocus border="20,16,20,16">dialogs/buttonD-focus.png</texturefocus>
+		<textcolor>WhiteTrans</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogListButton">
+		<textcolor>White</textcolor>
+		<textoffsetx>15</textoffsetx>
+		<focusedcolor>White</focusedcolor>
+		<font>info1</font>
+		<textoffsetx>15</textoffsetx>
+		<aligny>center</aligny>
+		<height>40</height>
+		<pulseonselect>false</pulseonselect>
+		<texturefocus border="3">button_media.png</texturefocus>
+		<texturenofocus border="3">-</texturenofocus>
+	</include>
+	<include name="dialogListLabel">
+		<textcolor>WhiteTrans</textcolor>
+		<font>info1</font>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>-2</textoffsety>
+		<aligny>center</aligny>
+		<height>40</height>
+		<texture border="3">dialogs/list-nofocus.png</texture>
+	</include>
+	<include name="dialogTextField">
+		<height>40</height>
+		<font>info1</font>
+		<align>center</align>
+		<textoffsety>5</textoffsety>
+		<texturenofocus border="10,0,10,0">dialogs/textField.png</texturenofocus>
+		<texturefocus border="10,0,10,0">dialogs/textFieldFocus.png</texturefocus>
+		<textcolor>Black</textcolor>
+		<shadowcolor>-</shadowcolor>
+		<focusedcolor>Black</focusedcolor>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogRadio">
+		<height>40</height>
+		<aligny>center</aligny>
+		<textoffsetx>15</textoffsetx>
+		<textcolor>WhiteTrans</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<font>info1</font>
+		<texturefocus border="3">dialogs/list-focus.png</texturefocus>
+		<texturenofocus border="3">dialogs/list-nofocus.png</texturenofocus>
+		<radioheight>24</radioheight>
+		<radiowidth>48</radiowidth>
+	</include>
+	<include name="dialogSpin">
+		<textcolor>White</textcolor>
+		<textoffsetx>15</textoffsetx>
+		<focusedcolor>White</focusedcolor>
+		<font>info1</font>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>-3</textoffsety>
+		<aligny>center</aligny>
+		<height>70</height>
+		<texturefocus border="3">button_media.png</texturefocus>
+		<texturenofocus border="3">-</texturenofocus>
+		<reverse>yes</reverse>
+	</include>
+	<include name="dialogSlider">
+		<texturefocus border="3">dialogs/list-focus.png</texturefocus>
+		<texturenofocus border="3">dialogs/list-nofocus.png</texturenofocus>
+		<font>info1</font>
+		<height>40</height>
+		<textcolor>WhiteTrans</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>15</textoffsety>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="dialogScroller">
+		<width>20</width>
+		<texturesliderbackground border="4,7,4,7">dialogScrollerBackground.png</texturesliderbackground>
+		<texturesliderbar border="4">scrollbar_bar.png</texturesliderbar>
+		<texturesliderbarfocus border="4">scrollbar_bar_focus.png</texturesliderbarfocus>
+		<textureslidernib>white.png</textureslidernib>
+		<textureslidernibfocus>-</textureslidernibfocus>
+		<orientation>vertical</orientation>
+	</include>
+	<include name="dialogSeparator">
+		<height>1</height>
+		<texture>dialogs/separator.png</texture>
+	</include>
+	<include name="keyboardButton">
+		<font>info1</font>
+		<texturenofocus border="8,3,8,3">-</texturenofocus>
+		<texturefocus border="8,3,8,3">dialogs/buttonKB-focus.png</texturefocus>
+		<textcolor>WhiteTrans</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<width>48</width>
+		<height>48</height>
+		<align>center</align>
+		<textoffsety>10</textoffsety>
+	</include>
+</includes>

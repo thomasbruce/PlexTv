@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<includes>
+	<include name="BackgroundNowPlaying">
+		<control type="group">
+			<visible>!MusicPlayer.NowPlayingFlipped</visible>
+			<animation effect="fade" start="0" end="100" time="900">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="900">Hidden</animation>
+			<control type="image">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<include condition="Skin.String(Custom_Background)">Custom_Background</include>
+				<include condition="!Skin.String(Custom_Background) + !Skin.HasSetting(Background1)">Background1</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background2)">Background2</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background3)">Background3</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background4)">Background4</include>
+				<fadetime>200</fadetime>
+			</control>
+			<control type="largeimage">
+				<width>1280</width>
+				<height>720</height>
+				<texture>$INFO[listitem.property(fanart_image)]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>!Container.OnNext + !Container.OnPrevious</visible>
+				<animation effect="fade" start="0" end="90" time="500">Visible</animation>
+				<animation effect="fade" start="90" end="0" time="0">Hidden</animation>
+				<visible>Skin.HasSetting(Fanart)</visible>
+			</control>
+			<control type="image">
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>ddffffff</colordiffuse>
+				<include condition="Skin.String(Custom_Background)">Custom_Background</include>
+				<include condition="!Skin.String(Custom_Background) + !Skin.HasSetting(Background1)">Background1</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background2)">Background2</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background3)">Background3</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background4)">Background4</include>
+				<visible>Skin.HasSetting(Fanart)</visible>
+			</control>
+			<control type="image">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<include condition="Skin.HasSetting(Bokeh1)">Bokeh1</include>
+				<fadetime>0</fadetime>
+			</control>
+			<control type="image">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<include condition="Skin.HasSetting(Bokeh2)">Bokeh2</include>
+				<fadetime>0</fadetime>
+			</control>
+		</control>
+		<control type="group">
+			<visible>MusicPlayer.NowPlayingFlipped</visible>
+			<animation effect="fade" start="0" end="100" time="900">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="900">Hidden</animation>
+			<control type="image">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<include condition="Skin.String(Custom_Background)">Custom_BackgroundFlipped</include>
+				<include condition="!Skin.String(Custom_Background) + !Skin.HasSetting(Background1)">Background1Flipped</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background2)">Background2Flipped</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background3)">Background3Flipped</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background4)">Background4Flipped</include>
+				<fadetime>200</fadetime>
+			</control>
+			<control type="largeimage">
+				<width>1280</width>
+				<height>720</height>
+				<texture flipx="true">$INFO[listitem.property(fanart_image)]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>!Container.OnNext + !Container.OnPrevious + Container.Content(movies)</visible>
+				<animation effect="fade" start="0" end="90" time="500">Visible</animation>
+				<animation effect="fade" start="90" end="0" time="0">Hidden</animation>
+				<visible>Skin.HasSettings(Fanart)</visible>
+			</control>
+			<control type="image">
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>ddffffff</colordiffuse>
+				<include condition="Skin.String(Custom_Background)">Custom_BackgroundFlipped</include>
+				<include condition="!Skin.String(Custom_Background) + !Skin.HasSetting(Background1)">Background1Flipped</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background2)">Background2Flipped</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background3)">Background3Flipped</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background4)">Background4Flipped</include>
+				<visible>Skin.HasSettings(Fanart)</visible>
+			</control>
+			<control type="image">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<include condition="Skin.HasSetting(Bokeh1)">Bokeh1Flipped</include>
+				<fadetime>0</fadetime>
+			</control>
+			<control type="image">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<include condition="Skin.HasSetting(Bokeh2)">Bokeh2Flipped</include>
+				<fadetime>0</fadetime>
+			</control>
+		</control>
+	</include>
+	<include name="NowPlayingCurrentCover">
+		<control type="group">
+			<description>Current cover</description>
+			<visible>Player.HasMusicPlaylist</visible>
+			<control type="image">
+				<width>330</width>
+				<height>330</height>
+				<info>MusicPlayer.Cover</info>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="20">thumb_background.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+		</control>
+	</include>
+	<include name="NowPlayingNextCover">
+		<control type="group">
+			<description>Next cover</description>
+			<visible>Player.HasMusicPlaylist</visible>
+			<control type="image">
+				<width>264</width>
+				<height>264</height>
+				<info>MusicPlayer.NextNewCover</info>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="20">thumb_background.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+		</control>
+	</include>
+	<include name="NowPlayingCurrentInfo">
+		<control type="group">
+			<description>Current track info</description>
+			<control type="label">
+				<posx>500</posx>
+				<width>500</width>
+				<font>title1</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>500</posx>
+				<posy>50</posy>
+				<width>500</width>
+				<font>title1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>500</posx>
+				<posy>88</posy>
+				<width>500</width>
+				<font>title1</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<align>right</align>
+			</control>
+		</control>
+	</include>
+	<include name="NowPlayingNextInfo">
+		<control type="group">
+			<description>Next track info</description>
+			<control type="label">
+				<posx>500</posx>
+				<width>500</width>
+				<font>info1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>Next Track</label>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>500</posx>
+				<posy>30</posy>
+				<width>500</width>
+				<font>info1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[MusicPlayer.Offset(1).Artist]</label>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>500</posx>
+				<posy>53</posy>
+				<width>500</width>
+				<font>info1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[MusicPlayer.Offset(1).Title]</label>
+				<align>right</align>
+			</control>
+		</control>
+	</include>
+	<include name="NowPlayingCurrentInfoFlipped">
+		<control type="group">
+			<description>Current track info</description>
+			<control type="label">
+				<posx>0</posx>
+				<width>500</width>
+				<font>title1</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>50</posy>
+				<width>500</width>
+				<font>title1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>88</posy>
+				<width>500</width>
+				<font>title1</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<align>left</align>
+			</control>
+		</control>
+	</include>
+	<include name="NowPlayingNextInfoFlipped">
+		<control type="group">
+			<description>Next track info</description>
+			<control type="label">
+				<posx>0</posx>
+				<width>500</width>
+				<font>info1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>Next Track</label>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>30</posy>
+				<width>500</width>
+				<font>info1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[MusicPlayer.Offset(1).Artist]</label>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>53</posy>
+				<width>500</width>
+				<font>info1</font>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[MusicPlayer.Offset(1).Title]</label>
+				<align>left</align>
+			</control>
+		</control>
+	</include>
+</includes>

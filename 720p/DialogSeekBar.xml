@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<window id="115">
+	<defaultcontrol>901</defaultcontrol>
+	<visible>![Window.IsVisible(script-XBMC-Subtitles-main.xml) | Window.IsActive(101) | Window.IsActive(2901) | Window.IsActive(142) ] + [Player.Caching | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + Player.HasVideo</visible>
+	<controls>
+		<control type="group">
+			<visible>!Window.IsActive(123) + !Window.IsActive(124)</visible>
+			<control type="group">
+				<posx>1043</posx>
+				<posy>20</posy>
+				<width>200</width>
+				<height>80</height>
+				<visible>!Window.IsActive(125) + Skin.HasSetting(ShowTimeOSD)</visible>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>80</height>
+					<width>200</width>
+					<texture>osd/osd_time.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<visible>true + System.timeisampm</visible>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeNoAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+				<control type="label">
+					<visible>true + !System.timeisampm</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+			</control>
+			<control type="group">
+				<posx>0</posx>
+				<posy>633</posy>
+				<width>1280</width>
+				<height>87</height>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>87</height>
+					<width>1280</width>
+					<texture>osd_back.png</texture>
+				</control>
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<posx>200</posx>
+					<posy>38</posy>
+					<width>880</width>
+					<height>15</height>
+					<info>Player.Progress</info>
+					<visible>true</visible>
+				</control>
+				
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>PAUSED</label>
+					<visible>Player.Paused</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>RWD 2X</label>
+					<visible>Player.Rewinding2x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>RWD 4X</label>
+					<visible>Player.Rewinding4x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>RWD 8X</label>
+					<visible>Player.Rewinding8x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>RWD 16X</label>
+					<visible>Player.Rewinding16x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>RWD 32X</label>
+					<visible>Player.Rewinding32x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>FWD 2X</label>
+					<visible>Player.Forwarding2x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>FWD 4X</label>
+					<visible>Player.Forwarding4x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>FWD 8X</label>
+					<visible>Player.Forwarding8x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>FWD 16X</label>
+					<visible>Player.Forwarding16x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-30</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>FWD 32X</label>
+					<visible>Player.Forwarding32x</visible>
+				</control>
+				<control type="label">
+					<posx>180</posx>
+					<posy>32</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>info1</font>
+					<align>right</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[VideoPlayer.Time]</label>
+				</control>
+				<!-- ### <control type="label">
+					<posx>494</posx>
+					<posy>80</posy>
+					<width>281</width>
+					<height>28</height>
+					<font>info1</font>
+					<align>center</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>finished at $INFO[Player.FinishTime]</label>
+					<visible>Skin.HasSetting(FinishTime)</visible>
+				</control> ### -->
+				
+				<control type="label">
+					<posx>1100</posx>
+					<posy>32</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>info1</font>
+					<align>left</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[VideoPlayer.Duration]</label>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

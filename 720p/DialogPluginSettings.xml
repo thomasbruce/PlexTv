@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<window id="10140">
+	<defaultcontrol>2</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="image" id="9209">
+			<description>background top image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture border="0">black.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<animation type="WindowOpen">
+				<effect type="fade" start="100" end="90" time="0"/>
+			</animation>
+		</control>
+		<control type="group">
+			<posy>100</posy>
+			<animation effect="fade" start="97" end="50" time="500" condition="Window.IsActive(103)">Conditional</animation>
+			<control type="label" id="1">
+				<description>heading label</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>56</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>homeheader</font>
+				<textcolor>White</textcolor>
+				<label>Settings</label>
+			</control>
+			<control type="spincontrol" id="60">
+				<visible>false</visible>
+			</control>
+			<control type="grouplist" id="2">
+				<description>control area</description>
+				<posx>190</posx>
+				<posy>75</posy>
+				<width>900</width>
+				<height>361</height>
+				<itemgap>0</itemgap>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<onup>300</onup>
+				<ondown>300</ondown>
+			</control>
+			<control type="button" id="3">
+				<description>Default Button</description>
+			</control>
+			<control type="radiobutton" id="4">
+				<description>Default RadioButton</description>
+			</control>
+			<control type="spincontrolex" id="5">
+				<description>Default SpinControlex</description>
+			</control>
+			<control type="image" id="6">
+				<description>separator image</description>
+			</control>
+			<control type="grouplist" id="300">
+				<posx>190</posx>
+				<posy>450</posy>
+				<orientation>horizontal</orientation>
+				<itemgap>-30</itemgap>
+				<onup>2</onup>
+				<control type="button" id="12">
+					<description>Defaults button</description>
+					<label>409</label>
+					<onleft>11</onleft>
+					<onright>10</onright>
+					<onup>2</onup>
+					<ondown>11</ondown>
+					<texturefocus>button_home.png</texturefocus>
+					<width>300</width>
+					<height>86</height>
+				</control>
+				<control type="button" id="10">
+					<description>OK button</description>
+					<label>186</label>
+					<onleft>12</onleft>
+					<onright>11</onright>
+					<onup>2</onup>
+					<ondown>11</ondown>
+					<texturefocus>button_home.png</texturefocus>
+					<width>300</width>
+					<height>86</height>
+				</control>
+				<control type="button" id="11">
+					<description>Cancel button</description>
+					<label>222</label>
+					<onleft>10</onleft>
+					<onright>12</onright>
+					<onup>2</onup>
+					<ondown>11</ondown>
+					<texturefocus>button_home.png</texturefocus>
+					<width>300</width>
+					<height>86</height>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<window type="dialog" id="134">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>364</posx>
+		<posy>100</posy>
+	</coordinates>
+	<include>dialogOpen</include>
+	<controls>
+		<control type="image" id="9209">
+			<description>background top image</description>
+			<posx>-364</posx>
+			<posy>-100</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture border="0">black.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<animation type="WindowOpen">
+				<effect type="fade" start="0" end="100" time="300"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="fade" start="100" end="0" time="300"/>
+			</animation>
+		</control>
+			<control type="label">
+			<description>First title</description>
+		<label>Favorites</label>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+		</control>
+		<control type="list" id="450">
+			<animation type="WindowOpen">
+				<effect type="fade" start="0" end="100" time="400" delay="200"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="fade" start="100" end="0" time="400" delay="200"/>
+			</animation>
+			<posx>0</posx>
+			<posy>75</posy>
+			<width>551</width>
+			<height>320</height>
+			<onup>450</onup>
+			<onleft>450</onleft>
+			<onright>450</onright>
+			<ondown>450</ondown>
+			<pagecontrol>-</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="58">
+				<control type="label">
+					<posy>15</posy>
+					<posx>35</posx>
+					<width>400</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<info>ListItem.Label</info>
+					<textcolor>White</textcolor>
+					<scroll>false</scroll>
+					<font>list1</font>
+				</control>
+			</itemlayout>
+			<focusedlayout height="58">
+				<control type="image">
+					<posy>0</posy>
+					<width>551</width>
+					<height>80</height>
+					<texture>button_media.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="slide" start="0,-50" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnNext">Focus</animation>
+					<animation effect="slide" start="0,50" end="0,0" time="200" reversible="false" easing="out" condition="Container(50).OnPrevious">Focus</animation>
+				</control>
+				<control type="label">
+					<visible>!Container.Content(episodes)</visible>
+					<posy>15</posy>
+					<posx>35</posx>
+					<width>400</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<info>ListItem.Label</info>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<font>list1</font>
+				</control>
+			</focusedlayout>
+		</control>
+	</controls>
+</window>

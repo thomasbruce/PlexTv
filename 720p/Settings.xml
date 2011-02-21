@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<window id="4">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<include>Background</include>
+		<include>Header</include>
+		<control type="grouplist" id="9000">
+			<posx>30</posx>
+			<posy>100</posy>
+			<width>200</width>
+			<height>480</height>
+			<itemgap>2</itemgap>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<orientation>vertical</orientation>
+			<control type="button" id="2">
+				<description>Videos</description>
+				<label>$LOCALIZE[3]</label>
+				<onclick>activatewindow(MyVideosSettings)</onclick>
+			</control>
+			<control type="button" id="3">
+				<description>Music</description>
+				<label>$LOCALIZE[2]</label>
+				<onclick>activatewindow(MyMusicSettings)</onclick>
+			</control>
+			<control type="button" id="4">
+				<description>Pictures</description>
+				<label>$LOCALIZE[1]</label>
+				<onclick>activatewindow(MyPicturesSettings)</onclick>
+			</control>
+			<control type="button" id="6">
+				<description>Weather</description>
+				<label>$LOCALIZE[8]</label>
+				<onclick>activatewindow(MyWeatherSettings)</onclick>
+			</control>
+			<control type="button" id="7">
+				<description>Network</description>
+				<label>$LOCALIZE[705]</label>
+				<onclick>activatewindow(NetworkSettings)</onclick>
+			</control>
+			<control type="button" id="8">
+				<description>System</description>
+				<label>$LOCALIZE[13000]</label>
+				<onclick>activatewindow(SystemSettings)</onclick>
+			</control>
+			<control type="button" id="9">
+				<description>Appearance</description>
+				<label>$LOCALIZE[480]</label>
+				<onclick>activatewindow(AppearanceSettings)</onclick>
+			</control>
+			<control type="button" id="13">
+				<description>Custom Settings</description>
+				<label>$LOCALIZE[636]</label>
+				<onclick>activatewindow(56)</onclick>
+			</control>
+		</control>
+	</controls>
+</window>

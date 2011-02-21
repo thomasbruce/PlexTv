@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<includes>
+	<default type="label">
+		<posx>0</posx>
+		<posy>0</posy>
+		<label>-</label>
+		<height>35</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>plot1</font>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>White</selectedcolor>
+		<disabledcolor>Gray</disabledcolor>
+		<scroll>true</scroll>
+	</default>
+	<default type="textbox">
+		<posx>0</posx>
+		<posy>0</posy>
+		<label>-</label>
+		<align>left</align>
+		<aligny>top</aligny>
+		<font>info1</font>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>White</selectedcolor>
+		<disabledcolor>Gray</disabledcolor>
+		<scroll>true</scroll>
+	</default>
+	<default type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>-</width>
+		<height>-</height>
+		<texture>-</texture>
+	</default>
+	<default type="button">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>800</width>
+		<height>80</height>
+		<align>center</align>
+		<textoffsetx>50</textoffsetx>
+		<aligny>center</aligny>
+		<font>list2</font>
+		<label>-</label>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<disabledcolor>Gray</disabledcolor>
+		<texturefocus>button_settings.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="togglebutton">
+		<description>Default Togglebutton</description>
+		<width>16</width>
+		<height>30</height>
+		<font>list2</font>
+		<textcolor>WhiteTrans</textcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texturefocus>ArrowUpFO.png</texturefocus>
+		<texturenofocus>ArrowUpNF.png</texturenofocus>
+		<alttexturefocus>ArrowDownFO.png</alttexturefocus>
+		<alttexturenofocus>ArrowDownNF.png</alttexturenofocus>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>White</selectedcolor>
+		<disabledcolor>Gray</disabledcolor>
+		<aligny>center</aligny>
+	</default>
+	<default type="radiobutton">
+		<description>Default Radiobutton</description>
+		<width>800</width>
+		<height>80</height>
+		<font>list2</font>
+		<textcolor>White</textcolor>
+		<align>left</align>
+		<textoffsetx>50</textoffsetx>
+		<texturefocus>button_settings.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<textureradiofocus>LEDOn.png</textureradiofocus>
+		<textureradionofocus>LEDOff.png</textureradionofocus>
+		<radiowidth>27</radiowidth>
+		<radioheight>27</radioheight>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>White</selectedcolor>
+		<disabledcolor>Gray</disabledcolor>
+		<aligny>center</aligny>
+		<radioposx>730</radioposx>
+	</default>
+	<default type="spincontrol">
+		<description>Default Spin Control</description>
+		<align>left</align>
+		<width>16</width>
+		<height>80</height>
+		<align>center</align>
+		<font>list2</font>
+		<textcolor>White</textcolor>
+		<textoffsetx>70</textoffsetx>
+		<texturefocus>button_settings.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<textureup>ArrowUpNF.png</textureup>
+		<textureupfocus>ArrowUpFO.png</textureupfocus>
+		<texturedown>ArrowDownNF.png</texturedown>
+		<texturedownfocus>ArrowDownFO.png</texturedownfocus>
+		<reverse>yes</reverse>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>White</selectedcolor>
+		<disabledcolor>Gray</disabledcolor>
+		<aligny>center</aligny>
+	</default>
+	<default type="spincontrolex">
+		<width>800</width>
+		<height>80</height>
+		<font>list2</font>
+		<textcolor>White</textcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>button_settings.png</texturefocus>
+		<textureup>ArrowUpNF.png</textureup>
+		<textureupfocus>ArrowUpFO.png</textureupfocus>
+		<texturedown>ArrowDownNF.png</texturedown>
+		<texturedownfocus>ArrowDownFO.png</texturedownfocus>
+		<spinwidth>16</spinwidth>
+		<spinheight>16</spinheight>
+		<reverse>yes</reverse>
+		<focusedcolor>White</focusedcolor>
+		<selectedcolor>White</selectedcolor>
+		<disabledcolor>Gray</disabledcolor>
+		<aligny>center</aligny>
+		<textoffsetx>50</textoffsetx>
+	</default>
+	<default type="progress">
+		<description>Default Progress Bar</description>
+		<visible>true</visible>
+		<width>474</width>
+		<height>24</height>
+		<texturebg border="14,0,14,0">OSDProgressBack.png</texturebg>
+		<midtexture border="14,0,14,0">OSDProgressMid.png</midtexture>
+		<overlaytexture>-</overlaytexture>
+	</default>
+	<default type="sliderex">
+		<sliderwidth>105</sliderwidth>
+		<sliderheight>32</sliderheight>
+		<texturesliderbar>osd/osd_sliderback.png</texturesliderbar>
+		<textureslidernib>osd/osd_slidernub.png</textureslidernib>
+		<textureslidernibfocus>osd/osd_slidernubf.png</textureslidernibfocus>
+		<texturefocus>button_settings.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<font>list2</font>
+		<height>80</height>
+		<textcolor>White</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<textoffsetx>50</textoffsetx>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="scrollbar">
+		<description>Scroll Bar</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>24</width>
+		<height>504</height>
+		<orientation>vertical</orientation>
+		<texturesliderbackground border="10,12,8,14">OSDProgressBackV.png</texturesliderbackground>
+		<texturesliderbar border="10,12,8,14">ScrollBarV.png</texturesliderbar>
+		<texturesliderbarfocus border="10,12,8,14">ScrollBarV.png</texturesliderbarfocus>
+		<textureslidernib>ScrollBarNibVNF.png</textureslidernib>
+		<textureslidernibfocus>ScrollBarNibVFO.png</textureslidernibfocus>
+		<pulseonselect>true</pulseonselect>
+		<showonepage>false</showonepage>
+		<visible allowhiddenfocus="true">true</visible>
+	</default>
+</includes>

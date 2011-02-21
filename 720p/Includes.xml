@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<includes>
+	
+	
+<include name="Background">
+<control type="group">
+<control type="image">
+<width>1280</width>
+<height>720</height>
+<posx>0</posx>
+<posy>0</posy>
+<aspectratio>scale</aspectratio>
+<texture>background.png</texture>
+</control>
+<control type="largeimage">
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true">$INFO[listitem.property(fanart_image)]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>500</fadetime>
+				<animation effect="fade" start="0" end="90" time="500">Visible</animation>
+				<visible>Skin.HasSetting(Fanart) + !IsEmpty(listitem.property(fanart_image))</visible>
+			</control>
+			<control type="largeimage">
+			<width>1280</width>
+			<height>720</height>
+			<texture border="0">black.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<animation type="WindowOpen">
+				<effect type="fade" start="0" end="90" time="300"/>
+			</animation>
+			<animation type="WindowClose">
+				<effect type="fade" start="90" end="0" time="300"/>
+			</animation>
+			<visible>Skin.HasSetting(Fanart)</visible>
+		</control>
+			</control>
+</include>
+	
+	
+	
+	<include file="Defaults.xml"/>
+	<include file="CommonViews.xml"/>
+	<include file="NowPlayingIncludes.xml"/>
+	<include file="IncludesDialogs.xml"/>
+	<include name="DialogBack">
+		<control type="image">
+			<width>520</width>
+			<height>424</height>
+			<texture>White.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+	</include>
+	<include name="DialogID">
+		<posx>10</posx>
+		<posy>10</posy>
+		<font>Small</font>
+		<textcolor>Gray</textcolor>
+		<align>left</align>
+	</include>
+	<include name="SideMenuViews">
+		<control type="button" id="9001">
+			<description>List view button</description>
+			<label>List</label>
+			<onclick>Container.SetViewMode(50)</onclick>
+		</control>
+		<control type="button" id="9002">
+			<description>Info List view button</description>
+			<visible>!Container.Content(secondary)</visible>
+			<label>Info List</label>
+			<onclick>Container.SetViewMode(51)</onclick>
+		</control>
+		<control type="button" id="9003">
+			<description>Episode view button</description>
+			<visible>Container.Content(episodes)</visible>
+			<label>Episodes</label>
+			<onclick>Container.SetViewMode(59)</onclick>
+		</control>
+		<control type="button" id="9004">
+			<description>Horizon view button</description>
+			<visible>!Container.Content(secondary) + !Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Window.IsVisible(28) + !Window.IsVisible(500)</visible>
+			<label>Horizon</label>
+			<onclick>Container.SetViewMode(56)</onclick>
+		</control>
+		<control type="button" id="9005">
+			<description>Poster view button</description>
+			<visible>!Container.Content(episodes) + !Container.Content(Pictures) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(artists) + !Container.Content(secondary) + !Window.IsVisible(28) + !Window.IsVisible(500)</visible>
+			<label>Panel</label>
+			<onclick>Container.SetViewMode(55)</onclick>
+		</control>
+	</include>
+	<include name="Background_Home">
+		<control type="group">
+			<control type="image">
+				<visible>Container(300).HasFocus(1) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>favorites.png</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1000) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1001) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1002) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1003) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1004) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1005) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1006) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1007) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1008) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1009) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1010) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1011) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1012) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1013) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1014) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1015) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1016) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1017) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1018) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="largeimage">
+				<visible>Container(300).HasFocus(1019) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<info>Container(300).ListItem.Property(fanart_image)</info>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Control.HasFocus(400)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>apps.png</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Control.HasFocus(500)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>settings.png</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Control.HasFocus(600)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>exit.png</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>background_trans.png</texture>
+				<fadetime>200</fadetime>
+			</control>
+		</control>
+	</include>
+	<include name="videoPageLabel">
+		<posx>30</posx>
+		<posy>15</posy>
+		<width>1000</width>
+		<height>56</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>title1</font>
+		<textcolor>White</textcolor>
+	</include>
+	<include name="Header">
+		<control type="label">
+			<description>First title</description>
+			<info>Container.FirstTitle</info>
+			<posx>700</posx>
+			<posy>44</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<visible>IsEmpty(Container.SecondTitle)</visible>
+		</control>
+		<control type="label">
+			<description>First title</description>
+			<info>Container.SecondTitle</info>
+			<posx>700</posx>
+			<posy>44</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+		</control>
+	</include>
+	<include name="HeaderVideo">
+		<control type="label">
+			<description>First title</description>
+			<label>Videos</label>
+			<posx>700</posx>
+			<posy>44</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<visible>IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle) </visible>
+		</control>
+	</include>
+	<include name="HeaderSettings">
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Settings</label>
+			<visible>Window.IsActive(settings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Appearance Settings</label>
+			<visible>Window.IsActive(appearancesettings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Video Settings</label>
+			<visible>Window.IsActive(videossettings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Program Settings</label>
+			<visible>Window.IsActive(programssettings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Music Settings</label>
+			<visible>Window.IsActive(musicsettings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Picture Settings</label>
+			<visible>Window.IsActive(picturessettings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Network Settings</label>
+			<visible>Window.IsActive(networksettings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>Weather Settings</label>
+			<visible>Window.IsActive(weathersettings)</visible>
+		</control>
+		<control type="label">
+			<posx>44</posx>
+			<posy>35</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<label>System Settings</label>
+			<visible>Window.IsActive(systemsettings)</visible>
+		</control>
+	</include>
+	<include name="HeaderHome">
+		<control type="label">
+			<description>First title</description>
+			<label>[UPPERCASE]Welcome to Plex[/UPPERCASE]</label>
+			<posx>30</posx>
+			<posy>15</posy>
+			<width>1000</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>White</textcolor>
+		</control>
+	</include>
+	<include name="SideMenuBackground">
+		<control type="image">
+			<animation effect="slide" start="0" end="-250" time="400" tween="cubic" easing="inout" condition="!ControlGroup(9000).HasFocus">Conditional</animation>
+			<height>680</height>
+			<posx>230</posx>
+			<posy>30</posy>
+			<texture>divider.png</texture>
+		</control>
+	</include>
+	<include name="WindowID">
+		<posx>10</posx>
+		<posy>10</posy>
+		<font>Small</font>
+		<textcolor>Gray</textcolor>
+		<align>left</align>
+	</include>
+</includes>

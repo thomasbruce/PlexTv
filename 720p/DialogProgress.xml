@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<window id="101">
+	<defaultcontrol>10</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>364</posx>
+		<posy>230</posy>
+	</coordinates>
+	<controls>
+		<control type="image" id="9209">
+			<description>background top image</description>
+			<posx>-364</posx>
+			<posy>-230</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture border="0">black.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<animation type="WindowOpen">
+				<effect type="fade" start="100" end="80" time="0"/>
+			</animation>
+		</control>
+		<control type="group">
+			<control type="label" id="1">
+				<description>heading label</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>500</width>
+				<height>56</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>homeheader</font>
+				<textcolor>White</textcolor>
+			</control>
+						<!--
+			<control type="label" id="2">
+				<description>dialog line 1</description>
+				<width>500</width>
+				<posy>65</posy>
+				<posx>0</posx>
+				<width>500</width>
+				<height>56</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>list1</font>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label" id="3">
+				<description>dialog line 2</description>
+				<width>482</width>
+				<posy>90</posy>
+				<include>dialogLine</include>
+			</control>
+			<control type="label" id="4">
+				<description>dialog line 3</description>
+				<width>482</width>
+				<posy>115</posy>
+				<include>dialogLine</include>
+			</control>
+			-->
+			<control type="image">	
+				<posx>228</posx>
+				<posy>100</posy>
+				<width>48</width>
+				<height>48</height>
+				<texture>loader.gif</texture>
+			</control>
+			<control type="progress" id="20">
+				<description>progress control</description>
+				<posx>34</posx>
+				<posy>190</posy>
+				<width>482</width>
+				<height>12</height>
+			</control>
+			<!---
+			<control type="button" id="10">
+				<posx>218</posx>
+				<posy>185</posy>
+				<label>222</label>
+				<include>dialogConfirmButton</include>
+			</control>
+			-->
+		</control>
+	</controls>
+</window>
