@@ -20,7 +20,7 @@
 				<onclick>Skin.ToggleSetting(ShowPlexLogo)</onclick>
 			</control>
 			<control type="radiobutton" id="2019">
-				<label>[COLOR=WhiteTrans]- Use alternative logo[/COLOR]</label>
+				<label>[COLOR=WhiteTrans]- use alternative logo[/COLOR]</label>
 				<onclick>Skin.ToggleSetting(PlexLogo1)</onclick>
 				<onclick>Skin.ToggleSetting(PlexLogo2)</onclick>
 				<selected>Skin.HasSetting(PlexLogo1) + Skin.HasSetting(PlexLogo2)</selected>
