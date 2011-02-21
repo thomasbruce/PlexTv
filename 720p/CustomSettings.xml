@@ -85,7 +85,7 @@
 				<selected>Skin.HasSetting(Resolution)</selected>
 			</control>
 			<control type="radiobutton" id="2031">
-				<label>Show Media flags [COLOR=WhiteTrans](movie information view)[/COLOR]</label>
+				<label>[COLOR=WhiteTrans]- also in movie information view[/COLOR]</label>
 				<onclick>Skin.ToggleSetting(ResolutionMovieInfo)</onclick>
 				<selected>Skin.HasSetting(ResolutionMovieInfo)</selected>
 			</control>
@@ -95,7 +95,7 @@
 				<selected>Skin.HasSetting(Studio)</selected>
 			</control>
 			<control type="radiobutton" id="2033">
-				<label>Show Studio flags [COLOR=WhiteTrans](movie information view)[/COLOR]</label>
+				<label>[COLOR=WhiteTrans]- also in movie information view[/COLOR]</label>
 				<onclick>Skin.ToggleSetting(StudioMovieInfo)</onclick>
 				<selected>Skin.HasSetting(StudioMovieInfo)</selected>
 			</control>
