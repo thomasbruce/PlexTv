@@ -80,36 +80,41 @@
 				<selected>Skin.HasSetting(Weather)</selected>
 			</control>
 			<control type="radiobutton" id="2030">
+				<label>Show Time and "finished at" time in OSD</label>
+				<onclick>Skin.ToggleSetting(FinishTime)</onclick>
+				<selected>Skin.HasSetting(FinishTime)</selected>
+			</control>
+			<control type="radiobutton" id="2031">
 				<label>Show Media flags</label>
 				<onclick>Skin.ToggleSetting(Resolution)</onclick>
 				<selected>Skin.HasSetting(Resolution)</selected>
 			</control>
-			<control type="radiobutton" id="2031">
+			<control type="radiobutton" id="2032">
 				<label>[COLOR=WhiteTrans]- also in movie information view[/COLOR]</label>
 				<onclick>Skin.ToggleSetting(ResolutionMovieInfo)</onclick>
 				<selected>Skin.HasSetting(ResolutionMovieInfo)</selected>
 			</control>
-			<control type="radiobutton" id="2032">
+			<control type="radiobutton" id="2033">
 				<label>Show Studio flags</label>
 				<onclick>Skin.ToggleSetting(Studio)</onclick>
 				<selected>Skin.HasSetting(Studio)</selected>
 			</control>
-			<control type="radiobutton" id="2033">
+			<control type="radiobutton" id="2034">
 				<label>[COLOR=WhiteTrans]- also in movie information view[/COLOR]</label>
 				<onclick>Skin.ToggleSetting(StudioMovieInfo)</onclick>
 				<selected>Skin.HasSetting(StudioMovieInfo)</selected>
 			</control>
-			<control type="radiobutton" id="2034">
+			<control type="radiobutton" id="2035">
 				<label>Show RSS on home screen</label>
 				<onclick>Skin.ToggleSetting(RSS)</onclick>
 				<selected>Skin.HasSetting(RSS)</selected>
 			</control>
-			<control type="radiobutton" id="2035">
+			<control type="radiobutton" id="2036">
 				<label>Show Favorites in menu</label>
 				<onclick>Skin.ToggleSetting(Favorites)</onclick>
 				<selected>Skin.HasSetting(Favorites)</selected>
 			</control>
-			<control type="radiobutton" id="2036">
+			<control type="radiobutton" id="2037">
 				<label>Show top/bottom "Text Fade" in lists</label>
 				<onclick>Skin.ToggleSetting(Fade)</onclick>
 				<selected>Skin.HasSetting(Fade)</selected>

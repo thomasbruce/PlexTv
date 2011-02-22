@@ -10,7 +10,7 @@
 		<control type="image">
 			<width>300</width>
 			<height>120</height>
-			<include>dialogWindow</include>
+			<texture>osd/osd_time.png</texture>
 		</control>
 		<control type="label">
 			<posx>34</posx>
@@ -19,7 +19,7 @@
 			<label>$LOCALIZE[13376]</label>
 			<font>normalLow</font>
 			<align>center</align>
-			<textcolor>Color4</textcolor>
+			<textcolor>WhiteTrans</textcolor>
 		</control>
 		<control type="progress" id="1">
 			<description>progress control</description>

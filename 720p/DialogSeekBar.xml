@@ -60,7 +60,7 @@
 				<control type="progress" id="23">
 					<description>Progressbar</description>
 					<posx>200</posx>
-					<posy>38</posy>
+					<posy>32</posy>
 					<width>880</width>
 					<height>15</height>
 					<info>Player.Progress</info>
@@ -201,34 +201,47 @@
 				</control>
 				<control type="label">
 					<posx>180</posx>
-					<posy>32</posy>
+					<posy>26</posy>
 					<width>160</width>
 					<height>25</height>
 					<font>info1</font>
 					<align>right</align>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[VideoPlayer.Time]</label>
 				</control>
-				<!-- ### <control type="label">
-					<posx>494</posx>
-					<posy>80</posy>
+				<control type="label">
+					<posx>-70</posx>
+					<posy>-610</posy>
 					<width>281</width>
 					<height>28</height>
-					<font>info1</font>
+					<aligny>center</aligny>
 					<align>center</align>
-					<colordiffuse>d0FFFFFF</colordiffuse>
-					<label>finished at $INFO[Player.FinishTime]</label>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[System.Time(short)]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
-				</control> ### -->
+				</control>
+				<control type="label">
+					<posx>1070</posx>
+					<posy>-610</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[Player.FinishTime]</label>
+					<visible>Skin.HasSetting(FinishTime)</visible>
+				</control>
 				
 				<control type="label">
 					<posx>1100</posx>
-					<posy>32</posy>
+					<posy>26</posy>
 					<width>160</width>
 					<height>25</height>
 					<font>info1</font>
 					<align>left</align>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[VideoPlayer.Duration]</label>
 				</control>
 			</control>

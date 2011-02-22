@@ -58,10 +58,10 @@
 				</control>
 				<control type="grouplist" id="213">
 					<width>790</width>
-					<posx>249</posx>
-					<posy>30</posy>
+					<posx>403</posx>
+					<posy>33</posy>
 					<height>96</height>
-					<itemgap>0</itemgap>
+					<itemgap>-20</itemgap>
 					<onup>-</onup>
 					<ondown>-</ondown>
 					<orientation>horizontal</orientation>
@@ -109,69 +109,69 @@
 				</control>
 				<control type="grouplist" id="214">
 					<width>790</width>
-					<posx>317</posx>
-					<posy>30</posy>
+					<posx>403</posx>
+					<posy>33</posy>
 					<height>96</height>
-					<itemgap>-10</itemgap>
+					<itemgap>-20</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_dvd.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(8)">Conditional</animation>
 						<visible>VideoPlayer.HasMenu</visible>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_book.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(10)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_skipbwd.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(11)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_rew.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(12)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_stop.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(13)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_play.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(14)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_ff.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(15)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_skipfwd.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(16)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_audio.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(17)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>80</width>
-						<height>80</height>
+						<width>70</width>
+						<height>70</height>
 						<texturenofocus>osd/osd_button_video.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(18)">Conditional</animation>
 					</control>
@@ -179,7 +179,7 @@
 				<control type="progress" id="23">
 					<description>Progressbar</description>
 					<posx>200</posx>
-					<posy>38</posy>
+					<posy>32</posy>
 					<width>880</width>
 					<height>15</height>
 					<info>Player.Progress</info>
@@ -320,33 +320,46 @@
 				</control>
 				<control type="label">
 					<posx>180</posx>
-					<posy>32</posy>
+					<posy>26</posy>
 					<width>160</width>
 					<height>25</height>
 					<font>info1</font>
 					<align>right</align>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[VideoPlayer.Time]</label>
 				</control>
 				<control type="label">
-					<posx>180</posx>
-					<posy>20</posy>
-					<width>180</width>
-					<height>25</height>
-					<font>info1</font>
-					<align>right</align>
-					<colordiffuse>d0FFFFFF</colordiffuse>
-					<label>finished at $INFO[Player.FinishTime]</label>
+					<posx>-70</posx>
+					<posy>-610</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[System.Time(short)]</label>
+					<visible>Skin.HasSetting(FinishTime)</visible>
+				</control>
+				<control type="label">
+					<posx>1070</posx>
+					<posy>-610</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>homeheader</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
 				<control type="label">
 					<posx>1100</posx>
-					<posy>32</posy>
+					<posy>26</posy>
 					<width>160</width>
 					<height>25</height>
 					<font>info1</font>
 					<align>left</align>
-					<colordiffuse>d0FFFFFF</colordiffuse>
+					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[VideoPlayer.Duration]</label>
 				</control>
 			</control>
