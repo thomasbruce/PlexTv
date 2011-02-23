@@ -162,28 +162,34 @@
 				<content>
 					<item id="1">
 						<description>Video Apps</description>
-						<label>Video Apps</label>
+						<label>Video</label>
 						<onclick>xbmc.activatewindow(6)</onclick>
 					</item>
 					<item id="2">
 						<description>Music Apps</description>
-						<label>Music Apps</label>
+						<label>Music</label>
 						<onclick>xbmc.activatewindow(5)</onclick>
 					</item>
 					<item id="3">
 						<description>Photo Apps</description>
-						<label>Photo Apps</label>
+						<label>Photo</label>
 						<onclick>xbmc.activatewindow(2)</onclick>
 					</item>
 					<item id="4">
 						<description>Other Apps</description>
-						<label>Other Apps</label>
+						<label>Other</label>
 						<onclick>xbmc.activatewindow(1)</onclick>
 					</item>
 					<item id="5">
 						<description>Plex Online Menu</description>
 						<label>App Store</label>
 						<onclick>Plex.ActivateWindow(1,plex://localhost/system/plexonline,return)</onclick>
+					</item>
+					<item id="6">
+						<description>Weather</description>
+						<label>Weather</label>
+						<onclick>xbmc.activatewindow(2600)</onclick>
+						<visible>Skin.HasSetting(ShowMyWeather)</visible>
 					</item>
 				</content>
 			</control>
