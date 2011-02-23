@@ -89,6 +89,28 @@
 			<onclick>Container.SetViewMode(55)</onclick>
 		</control>
 	</include>
+	
+	<include name="SideMenuWeather">
+		 <control type="spincontrol" id="3">
+          <description>Location Select</description>
+          <align>center</align>
+          <width>25</width>
+   	      <height>25</height>
+          <posx>0</posx>
+          <posy>0</posy>
+          <aligny>center</aligny>
+          <font>-</font>
+          <reverse>yes</reverse>
+        </control>
+        <control type="label">
+            <description>Location</description>
+            <font>list2</font>
+			<textcolor>WhiteTrans</textcolor>
+			<align>left</align>
+            <info>Weather.Location</info>
+          </control>
+	</include>
+	
 	<include name="Background_Home">
 		<control type="group">
 			<control type="image">
