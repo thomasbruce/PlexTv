@@ -350,22 +350,49 @@
 	
 		
 		<control type="image">
-			<texture>plexicon.png</texture>
+			<texture>plexicon_1.png</texture>
 			<width>1280</width>
 			<height>266</height>
 			<posx>0</posx>
 			<posy>0</posy>
-			<visible>!Skin.HasSetting(PlexLogo1)</visible>
-			<visible>Skin.HasSetting(ShowPlexLogo)</visible>
+			<visible>Skin.HasSetting(PlexLogo1)</visible>
+			
 		</control>
 		<control type="image">
-			<texture>plexicon_blank.png</texture>
+			<texture>plexicon_2.png</texture>
 			<width>1280</width>
 			<height>266</height>
 			<posx>0</posx>
 			<posy>0</posy>
 			<visible>Skin.HasSetting(PlexLogo2)</visible>
-			<visible>Skin.HasSetting(ShowPlexLogo)</visible>
+			
+		</control>
+		<control type="image">
+			<texture>plexicon_3.png</texture>
+			<width>1280</width>
+			<height>266</height>
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Skin.HasSetting(PlexLogo3)</visible>
+			
+		</control>
+		<control type="image">
+			<texture>plexicon_4.png</texture>
+			<width>1280</width>
+			<height>266</height>
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Skin.HasSetting(PlexLogo4)</visible>
+			
+		</control>
+		<control type="image">
+			<texture>plexicon_5.png</texture>
+			<width>1280</width>
+			<height>266</height>
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>Skin.HasSetting(PlexLogo5)</visible>
+			
 		</control>
 		
 		
@@ -415,7 +442,7 @@
 			<aspectratio>keep</aspectratio>
 			<info>Weather.Conditions</info>
 		</control>
-		<visible>Skin.HasSetting(Weather)</visible>
+		<visible>!Skin.HasSetting(Weather)</visible>
         </control>
         <!-- End Weather Widget -->
         
@@ -432,7 +459,7 @@
                 <aligny>center</aligny>
                 <posx>-1</posx>
             </control>
-            <visible>Skin.HasSetting(Time)</visible>
+            <visible>!Skin.HasSetting(Time)</visible>
 		</control> 
 		   <!-- End Clock Widget -->
         
