@@ -109,7 +109,7 @@
 				<selected>Skin.HasSetting(Fade)</selected>
 			</control>
 			<control type="radiobutton" id="2036">
-				<label>Show Logo 1</label>
+				<label>Show Main logo</label>
 				<selected>Skin.HasSetting(PlexLogo1)</selected>
 				<onclick>Skin.ToggleSetting(PlexLogo1)</onclick>
 			</control>
