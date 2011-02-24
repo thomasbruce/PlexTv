@@ -41,7 +41,7 @@
 			<posx>370</posx>
 			<posy>50</posy>
 			<animation effect="slide" start="0" end="250" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus">Conditional</animation>
-			<texture>divider.png</texture>
+			<texture>whitedivider.png</texture>
 		</control>
 				
 			<control type="group">
