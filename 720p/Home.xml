@@ -59,7 +59,7 @@
 				<posx>40</posx>
 				<posy>320</posy>
 				<width>300</width>
-				<height>347</height>
+				<height>372</height>
 				<onright>400</onright>
 				<onleft>600</onleft>
 				<scrolltime>200</scrolltime>
@@ -116,7 +116,7 @@
 				<posx>340</posx>
 				<posy>320</posy>
 				<width>300</width>
-				<height>300</height>
+				<height>350</height>
 				<scrolltime>200</scrolltime>
 				<onright>500</onright>
 				<onleft>300</onleft>
@@ -198,7 +198,7 @@
 				<posx>640</posx>
 				<posy>320</posy>
 				<width>300</width>
-				<height>347</height>
+				<height>372</height>
 				<onright>600</onright>
 				<onleft>400</onleft>
 				<scrolltime>200</scrolltime>
@@ -401,7 +401,7 @@
 			
 		</control>
 		
-		
+		<!--
         <control type="image" id="1010">
 			<posy>636</posy>
 			<posx>0</posx>
@@ -411,6 +411,7 @@
 			<aspectratio>scale</aspectratio>
 			<visible>Skin.HasSetting(Fade)</visible>
 		</control>
+		-->
 		
 		 <!-- Weather Widget -->
     	<control type="group">
