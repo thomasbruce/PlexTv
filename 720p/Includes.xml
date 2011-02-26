@@ -90,6 +90,46 @@
 		</control>
 	</include>
 	
+	<!-- Weather headline and Time
+	<include name="HeaderWeather">
+		<control type="label">
+			<label>Weather</label>
+			<posx>30</posx>
+			<posy>15</posy>
+			<width>1000</width>
+			<height>56</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>title1</font>
+			<textcolor>White</textcolor>
+		</control>
+			<control type="label">
+				<posx>1230</posx>
+				<posy>15</posy>
+				<visible>System.timeisampm</visible>
+				<width>500</width>
+				<height>56</height>
+				<label>$INFO[System.TimeNoAmPm]</label>
+				<font>info1</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<visible>!System.timeisampm</visible>
+				<posx>1230</posx>
+				<posy>15</posy>
+				<width>500</width>
+				<height>56</height>
+				<label>$INFO[System.TimeAmPm]</label>
+				<font>info1</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<textcolor>White</textcolor>
+			</control>
+	</include>
+	End Weather headline and Time -->
+	
 	<include name="SideMenuWeather">
 		 <control type="spincontrol" id="3">
           <description>Location Select</description>

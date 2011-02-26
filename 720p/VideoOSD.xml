@@ -109,7 +109,7 @@
 				</control>
 				<control type="grouplist" id="214">
 					<width>790</width>
-					<posx>403</posx>
+					<posx>405</posx>
 					<posy>33</posy>
 					<height>96</height>
 					<itemgap>-20</itemgap>
@@ -187,134 +187,134 @@
 				</control>
 				
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>PAUSED</label>
 					<visible>Player.Paused</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 2X</label>
 					<visible>Player.Rewinding2x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 4X</label>
 					<visible>Player.Rewinding4x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 8X</label>
 					<visible>Player.Rewinding8x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 16X</label>
 					<visible>Player.Rewinding16x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 32X</label>
 					<visible>Player.Rewinding32x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 2X</label>
 					<visible>Player.Forwarding2x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 4X</label>
 					<visible>Player.Forwarding4x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 8X</label>
 					<visible>Player.Forwarding8x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 16X</label>
 					<visible>Player.Forwarding16x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 32X</label>
 					<visible>Player.Forwarding32x</visible>
 				</control>
@@ -328,6 +328,8 @@
 					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[VideoPlayer.Time]</label>
 				</control>
+				
+				<!-- Time/Finished at
 				<control type="label">
 					<posx>-70</posx>
 					<posy>-610</posy>
@@ -352,6 +354,8 @@
 					<label>$INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
+				End Time/Finished at -->
+				
 				<control type="label">
 					<posx>1100</posx>
 					<posy>26</posy>
@@ -363,6 +367,117 @@
 					<label>$INFO[VideoPlayer.Duration]</label>
 				</control>
 			</control>
+			
+			<!-- Faded background OSD
+			<control type="image">
+			        <animation effect="fade" time="200">WindowOpen</animation>
+		            <animation effect="fade" time="200">WindowClose</animation>
+		            <animation effect="fade" delay="200" time="200">Visible</animation>
+		            <animation effect="fade" time="200">Hidden</animation>
+					<description>Panel Fade</description>
+					<posx>0</posx>
+					<posy>150</posy>
+					<height>500</height>
+					<width>1280</width>
+					<texture>osd_fade.png</texture>
+					<visible>!Skin.HasSetting(OSDposter)</visible>
+				</control>
+			   End Faded background OSD -->
+			
+			<!-- Tilte/Year/Director -->
+			<control type="group">
+				<visible>!Window.IsVisible(125)</visible>
+				<animation effect="fade" time="200">WindowOpen</animation>
+		        <animation effect="fade" time="200">WindowClose</animation>
+		        <animation effect="fade" delay="200" time="200">Visible</animation>
+		        <animation effect="fade" time="200">Hidden</animation>
+				<posx>155</posx>
+				<posy>560</posy>
+				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>530</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title] $INFO[VideoPlayer.Year]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>-41</posx>
+					<posy>0</posy>
+					<width>410</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title] $INFO[VideoPlayer.Year]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>40</posy>
+					<width>510</width>
+					<font>info2</font>
+					<label>$INFO[VideoPlayer.Director]</label>
+					<textcolor>WhiteTrans</textcolor>
+					<scroll>true</scroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>-41</posx>
+					<posy>40</posy>
+					<width>410</width>
+					<textcolor>White</textcolor>
+					<font>settings</font>
+					<label>$INFO[VideoPlayer.TVShowTitle]</label>
+					<scroll>true</scroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<visible>!Skin.HasSetting(OSDposter)</visible>
+			</control>
+			<!-- End Tilte/Year/Director -->
+
+			<!-- Poster/Cover -->
+			<control type="group">
+			<visible>!Window.IsVisible(125)</visible>
+			<animation effect="fade" time="200">WindowOpen</animation>
+		    <animation effect="fade" time="200">WindowClose</animation>
+		    <animation effect="fade" delay="200" time="200">Visible</animation>
+		    <animation effect="fade" time="200">Hidden</animation>
+			<posx>30</posx>
+			<posy>470</posy>
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-1</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-3</posy>
+				<width>218</width>
+				<height>115</height>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
+				<posx>-2</posx>
+				<posy>48</posy>
+				<width>195</width>
+				<height>111</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<visible>!Skin.HasSetting(OSDposter)</visible>
+		</control>
+		<!-- End Poster/Cover -->
+		
 		</control>
 	</controls>
 </window>

@@ -68,134 +68,134 @@
 				</control>
 				
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>PAUSED</label>
 					<visible>Player.Paused</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 2X</label>
 					<visible>Player.Rewinding2x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 4X</label>
 					<visible>Player.Rewinding4x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 8X</label>
 					<visible>Player.Rewinding8x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 16X</label>
 					<visible>Player.Rewinding16x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>RWD 32X</label>
 					<visible>Player.Rewinding32x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 2X</label>
 					<visible>Player.Forwarding2x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 4X</label>
 					<visible>Player.Forwarding4x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 8X</label>
 					<visible>Player.Forwarding8x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 16X</label>
 					<visible>Player.Forwarding16x</visible>
 				</control>
 				<control type="label">
-					<posx>499</posx>
-					<posy>-30</posy>
-					<width>281</width>
-					<height>28</height>
+					<posx>137</posx>
+					<posy>-450</posy>
+					<width>1000</width>
+					<height>250</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
-					<textcolor>WhiteTrans</textcolor>
+					<font>paused</font>
+					<textcolor>WhiteExtraTrans</textcolor>
 					<label>FWD 32X</label>
 					<visible>Player.Forwarding32x</visible>
 				</control>
@@ -209,6 +209,8 @@
 					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[VideoPlayer.Time]</label>
 				</control>
+				
+				<!-- Time/Finished at
 				<control type="label">
 					<posx>-70</posx>
 					<posy>-610</posy>
@@ -231,6 +233,20 @@
 					<font>homeheader</font>
 					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[Player.FinishTime]</label>
+					<visible>Skin.HasSetting(FinishTime)</visible>
+				</control>
+				End Time/Finished at -->
+				
+				<control type="label">
+					<posx>465</posx>
+					<posy>52</posy>
+					<width>350</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>info2</font>
+					<textcolor>WhiteExtraTrans</textcolor>
+					<label>Current time $INFO[System.Time(short)] | Finished at $INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
 				

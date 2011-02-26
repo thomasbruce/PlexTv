@@ -15,7 +15,11 @@
 			</animation>	
 			<include>Background</include>
 			<control type="group">
+			
+			<!-- Weather headline and Time
 			<include>HeaderWeather</include>
+			End Weather headline and Time -->
+			
 			<include>List</include>
 			<animation effect="slide" start="0" end="250" time="400" tween="cubic" easing="inout" condition="ControlGroup(9000).HasFocus">Conditional</animation>
 		</control>

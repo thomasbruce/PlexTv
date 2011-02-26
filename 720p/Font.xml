@@ -20,6 +20,12 @@
 			<size>42</size>
 		</font>
 		<font>
+			<name>paused</name>
+			<filename>Helvetica</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>Helvetica</filename>
@@ -119,6 +125,12 @@
 			<style>bold</style>
 		</font>
 		<font>
+			<name>paused</name>
+			<filename>Arial.ttf</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>Arial.ttf</filename>
@@ -214,6 +226,12 @@
 			<filename>coolvetica rg.ttf</filename>
 			<size>40</size>
 			<style>bold</style>
+		</font>
+		<font>
+			<name>paused</name>
+			<filename>coolvetica rg.ttf</filename>
+			<variant>Bold</variant>
+			<size>200</size>
 		</font>
 		<font>
 			<name>plex</name>
@@ -313,6 +331,12 @@
 			<size>38</size>
 		</font>
 		<font>
+			<name>paused</name>
+			<filename>segoeuib.ttf</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>segoeuib.ttf</filename>
@@ -410,6 +434,12 @@
 			<filename>FE11004T.TTF</filename>
 			<variant>Bold</variant>
 			<size>42</size>
+		</font>
+		<font>
+			<name>paused</name>
+			<filename>FE11004T.TTF</filename>
+			<variant>Bold</variant>
+			<size>200</size>
 		</font>
 		<font>
 			<name>plex</name>
