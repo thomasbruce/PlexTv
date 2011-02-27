@@ -108,6 +108,10 @@
 					</control>
 				</control>
 				<control type="grouplist" id="214">
+				    <animation effect="fade" time="200">WindowOpen</animation>
+		            <animation effect="fade" time="200">WindowClose</animation>
+		            <animation effect="fade" delay="200" time="200">Visible</animation>
+		            <animation effect="fade" time="200">Hidden</animation>
 					<width>790</width>
 					<posx>405</posx>
 					<posy>33</posy>

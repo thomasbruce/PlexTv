@@ -24,7 +24,7 @@
 			<control type="largeimage">
 			<width>1280</width>
 			<height>720</height>
-			<texture border="0">black.png</texture>
+			<texture border="0">fanart_overlay.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<animation type="WindowOpen">
 				<effect type="fade" start="0" end="90" time="300"/>
