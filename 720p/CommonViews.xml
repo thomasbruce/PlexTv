@@ -209,10 +209,9 @@
 					<width>510</width>
 					<height>3</height>
 				</control>
-			<control type="grouplist">
-						<height>53</height> <!-- 333 -->
-						<orientation>horizontal</orientation>
-						<itemgap>20</itemgap>
+			<control type="group">
+						<height>25</height> <!-- 333 -->
+						<width>400</width>
 						<visible>!Container.Content(episodes)</visible>
 						<control type="image">
 							<description>Studio</description>
@@ -224,7 +223,10 @@
 				        </control>
 						<control type="image">
 							<description>Video Res</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>258</posx>
+							<posy>0</posy>
+							<width>90</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoResolution)]</texture>
@@ -232,7 +234,10 @@
 						</control>
 						<control type="image">
 							<description>Video Codec</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>318</posx>
+							<posy>0</posy>
+							<width>90</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoCodec)]</texture>
@@ -240,7 +245,10 @@
 						</control>
 						<control type="image">
 							<description>Audio Codec</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>388</posx>
+							<posy>0</posy>
+							<width>90</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::audioCodec)]</texture>
@@ -248,6 +256,9 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
+							<align>right</align>
+							<posx>481</posx>
+							<posy>0</posy>
 							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
@@ -256,7 +267,10 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>400</posx>
+							<posy>0</posy>
+							<width>95</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoStudio)]</texture>
@@ -266,6 +280,14 @@
 					
 
 			</control>
+
+
+
+
+
+
+
+
 			
 			<control type="grouplist">
 				<animation effect="fade" start="0" end="100" delay="280" time="100">Visible</animation>
@@ -632,13 +654,16 @@
 					<width>510</width>
 					<height>5</height>
 				</control>
-				<control type="grouplist">
+				<control type="group">
 						<height>25</height> <!-- 333 -->
-						<orientation>horizontal</orientation>
-						<itemgap>20</itemgap>
+						<width>400</width>
+						<visible>Container.Content(episodes)</visible>
 						<control type="image">
 							<description>Video Res</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>258</posx>
+							<posy>0</posy>
+							<width>90</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoResolution)]</texture>
@@ -646,7 +671,10 @@
 						</control>
 						<control type="image">
 							<description>Video Codec</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>318</posx>
+							<posy>0</posy>
+							<width>90</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoCodec)]</texture>
@@ -654,7 +682,10 @@
 						</control>
 						<control type="image">
 							<description>Audio Codec</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>388</posx>
+							<posy>0</posy>
+							<width>90</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::audioCodec)]</texture>
@@ -662,6 +693,9 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
+							<align>right</align>
+							<posx>481</posx>
+							<posy>0</posy>
 							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
@@ -670,7 +704,10 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
-							<width min="1" max="95">auto</width>
+							<align>center</align>
+							<posx>400</posx>
+							<posy>0</posy>
+							<width>95</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoStudio)]</texture>
