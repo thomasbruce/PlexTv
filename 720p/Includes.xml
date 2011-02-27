@@ -145,7 +145,7 @@
         <control type="label">
             <description>Location</description>
             <font>list2</font>
-			<textcolor>WhiteTrans</textcolor>
+			<textcolor>White</textcolor>
 			<align>left</align>
             <info>Weather.Location</info>
           </control>
