@@ -26,6 +26,12 @@
 			<size>200</size>
 		</font>
 		<font>
+			<name>bigclock</name>
+			<filename>Helvetica</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>Helvetica</filename>
@@ -126,6 +132,12 @@
 		</font>
 		<font>
 			<name>paused</name>
+			<filename>Arial.ttf</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
+			<name>bigclock</name>
 			<filename>Arial.ttf</filename>
 			<variant>Bold</variant>
 			<size>200</size>
@@ -234,6 +246,12 @@
 			<size>200</size>
 		</font>
 		<font>
+			<name>bigclock</name>
+			<filename>coolvetica rg.ttf</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>coolvetica rg.ttf</filename>
@@ -337,6 +355,12 @@
 			<size>200</size>
 		</font>
 		<font>
+			<name>bigclock</name>
+			<filename>segoeuib.ttf</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>segoeuib.ttf</filename>
@@ -416,7 +440,7 @@
 			<size>34</size>
 		</font>
 	</fontset>
-	<fontset id="Futurio" unicode="true">
+	<fontset id="Futura" unicode="true">
 		<font>
 			<name>title1</name>
 			<filename>FE11004T.TTF</filename>
@@ -437,6 +461,12 @@
 		</font>
 		<font>
 			<name>paused</name>
+			<filename>FE11004T.TTF</filename>
+			<variant>Bold</variant>
+			<size>200</size>
+		</font>
+		<font>
+			<name>bigclock</name>
 			<filename>FE11004T.TTF</filename>
 			<variant>Bold</variant>
 			<size>200</size>

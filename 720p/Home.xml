@@ -469,6 +469,22 @@
             <visible>!Skin.HasSetting(Time)</visible>
 		</control> 
 		   <!-- End Clock Widget -->
+		   
+		   <!-- BIG Clock Widget -->
+   		<control type="group" id="1">
+			<posx>390</posx>
+			<posy>120</posy>
+            <control type="label" id="1">
+                <textcolor>WhiteTrans</textcolor>
+                <info>System.Time(short)</info>
+                <font>bigclock</font>
+                <align>left</align>
+                <aligny>center</aligny>
+                <posx>-1</posx>
+            </control>
+            <visible>Skin.HasSetting(BigTime)</visible>
+		</control> 
+		   <!-- End BIG Clock Widget -->
         
         <!-- RSS Widget-->
 		<control type="rss">
