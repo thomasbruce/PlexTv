@@ -209,9 +209,10 @@
 					<width>510</width>
 					<height>3</height>
 				</control>
-			<control type="group">
-						<height>25</height> <!-- 333 -->
-						<width>400</width>
+			<control type="grouplist">
+						<height>53</height> <!-- 333 -->
+						<orientation>horizontal</orientation>
+						<itemgap>20</itemgap>
 						<visible>!Container.Content(episodes)</visible>
 						<control type="image">
 							<description>Studio</description>
@@ -221,12 +222,17 @@
 							<texture>$INFO[ListItem.Property(mediaTag::Studio)]</texture>
 							<visible>Skin.HasSetting(Studio)</visible>
 				        </control>
+				        <control type="image">
+							<description>Divider</description>
+							<width>192</width>
+							<height>18</height>
+							<aspectratio>keep</aspectratio>
+							<texture>mediaflags_movie_divider.png</texture>
+							<visible>Skin.HasSetting(Resolution)</visible>
+						</control>
 						<control type="image">
 							<description>Video Res</description>
-							<align>center</align>
-							<posx>258</posx>
-							<posy>0</posy>
-							<width>90</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoResolution)]</texture>
@@ -234,10 +240,7 @@
 						</control>
 						<control type="image">
 							<description>Video Codec</description>
-							<align>center</align>
-							<posx>318</posx>
-							<posy>0</posy>
-							<width>90</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoCodec)]</texture>
@@ -245,10 +248,7 @@
 						</control>
 						<control type="image">
 							<description>Audio Codec</description>
-							<align>center</align>
-							<posx>388</posx>
-							<posy>0</posy>
-							<width>90</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::audioCodec)]</texture>
@@ -256,9 +256,6 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
-							<align>right</align>
-							<posx>481</posx>
-							<posy>0</posy>
 							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
@@ -267,16 +264,14 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
-							<align>center</align>
-							<posx>400</posx>
-							<posy>0</posy>
-							<width>95</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoStudio)]</texture>
 							<visible>Skin.HasSetting(Resolution)</visible>
 						</control>
 					</control>
+
 					
 
 			</control>
@@ -654,16 +649,21 @@
 					<width>510</width>
 					<height>5</height>
 				</control>
-				<control type="group">
+				<control type="grouplist">
 						<height>25</height> <!-- 333 -->
-						<width>400</width>
-						<visible>Container.Content(episodes)</visible>
+						<orientation>horizontal</orientation>
+						<itemgap>20</itemgap>
+						<control type="image">
+							<description>Divider</description>
+							<width>253</width>
+							<height>18</height>
+							<aspectratio>keep</aspectratio>
+							<texture>mediaflags_episode_divider.png</texture>
+							<visible>Skin.HasSetting(Resolution)</visible>
+						</control>
 						<control type="image">
 							<description>Video Res</description>
-							<align>center</align>
-							<posx>258</posx>
-							<posy>0</posy>
-							<width>90</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoResolution)]</texture>
@@ -671,10 +671,7 @@
 						</control>
 						<control type="image">
 							<description>Video Codec</description>
-							<align>center</align>
-							<posx>318</posx>
-							<posy>0</posy>
-							<width>90</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoCodec)]</texture>
@@ -682,10 +679,7 @@
 						</control>
 						<control type="image">
 							<description>Audio Codec</description>
-							<align>center</align>
-							<posx>388</posx>
-							<posy>0</posy>
-							<width>90</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::audioCodec)]</texture>
@@ -693,9 +687,6 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
-							<align>right</align>
-							<posx>481</posx>
-							<posy>0</posy>
 							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
@@ -704,10 +695,7 @@
 						</control>
 						<control type="image">
 							<description>Audio Channels</description>
-							<align>center</align>
-							<posx>400</posx>
-							<posy>0</posy>
-							<width>95</width>
+							<width min="1" max="95">auto</width>
 							<height>18</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Property(mediaTag::videoStudio)]</texture>
@@ -715,6 +703,7 @@
 						</control>
 					
 					</control>
+
 					
 			</control>
 
