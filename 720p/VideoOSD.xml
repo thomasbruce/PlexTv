@@ -454,8 +454,17 @@
 			<posx>1088</posx>
 			<posy>555</posy>
 			<control type="image">
-				<posx>-2</posx>
-				<posy>-1</posy>
+				<posx>-15</posx>
+				<posy>95</posy>
+				<width>122</width>
+				<height>53</height>
+				<texture>osd/movie_poster_bg.png</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<control type="image">
+				<posx>-8</posx>
+				<posy>-18</posy>
 				<width>108</width>
 				<height>159</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
@@ -482,8 +491,17 @@
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
 			<control type="image">
+				<posx>-45</posx>
+				<posy>95</posy>
+				<width>160</width>
+				<height>53</height>
+				<texture>osd/episode_poster_bg.png</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
 				<posx>-40</posx>
-				<posy>63</posy>
+				<posy>57</posy>
 				<width>150</width>
 				<height>85</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>

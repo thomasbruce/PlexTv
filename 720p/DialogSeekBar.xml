@@ -293,64 +293,7 @@
 			</control>
 			<!-- End Tilte/Year/Director -->
 			
-			<!-- Poster/Cover -->
-			<control type="group">
-			<visible>!Window.IsVisible(125)</visible>
-			<posx>1088</posx>
-			<posy>555</posy>
-			<control type="image">
-				<posx>-2</posx>
-				<posy>-1</posy>
-				<width>108</width>
-				<height>159</height>
-				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<visible>!VideoPlayer.Content(episodes)</visible>
-			</control>
 			
-			<!-- Old Movie poster size
-			<control type="image">
-				<posx>-2</posx>
-				<posy>-1</posy>
-				<width>108</width>
-				<height>159</height>
-				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<visible>!VideoPlayer.Content(episodes)</visible>
-			</control>
-			End Movie poster size -->
-			
-			<control type="image">
-				<posx>-20</posx>
-				<posy>-3</posy>
-				<width>218</width>
-				<height>115</height>
-				<aspectratio>scale</aspectratio>
-				<visible>VideoPlayer.Content(episodes)</visible>
-			</control>
-			<control type="image">
-				<posx>-40</posx>
-				<posy>63</posy>
-				<width>150</width>
-				<height>85</height>
-				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<aspectratio>scale</aspectratio>
-				<visible>VideoPlayer.Content(episodes)</visible>
-			</control>
-			
-			<!-- Old Tv show poster size
-			<control type="image">
-				<posx>-90</posx>
-				<posy>48</posy>
-				<width>195</width>
-				<height>111</height>
-				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<aspectratio>scale</aspectratio>
-				<visible>VideoPlayer.Content(episodes)</visible>
-			</control>
-			End Tv show poster size -->
-			
-		<visible>!Skin.HasSetting(OSDposter)</visible>	
-		</control>
-		<!-- End Poster/Cover -->
 			
 		</control>
 	</controls>
