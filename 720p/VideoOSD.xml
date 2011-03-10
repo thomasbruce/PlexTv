@@ -450,6 +450,10 @@
 
 			<!-- Poster/Cover -->
 			<control type="group">
+			<animation effect="fade" time="200">WindowOpen</animation>
+		    <animation effect="fade" time="200">WindowClose</animation>
+            <animation effect="fade" delay="200" time="200">Visible</animation>
+		    <animation effect="fade" time="200">Hidden</animation>
 			<visible>!Window.IsVisible(125)</visible>
 			<posx>1088</posx>
 			<posy>555</posy>
