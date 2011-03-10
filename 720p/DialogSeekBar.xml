@@ -48,23 +48,32 @@
 				<posx>0</posx>
 				<posy>633</posy>
 				<width>1280</width>
-				<height>87</height>
+				<height>71</height>
 				<control type="image">
 					<description>Panel</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<height>87</height>
-					<width>1280</width>
-					<texture>osd_back.png</texture>
+					<posx>42</posx>
+					<posy>17</posy>
+					<height>71</height>
+					<width>1195</width>
+					<texture>osd/osd_back_no_buttons.png</texture>
 				</control>
 				<control type="progress" id="23">
 					<description>Progressbar</description>
-					<posx>200</posx>
-					<posy>32</posy>
-					<width>880</width>
-					<height>15</height>
+					<posx>375</posx>
+					<posy>39</posy>
+					<width>531</width>
+					<height>42</height>
 					<info>Player.Progress</info>
 					<visible>true</visible>
+				</control>
+				
+				<control type="image">
+					<description>Progressbar Overlay</description>
+					<posx>375</posx>
+					<posy>39</posy>
+					<height>42</height>
+					<width>530</width>
+					<texture>osd/OSDProgressTop.png</texture>
 				</control>
 				
 				<control type="label">
@@ -200,67 +209,149 @@
 					<visible>Player.Forwarding32x</visible>
 				</control>
 				<control type="label">
-					<posx>180</posx>
-					<posy>26</posy>
-					<width>160</width>
+					<posx>887</posx>
+					<posy>50</posy>
+					<width>120</width>
 					<height>25</height>
-					<font>info1</font>
+					<font>info3</font>
 					<align>right</align>
-					<textcolor>WhiteTrans</textcolor>
-					<label>$INFO[VideoPlayer.Time]</label>
+					<textcolor>TimeDuration</textcolor>
+					<label>$INFO[VideoPlayer.Time] - $INFO[VideoPlayer.Duration]</label>
 				</control>
+				
 				
 				<!-- Time/Finished at
 				<control type="label">
-					<posx>-70</posx>
-					<posy>-610</posy>
+					<posx>250</posx>
+					<posy>13</posy>
 					<width>281</width>
 					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
+					<font>info3</font>
 					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[System.Time(short)]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
 				<control type="label">
-					<posx>1070</posx>
-					<posy>-610</posy>
+					<posx>750</posx>
+					<posy>13</posy>
 					<width>281</width>
 					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
+					<font>info3</font>
 					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
 				End Time/Finished at -->
 				
+				
 				<control type="label">
 					<posx>465</posx>
-					<posy>52</posy>
+					<posy>13</posy>
 					<width>350</width>
 					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>info2</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info3</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>Current time $INFO[System.Time(short)] | Finished at $INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
-				
+			</control>
+			
+			<!-- Tilte/Year/Director -->
+			<control type="group">
+				<visible>!Window.IsVisible(125)</visible>
+				<posx>380</posx>
+				<posy>673</posy>
+				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
-					<posx>1100</posx>
-					<posy>26</posy>
-					<width>160</width>
-					<height>25</height>
-					<font>info1</font>
-					<align>left</align>
-					<textcolor>WhiteTrans</textcolor>
-					<label>$INFO[VideoPlayer.Duration]</label>
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>-120</posx>
+					<posy>0</posy>
+					<width>450</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
+			<!-- End Tilte/Year/Director -->
+			
+			<!-- Poster/Cover -->
+			<control type="group">
+			<visible>!Window.IsVisible(125)</visible>
+			<posx>1088</posx>
+			<posy>555</posy>
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-1</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Movie poster size
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-1</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Movie poster size -->
+			
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-3</posy>
+				<width>218</width>
+				<height>115</height>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
+				<posx>-40</posx>
+				<posy>63</posy>
+				<width>150</width>
+				<height>85</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Tv show poster size
+			<control type="image">
+				<posx>-90</posx>
+				<posy>48</posy>
+				<width>195</width>
+				<height>111</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Tv show poster size -->
+			
+		<visible>!Skin.HasSetting(OSDposter)</visible>	
+		</control>
+		<!-- End Poster/Cover -->
+			
 		</control>
 	</controls>
 </window>

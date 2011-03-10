@@ -47,21 +47,21 @@
 				<posx>0</posx>
 				<posy>633</posy>
 				<width>1280</width>
-				<height>87</height>
+				<height>71</height>
 				<control type="image">
 					<description>Panel</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<height>87</height>
-					<width>1280</width>
-					<texture>osd_back.png</texture>
+					<posx>42</posx>
+					<posy>17</posy>
+					<height>71</height>
+					<width>1195</width>
+					<texture>osd/osd_back.png</texture>
 				</control>
 				<control type="grouplist" id="213">
-					<width>790</width>
-					<posx>403</posx>
-					<posy>33</posy>
-					<height>96</height>
-					<itemgap>-20</itemgap>
+					<width>400</width>
+					<posx>83</posx>
+					<posy>48</posy>
+					<height>22</height>
+					<itemgap>5</itemgap>
 					<onup>-</onup>
 					<ondown>-</ondown>
 					<orientation>horizontal</orientation>
@@ -107,87 +107,130 @@
 						<onclick>XBMC.ActivateWindow(123)</onclick>
 					</control>
 				</control>
+				
+				<control type="grouplist" id="215">
+					<width>400</width>
+					<posx>883</posx>
+					<posy>48</posy>
+					<height>22</height>
+					<itemgap>5</itemgap>
+					<onup>-</onup>
+					<ondown>-</ondown>
+					<orientation>horizontal</orientation>
+					<control type="button" id="17">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.ActivateWindow(124)</onclick>
+					</control>
+					<control type="button" id="18">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.ActivateWindow(123)</onclick>
+					</control>
+				</control>
+				
 				<control type="grouplist" id="214">
 				    <animation effect="fade" time="200">WindowOpen</animation>
 		            <animation effect="fade" time="200">WindowClose</animation>
 		            <animation effect="fade" delay="200" time="200">Visible</animation>
 		            <animation effect="fade" time="200">Hidden</animation>
-					<width>790</width>
-					<posx>405</posx>
-					<posy>33</posy>
-					<height>96</height>
-					<itemgap>-20</itemgap>
+					<width>400</width>
+					<posx>83</posx>
+					<posy>48</posy>
+					<height>22</height>
+					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_dvd.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(8)">Conditional</animation>
 						<visible>VideoPlayer.HasMenu</visible>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_book.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(10)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_skipbwd.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(11)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_rew.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(12)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_stop.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(13)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_play.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(14)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_ff.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(15)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_skipfwd.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(16)">Conditional</animation>
 					</control>
+				</control>
+				
+				<control type="grouplist" id="216">
+				    <animation effect="fade" time="200">WindowOpen</animation>
+		            <animation effect="fade" time="200">WindowClose</animation>
+		            <animation effect="fade" delay="200" time="200">Visible</animation>
+		            <animation effect="fade" time="200">Hidden</animation>
+					<width>400</width>
+					<posx>948</posx>
+					<posy>48</posy>
+					<height>22</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_audio.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(17)">Conditional</animation>
 					</control>
 					<control type="button">
-						<width>70</width>
-						<height>70</height>
+						<width>31</width>
+						<height>22</height>
 						<texturenofocus>osd/osd_button_video.png</texturenofocus>
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(18)">Conditional</animation>
 					</control>
 				</control>
+				
 				<control type="progress" id="23">
 					<description>Progressbar</description>
-					<posx>200</posx>
-					<posy>32</posy>
-					<width>880</width>
-					<height>15</height>
+					<posx>375</posx>
+					<posy>39</posy>
+					<width>531</width>
+					<height>42</height>
 					<info>Player.Progress</info>
 					<visible>true</visible>
+				</control>
+				
+				<control type="image">
+					<description>Progressbar Overlay</description>
+					<posx>375</posx>
+					<posy>39</posy>
+					<height>42</height>
+					<width>530</width>
+					<texture>osd/OSDProgressTop.png</texture>
 				</control>
 				
 				<control type="label">
@@ -323,14 +366,14 @@
 					<visible>Player.Forwarding32x</visible>
 				</control>
 				<control type="label">
-					<posx>180</posx>
-					<posy>26</posy>
-					<width>160</width>
+					<posx>887</posx>
+					<posy>50</posy>
+					<width>120</width>
 					<height>25</height>
-					<font>info1</font>
+					<font>info3</font>
 					<align>right</align>
-					<textcolor>WhiteTrans</textcolor>
-					<label>$INFO[VideoPlayer.Time]</label>
+					<textcolor>TimeDuration</textcolor>
+					<label>$INFO[VideoPlayer.Time] - $INFO[VideoPlayer.Duration]</label>
 				</control>
 				
 				<!-- Time/Finished at
@@ -361,98 +404,55 @@
 				End Time/Finished at -->
 				
 				<control type="label">
-					<posx>1100</posx>
-					<posy>26</posy>
-					<width>160</width>
-					<height>25</height>
-					<font>info1</font>
-					<align>left</align>
+					<posx>465</posx>
+					<posy>13</posy>
+					<width>350</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>info3</font>
 					<textcolor>WhiteTrans</textcolor>
-					<label>$INFO[VideoPlayer.Duration]</label>
+					<label>Current time $INFO[System.Time(short)] | Finished at $INFO[Player.FinishTime]</label>
+					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
 			</control>
 			
-			<!-- Faded background OSD
-			<control type="image">
-			        <animation effect="fade" time="200">WindowOpen</animation>
-		            <animation effect="fade" time="200">WindowClose</animation>
-		            <animation effect="fade" delay="200" time="200">Visible</animation>
-		            <animation effect="fade" time="200">Hidden</animation>
-					<description>Panel Fade</description>
-					<posx>0</posx>
-					<posy>150</posy>
-					<height>500</height>
-					<width>1280</width>
-					<texture>osd_fade.png</texture>
-					<visible>!Skin.HasSetting(OSDposter)</visible>
-				</control>
-			   End Faded background OSD -->
 			
 			<!-- Tilte/Year/Director -->
 			<control type="group">
-				<visible>!Window.IsVisible(125)</visible>
-				<animation effect="fade" time="200">WindowOpen</animation>
-		        <animation effect="fade" time="200">WindowClose</animation>
-		        <animation effect="fade" delay="200" time="200">Visible</animation>
-		        <animation effect="fade" time="200">Hidden</animation>
-				<posx>155</posx>
-				<posy>560</posy>
+				<posx>380</posx>
+				<posy>673</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
-					<posx>0</posx>
+					<posx>10</posx>
 					<posy>0</posy>
-					<width>530</width>
+					<width>450</width>
 					<height>40</height>
 					<font>list2</font>
-					<label>$INFO[VideoPlayer.Title] $INFO[VideoPlayer.Year]</label>
+					<label>$INFO[VideoPlayer.Title]</label>
 					<textcolor>White</textcolor>
 					<scroll>true</scroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="label">
-					<posx>-41</posx>
+					<posx>-120</posx>
 					<posy>0</posy>
-					<width>410</width>
+					<width>450</width>
 					<height>40</height>
 					<font>list2</font>
-					<label>$INFO[VideoPlayer.Title] $INFO[VideoPlayer.Year]</label>
+					<label>$INFO[VideoPlayer.Title]</label>
 					<textcolor>White</textcolor>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
-				<control type="label">
-					<posx>0</posx>
-					<posy>40</posy>
-					<width>510</width>
-					<font>info2</font>
-					<label>$INFO[VideoPlayer.Director]</label>
-					<textcolor>WhiteTrans</textcolor>
-					<scroll>true</scroll>
-					<visible>!VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="label">
-					<posx>-41</posx>
-					<posy>40</posy>
-					<width>410</width>
-					<textcolor>White</textcolor>
-					<font>settings</font>
-					<label>$INFO[VideoPlayer.TVShowTitle]</label>
-					<scroll>true</scroll>
-					<visible>VideoPlayer.Content(episodes)</visible>
-				</control>
-				<visible>!Skin.HasSetting(OSDposter)</visible>
 			</control>
 			<!-- End Tilte/Year/Director -->
 
 			<!-- Poster/Cover -->
 			<control type="group">
 			<visible>!Window.IsVisible(125)</visible>
-			<animation effect="fade" time="200">WindowOpen</animation>
-		    <animation effect="fade" time="200">WindowClose</animation>
-		    <animation effect="fade" delay="200" time="200">Visible</animation>
-		    <animation effect="fade" time="200">Hidden</animation>
-			<posx>30</posx>
-			<posy>470</posy>
+			<posx>1088</posx>
+			<posy>555</posy>
 			<control type="image">
 				<posx>-2</posx>
 				<posy>-1</posy>
@@ -461,6 +461,18 @@
 				<texture>$INFO[VideoPlayer.Cover]</texture>
 				<visible>!VideoPlayer.Content(episodes)</visible>
 			</control>
+			
+			<!-- Old Movie poster size
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-1</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Movie poster size -->
+			
 			<control type="image">
 				<posx>-20</posx>
 				<posy>-3</posy>
@@ -470,7 +482,18 @@
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
 			<control type="image">
-				<posx>-2</posx>
+				<posx>-40</posx>
+				<posy>63</posy>
+				<width>150</width>
+				<height>85</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Tv show poster size
+			<control type="image">
+				<posx>-90</posx>
 				<posy>48</posy>
 				<width>195</width>
 				<height>111</height>
@@ -478,7 +501,9 @@
 				<aspectratio>scale</aspectratio>
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
-			<visible>!Skin.HasSetting(OSDposter)</visible>
+			End Tv show poster size -->
+			
+		<visible>!Skin.HasSetting(OSDposter)</visible>	
 		</control>
 		<!-- End Poster/Cover -->
 		

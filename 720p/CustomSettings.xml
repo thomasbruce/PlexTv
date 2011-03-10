@@ -36,7 +36,7 @@
 				<selected>Skin.HasSetting(White) + Skin.HasSetting(Metal)</selected>
 			</control>
 			<control type="radiobutton" id="2022">
-				<label>Hide Poster/Title in OSD</label>
+				<label>Hide Poster in OSD</label>
 				<onclick>Skin.ToggleSetting(OSDposter)</onclick>
 				<selected>Skin.HasSetting(OSDposter)</selected>
 			</control>
@@ -160,3 +160,4 @@
 		</control>
 	</controls>
 </window>
+

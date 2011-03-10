@@ -134,10 +134,10 @@
 	<default type="progress">
 		<description>Default Progress Bar</description>
 		<visible>true</visible>
-		<width>474</width>
-		<height>24</height>
-		<texturebg border="14,0,14,0">OSDProgressBack.png</texturebg>
-		<midtexture border="14,0,14,0">OSDProgressMid.png</midtexture>
+		<width>531</width>
+		<height>42</height>
+		<texturebg border="14,0,14,0">osd/OSDProgressBack.png</texturebg>
+		<midtexture border="14,0,14,0">osd/OSDProgressMid.png</midtexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="sliderex">
