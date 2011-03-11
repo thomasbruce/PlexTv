@@ -52,7 +52,7 @@
 				<control type="image">
 					<description>Panel</description>
 					<posx>42</posx>
-					<posy>17</posy>
+					<posy>5</posy>
 					<height>71</height>
 					<width>1195</width>
 					<texture>osd/osd_back_no_buttons.png</texture>
@@ -60,7 +60,7 @@
 				<control type="progress" id="23">
 					<description>Progressbar</description>
 					<posx>375</posx>
-					<posy>39</posy>
+					<posy>27</posy>
 					<width>531</width>
 					<height>42</height>
 					<info>Player.Progress</info>
@@ -70,7 +70,7 @@
 				<control type="image">
 					<description>Progressbar Overlay</description>
 					<posx>375</posx>
-					<posy>39</posy>
+					<posy>27</posy>
 					<height>42</height>
 					<width>530</width>
 					<texture>osd/OSDProgressTop.png</texture>
@@ -210,7 +210,7 @@
 				</control>
 				<control type="label">
 					<posx>887</posx>
-					<posy>50</posy>
+					<posy>35</posy>
 					<width>120</width>
 					<height>25</height>
 					<font>info3</font>
@@ -250,7 +250,7 @@
 				
 				<control type="label">
 					<posx>465</posx>
-					<posy>13</posy>
+					<posy>1</posy>
 					<width>350</width>
 					<height>28</height>
 					<aligny>center</aligny>
@@ -266,7 +266,7 @@
 			<control type="group">
 				<visible>!Window.IsVisible(125)</visible>
 				<posx>380</posx>
-				<posy>673</posy>
+				<posy>661</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
 					<posx>10</posx>
