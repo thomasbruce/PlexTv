@@ -51,7 +51,7 @@
 				<control type="image">
 					<description>Panel</description>
 					<posx>42</posx>
-					<posy>5</posy>
+					<posy>10</posy>
 					<height>71</height>
 					<width>1195</width>
 					<texture>osd/osd_back.png</texture>
@@ -59,7 +59,7 @@
 				<control type="grouplist" id="213">
 					<width>400</width>
 					<posx>83</posx>
-					<posy>36</posy>
+					<posy>41</posy>
 					<height>22</height>
 					<itemgap>5</itemgap>
 					<onup>-</onup>
@@ -111,7 +111,7 @@
 				<control type="grouplist" id="215">
 					<width>400</width>
 					<posx>883</posx>
-					<posy>36</posy>
+					<posy>41</posy>
 					<height>22</height>
 					<itemgap>5</itemgap>
 					<onup>-</onup>
@@ -134,7 +134,7 @@
 		            <animation effect="fade" time="200">Hidden</animation>
 					<width>400</width>
 					<posx>83</posx>
-					<posy>36</posy>
+					<posy>41</posy>
 					<height>22</height>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
@@ -196,7 +196,7 @@
 		            <animation effect="fade" time="200">Hidden</animation>
 					<width>400</width>
 					<posx>948</posx>
-					<posy>36</posy>
+					<posy>41</posy>
 					<height>22</height>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
@@ -217,7 +217,7 @@
 				<control type="progress" id="23">
 					<description>Progressbar</description>
 					<posx>375</posx>
-					<posy>27</posy>
+					<posy>32</posy>
 					<width>531</width>
 					<height>42</height>
 					<info>Player.Progress</info>
@@ -227,7 +227,7 @@
 				<control type="image">
 					<description>Progressbar Overlay</description>
 					<posx>375</posx>
-					<posy>27</posy>
+					<posy>32</posy>
 					<height>42</height>
 					<width>530</width>
 					<texture>osd/OSDProgressTop.png</texture>
@@ -367,7 +367,7 @@
 				</control>
 				<control type="label">
 					<posx>887</posx>
-					<posy>35</posy>
+					<posy>40</posy>
 					<width>120</width>
 					<height>25</height>
 					<font>info3</font>
@@ -405,7 +405,7 @@
 				
 				<control type="label">
 					<posx>465</posx>
-					<posy>1</posy>
+					<posy>6</posy>
 					<width>350</width>
 					<height>28</height>
 					<aligny>center</aligny>
@@ -421,12 +421,12 @@
 			<!-- Tilte/Year/Director -->
 			<control type="group">
 				<posx>380</posx>
-				<posy>661</posy>
+				<posy>666</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
 					<posx>10</posx>
 					<posy>0</posy>
-					<width>450</width>
+					<width>350</width>
 					<height>40</height>
 					<font>list2</font>
 					<label>$INFO[VideoPlayer.Title]</label>
@@ -437,7 +437,7 @@
 				<control type="label">
 					<posx>-120</posx>
 					<posy>0</posy>
-					<width>450</width>
+					<width>350</width>
 					<height>40</height>
 					<font>list2</font>
 					<label>$INFO[VideoPlayer.Title]</label>
@@ -450,13 +450,9 @@
 
 			<!-- Poster/Cover -->
 			<control type="group">
-			<animation effect="fade" time="200">WindowOpen</animation>
-		    <animation effect="fade" time="200">WindowClose</animation>
-            <animation effect="fade" delay="200" time="200">Visible</animation>
-		    <animation effect="fade" time="200">Hidden</animation>
 			<visible>!Window.IsVisible(125)</visible>
 			<posx>1088</posx>
-			<posy>543</posy>
+			<posy>548</posy>
 			<control type="image">
 				<posx>-15</posx>
 				<posy>95</posy>
