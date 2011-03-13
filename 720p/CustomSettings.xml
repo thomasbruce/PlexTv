@@ -36,19 +36,19 @@
 				<selected>Skin.HasSetting(White) + Skin.HasSetting(Metal)</selected>
 			</control>
 			<control type="radiobutton" id="2022">
-				<label>Hide Unwatched flags</label>
-				<onclick>Skin.ToggleSetting(NoWatchedFlags)</onclick>
-				<selected>Skin.HasSetting(NoWatchedFlags)</selected>
-			</control
-			<control type="radiobutton" id="2023">
 				<label>Hide Poster in OSD</label>
 				<onclick>Skin.ToggleSetting(OSDposter)</onclick>
 				<selected>Skin.HasSetting(OSDposter)</selected>
 			</control>
-			<control type="radiobutton" id="2024">
+			<control type="radiobutton" id="2023">
 				<label>Hide Plot in OSD</label>
 				<onclick>Skin.ToggleSetting(OSDplot)</onclick>
 				<selected>Skin.HasSetting(OSDplot)</selected>
+			</control>
+			<control type="radiobutton" id="2024">
+				<label>Hide Unwatched flags</label>
+				<onclick>Skin.ToggleSetting(NoWatchedFlags)</onclick>
+				<selected>Skin.HasSetting(NoWatchedFlags)</selected>
 			</control>
 			<control type="radiobutton" id="2025">
 				<label>Hide Time on home screen</label>
@@ -66,7 +66,7 @@
 				<selected>Skin.HasSetting(Weather)</selected>
 			</control>
 			<control type="radiobutton" id="2028">
-				<label>Show Time and "finished at" time in OSD</label>
+				<label>Show "finished at" time in OSD</label>
 				<onclick>Skin.ToggleSetting(FinishTime)</onclick>
 				<selected>Skin.HasSetting(FinishTime)</selected>
 			</control>
@@ -165,4 +165,3 @@
 		</control>
 	</controls>
 </window>
-

@@ -386,33 +386,32 @@
 					<label>$INFO[VideoPlayer.Time] - $INFO[VideoPlayer.Duration]</label>
 				</control>
 				
-				<!-- Time/Finished at
+			
 				<control type="label">
-					<posx>-70</posx>
-					<posy>-610</posy>
+					<posx>295</posx>
+					<posy>6</posy>
 					<width>281</width>
 					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
+					<font>info4</font>
 					<textcolor>WhiteTrans</textcolor>
-					<label>$INFO[System.Time(short)]</label>
-					<visible>Skin.HasSetting(FinishTime)</visible>
+					<label>$INFO[System.Date], $INFO[System.Time(short)]</label>
 				</control>
 				<control type="label">
-					<posx>1070</posx>
-					<posy>-610</posy>
+					<posx>712</posx>
+					<posy>6</posy>
 					<width>281</width>
 					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>homeheader</font>
+					<font>info4</font>
 					<textcolor>WhiteTrans</textcolor>
-					<label>$INFO[Player.FinishTime]</label>
+					<label>finished at $INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
-				End Time/Finished at -->
 				
+				<!-- Time/Finished at
 				<control type="label">
 					<posx>465</posx>
 					<posy>6</posy>
@@ -420,11 +419,13 @@
 					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>info3</font>
+					<font>osdtimedate</font>
 					<textcolor>WhiteTrans</textcolor>
 					<label>Current time $INFO[System.Time(short)] | Finished at $INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
+				End Time/Finished at -->
+				
 			</control>
 			
 			
