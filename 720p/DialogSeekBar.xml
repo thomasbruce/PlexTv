@@ -77,134 +77,134 @@
 				</control>
 				
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>PAUSED</label>
 					<visible>Player.Paused</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>RWD 2X</label>
 					<visible>Player.Rewinding2x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>RWD 4X</label>
 					<visible>Player.Rewinding4x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>RWD 8X</label>
 					<visible>Player.Rewinding8x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>RWD 16X</label>
 					<visible>Player.Rewinding16x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+				    <font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>RWD 32X</label>
 					<visible>Player.Rewinding32x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>FWD 2X</label>
 					<visible>Player.Forwarding2x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>FWD 4X</label>
 					<visible>Player.Forwarding4x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>FWD 8X</label>
 					<visible>Player.Forwarding8x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>FWD 16X</label>
 					<visible>Player.Forwarding16x</visible>
 				</control>
 				<control type="label">
-					<posx>137</posx>
-					<posy>-450</posy>
-					<width>1000</width>
-					<height>250</height>
+					<posx>502</posx>
+					<posy>6</posy>
+					<width>281</width>
+					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
-					<font>paused</font>
-					<textcolor>WhiteExtraTrans</textcolor>
+					<font>info4</font>
+					<textcolor>WhiteTrans</textcolor>
 					<label>FWD 32X</label>
 					<visible>Player.Forwarding32x</visible>
 				</control>
@@ -221,7 +221,7 @@
 				
 				
 				<control type="label">
-					<posx>295</posx>
+					<posx>308</posx>
 					<posy>6</posy>
 					<width>281</width>
 					<height>28</height>
@@ -232,7 +232,7 @@
 					<label>$INFO[System.Date], $INFO[System.Time(short)]</label>
 				</control>
 				<control type="label">
-					<posx>712</posx>
+					<posx>699</posx>
 					<posy>6</posy>
 					<width>281</width>
 					<height>28</height>
