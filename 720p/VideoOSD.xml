@@ -449,9 +449,9 @@
 					<posx>-320</posx>
 			        <posy>-104</posy>
 					<width>597</width>
-					<height>60</height>
+					<height>65</height>
 					<info>VideoPlayer.Plot</info>
-					<textcolor>White</textcolor>
+					<textcolor>WhiteTrans</textcolor>
 					<font>info2</font>
 					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
@@ -473,9 +473,9 @@
 					<posx>-448</posx>
 			        <posy>-104</posy>
 					<width>597</width>
-					<height>60</height>
+					<height>65</height>
 					<info>VideoPlayer.Plot</info>
-					<textcolor>White</textcolor>
+					<textcolor>WhiteTrans</textcolor>
 					<font>info2</font>
 					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
