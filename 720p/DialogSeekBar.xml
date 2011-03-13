@@ -262,7 +262,7 @@
 				</control>
 			</control>
 			
-			<!-- Tilte/Year/Director -->
+			<!-- Tilte -->
 			<control type="group">
 				<visible>!Window.IsVisible(125)</visible>
 				<posx>380</posx>
@@ -291,7 +291,7 @@
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
-			<!-- End Tilte/Year/Director -->
+			<!-- End Tilte -->
 			
 			<!-- Poster/Cover -->
 			<control type="group">
@@ -309,7 +309,7 @@
 			
 			<control type="image">
 				<posx>-8</posx>
-				<posy>-18</posy>
+				<posy>-20</posy>
 				<width>108</width>
 				<height>159</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
@@ -346,7 +346,7 @@
 			</control>
 			<control type="image">
 				<posx>-40</posx>
-				<posy>57</posy>
+				<posy>55</posy>
 				<width>150</width>
 				<height>85</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>

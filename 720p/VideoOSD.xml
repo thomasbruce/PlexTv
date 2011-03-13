@@ -56,6 +56,15 @@
 					<width>1195</width>
 					<texture>osd/osd_back.png</texture>
 				</control>
+				<control type="image">
+					<description>Plot Background</description>
+					<posx>42</posx>
+					<posy>-80</posy>
+					<height>90</height>
+					<width>1195</width>
+					<texture>osd/plot_bg.png</texture>
+					<visible>!Skin.HasSetting(OSDplot)</visible>
+				</control>
 				<control type="grouplist" id="213">
 					<width>400</width>
 					<posx>83</posx>
@@ -365,6 +374,7 @@
 					<label>FWD 32X</label>
 					<visible>Player.Forwarding32x</visible>
 				</control>
+				
 				<control type="label">
 					<posx>887</posx>
 					<posy>40</posy>
@@ -418,7 +428,7 @@
 			</control>
 			
 			
-			<!-- Tilte/Year/Director -->
+			<!-- Tilte/Plot -->
 			<control type="group">
 				<posx>380</posx>
 				<posy>666</posy>
@@ -434,6 +444,19 @@
 					<scroll>true</scroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>
+				<control type="textbox">
+					<description>Movie Plot/Details</description>
+					<posx>-320</posx>
+			        <posy>-104</posy>
+					<width>597</width>
+					<height>60</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(OSDplot)</visible>
+				</control>
 				<control type="label">
 					<posx>-120</posx>
 					<posy>0</posy>
@@ -445,8 +468,21 @@
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
+				<control type="textbox">
+					<description>Tv shows Plot/Details</description>
+					<posx>-448</posx>
+			        <posy>-104</posy>
+					<width>597</width>
+					<height>60</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(OSDplot)</visible>
+				</control>
 			</control>
-			<!-- End Tilte/Year/Director -->
+			<!-- End Tilte/Plot -->
 
 			<!-- Poster/Cover -->
 			<control type="group">
@@ -464,7 +500,7 @@
 			
 			<control type="image">
 				<posx>-8</posx>
-				<posy>-18</posy>
+				<posy>-20</posy>
 				<width>108</width>
 				<height>159</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
@@ -501,7 +537,7 @@
 			</control>
 			<control type="image">
 				<posx>-40</posx>
-				<posy>57</posy>
+				<posy>55</posy>
 				<width>150</width>
 				<height>85</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
