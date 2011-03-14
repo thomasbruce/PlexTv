@@ -89,6 +89,12 @@
 			<size>19</size>
 		</font>
 		<font>
+			<name>aTVinfo</name>
+			<filename>Helvetica</filename>
+			<variant>Bold</variant>
+			<size>18</size>
+		</font>
+		<font>
 			<name>info3</name>
 			<filename>Helvetica</filename>
 			<variant>Regular</variant>
@@ -205,6 +211,12 @@
 			<size>19</size>
 		</font>
 		<font>
+			<name>aTVinfo</name>
+			<filename>Arial.ttf</filename>
+			<variant>Bold</variant>
+			<size>18</size>
+		</font>
+		<font>
 			<name>info3</name>
 			<filename>Arial.ttf</filename>
 			<size>14</size>
@@ -318,6 +330,12 @@
 			<name>info2</name>
 			<filename>coolvetica rg.ttf</filename>
 			<size>19</size>
+		</font>
+		<font>
+			<name>aTVinfo</name>
+			<filename>coolvetica rg.ttf</filename>
+			<variant>Bold</variant>
+			<size>18</size>
 		</font>
 		<font>
 			<name>info3</name>
@@ -436,6 +454,12 @@
 			<size>19</size>
 		</font>
 		<font>
+			<name>aTVinfo</name>
+			<filename>segoeui.ttf</filename>
+			<variant>Bold</variant>
+			<size>18</size>
+		</font>
+		<font>
 			<name>info3</name>
 			<filename>segoeui.ttf</filename>
 			<variant>Regular</variant>
@@ -551,6 +575,12 @@
 			<filename>FE11003T.TTF</filename>
 			<variant>Regular</variant>
 			<size>19</size>
+		</font>
+		<font>
+			<name>aTVinfo</name>
+			<filename>FE11003T.TTF</filename>
+			<variant>Bold</variant>
+			<size>18</size>
 		</font>
 		<font>
 			<name>info3</name>
