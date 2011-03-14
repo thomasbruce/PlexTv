@@ -61,15 +61,6 @@
 					<width>1195</width>
 					<texture>osd/osd_back.png</texture>
 				</control>
-				<control type="image">
-					<description>Plot Background</description>
-					<posx>42</posx>
-					<posy>-80</posy>
-					<height>90</height>
-					<width>1195</width>
-					<texture>osd/plot_bg.png</texture>
-					<visible>!Skin.HasSetting(OSDplot)</visible>
-				</control>
 				<control type="grouplist" id="213">
 					<width>400</width>
 					<posx>83</posx>
@@ -434,6 +425,16 @@
 				<posx>380</posx>
 				<posy>666</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
+				<control type="image">
+					<description>Plot Background</description>
+					<posx>-338</posx>
+					<posy>-113</posy>
+					<height>90</height>
+					<width>1195</width>
+					<texture>osd/plot_bg.png</texture>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(OSDplot)</visible>
+				</control>
 				<control type="label">
 					<posx>10</posx>
 					<posy>0</posy>
@@ -456,6 +457,16 @@
 					<font>info2</font>
 					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(OSDplot)</visible>
+				</control>
+				<control type="image">
+					<description>Plot Background</description>
+					<posx>-468</posx>
+					<posy>-113</posy>
+					<height>90</height>
+					<width>1195</width>
+					<texture>osd/plot_bg.png</texture>
+					<visible>VideoPlayer.Content(episodes)</visible>
 					<visible>!Skin.HasSetting(OSDplot)</visible>
 				</control>
 				<control type="label">
