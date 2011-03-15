@@ -131,19 +131,15 @@
 		<aligny>center</aligny>
 		<textoffsetx>50</textoffsetx>
 	</default>
-	
-	<!-- Old Progressbar
 	<default type="progress">
 		<description>Default Progress Bar</description>
 		<visible>true</visible>
 		<width>531</width>
-		<height>42</height>
-		<texturebg border="14,0,14,0">osd/OSDProgressBack.png</texturebg>
-		<midtexture border="14,0,14,0">osd/OSDProgressMid.png</midtexture>
+		<height>22</height>
+		<texturebg border="14,0,14,0">osd/musicOSDProgressBack.png</texturebg>
+		<midtexture border="14,0,14,0">osd/musicOSDProgressMid.png</midtexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
-	End Old Progressbar -->
-	
 	<default type="sliderex">
 		<sliderwidth>105</sliderwidth>
 		<sliderheight>32</sliderheight>
