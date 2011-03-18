@@ -328,7 +328,7 @@
 				</control>
 				<control type="progress" id="23">
 					<description>Progressbar</description>
-					<texturebg border="14,0,14,0">aTVOSD/OSDProgressBack.png</texturebg>
+					<texturebg border="14,0,14,0">aTVOSD/blank_OSDProgressBack.png</texturebg>
 		            <midtexture border="14,0,14,0">aTVOSD/OSDProgressMid.png</midtexture>
 					<posx>180</posx>
 					<posy>26</posy>
