@@ -59,7 +59,7 @@
 				<control type="grouplist" id="213">
 					<width>790</width>
 					<posx>280</posx>
-					<posy>28</posy>
+					<posy>47</posy>
 					<height>96</height>
 					<itemgap>0</itemgap>
 					<onup>-</onup>
@@ -110,7 +110,7 @@
 				<control type="grouplist" id="214">
 					<width>790</width>
 					<posx>280</posx>
-					<posy>28</posy>
+					<posy>47</posy>
 					<height>96</height>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
@@ -373,6 +373,17 @@
 					<label>$INFO[VideoPlayer.Director]</label>
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>
+				<control type="label">
+					<posx>563</posx>
+					<posy>30</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[VideoPlayer.Rating]</label>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>57</posy>
@@ -423,6 +434,17 @@
 					<align>left</align>
 					<textcolor>WhiteTrans</textcolor>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>30</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[VideoPlayer.Rating]</label>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="image">
