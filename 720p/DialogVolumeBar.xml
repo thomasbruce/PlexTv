@@ -10,7 +10,7 @@
 		<control type="image">
 			<width>300</width>
 			<height>120</height>
-			<texture>osd/osd_time.png</texture>
+			<texture>aTVOSD/osd_time.png</texture>
 		</control>
 		<control type="label">
 			<posx>34</posx>

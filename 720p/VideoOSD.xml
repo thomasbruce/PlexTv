@@ -59,7 +59,7 @@
 				<control type="grouplist" id="213">
 					<width>790</width>
 					<posx>280</posx>
-					<posy>47</posy>
+					<posy>33</posy>
 					<height>96</height>
 					<itemgap>0</itemgap>
 					<onup>-</onup>
@@ -110,7 +110,7 @@
 				<control type="grouplist" id="214">
 					<width>790</width>
 					<posx>280</posx>
-					<posy>47</posy>
+					<posy>33</posy>
 					<height>96</height>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
