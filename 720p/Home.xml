@@ -4,23 +4,46 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Background_Home</include>
-		<control type="grouplist">
+		<control type="group" id="200">
 			<orientation>horizontal</orientation>
 			<posx>40</posx>
-			<posy>270</posy>
+			<posy>330</posy>
+			<control type="image">
+						<posx>0</posx>
+						<posy>-17</posy>
+						<width>300</width>
+						<height>82</height>
+						<texture>mainmenu_glow.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>Control.HasFocus(300)</visible>
+						<animation effect="slide" start="0,-50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnNext">Focus</animation>
+						<animation effect="slide" start="0,50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnPrevious">Focus</animation>
+					</control>
 			<control type="label">
-				<posx>150</posx>
+				<posx>0</posx>
 				<width>300</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<label>My Media</label>
+				<label>Media</label>
 				<textcolor>White</textcolor>
 				<scroll>false</scroll>
 				<font>homeheader</font>
 				<align>center</align>
 			</control>
+			
+			<control type="image">
+						<posx>300</posx>
+						<posy>-17</posy>
+						<width>300</width>
+						<height>82</height>
+						<texture>mainmenu_glow.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>Control.HasFocus(400)</visible>
+						<animation effect="slide" start="0,-50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnNext">Focus</animation>
+						<animation effect="slide" start="0,50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnPrevious">Focus</animation>
+					</control>
 			<control type="label">
-				<posx>150</posx>
+				<posx>300</posx>
 				<width>300</width>
 				<height>50</height>
 				<aligny>center</aligny>
@@ -30,8 +53,20 @@
 				<font>homeheader</font>
 				<align>center</align>
 			</control>
+			
+			<control type="image">
+						<posx>600</posx>
+						<posy>-17</posy>
+						<width>300</width>
+						<height>82</height>
+						<texture>mainmenu_glow.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>Control.HasFocus(500)</visible>
+						<animation effect="slide" start="0,-50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnNext">Focus</animation>
+						<animation effect="slide" start="0,50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnPrevious">Focus</animation>
+					</control>
 			<control type="label">
-				<posx>150</posx>
+				<posx>600</posx>
 				<width>300</width>
 				<height>50</height>
 				<aligny>center</aligny>
@@ -41,8 +76,20 @@
 				<font>homeheader</font>
 				<align>center</align>
 			</control>
+			
+			<control type="image">
+						<posx>900</posx>
+						<posy>-17</posy>
+						<width>300</width>
+						<height>82</height>
+						<texture>mainmenu_glow.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>Control.HasFocus(600)</visible>
+						<animation effect="slide" start="0,-50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnNext">Focus</animation>
+						<animation effect="slide" start="0,50" end="0,0" time="200" reversible="false" easing="out" condition="Container(300).OnPrevious">Focus</animation>
+					</control>
 			<control type="label">
-				<posx>150</posx>
+				<posx>900</posx>
 				<width>300</width>
 				<height>50</height>
 				<aligny>center</aligny>
@@ -53,13 +100,14 @@
 				<align>center</align>
 			</control>
 		</control>
+
 		<control type="group">
 			<control type="list" id="300">
 				<description>Home Fixedlist</description>
 				<posx>40</posx>
-				<posy>320</posy>
+				<posy>375</posy>
 				<width>300</width>
-				<height>372</height>
+				<height>280</height>
 				<onright>400</onright>
 				<onleft>600</onleft>
 				<scrolltime>200</scrolltime>
@@ -114,9 +162,9 @@
 			<control type="list" id="400">
 				<description>Home Fixedlist</description>
 				<posx>340</posx>
-				<posy>320</posy>
+				<posy>375</posy>
 				<width>300</width>
-				<height>350</height>
+				<height>280</height>
 				<scrolltime>200</scrolltime>
 				<onright>500</onright>
 				<onleft>300</onleft>
@@ -196,9 +244,9 @@
 			<control type="list" id="500">
 				<description>Home Fixedlist</description>
 				<posx>640</posx>
-				<posy>320</posy>
+				<posy>375</posy>
 				<width>300</width>
-				<height>372</height>
+				<height>280</height>
 				<onright>600</onright>
 				<onleft>400</onleft>
 				<scrolltime>200</scrolltime>
@@ -289,9 +337,9 @@
 			<control type="list" id="600">
 				<description>Home Fixedlist</description>
 				<posx>940</posx>
-				<posy>320</posy>
+				<posy>375</posy>
 				<width>300</width>
-				<height>300</height>
+				<height>280</height>
 				<onright>300</onright>
 				<onleft>500</onleft>
 				<scrolltime>200</scrolltime>
@@ -356,49 +404,12 @@
 	
 		
 		<control type="image">
-			<texture>plexicon_1.png</texture>
-			<width>1280</width>
-			<height>266</height>
-			<posx>0</posx>
-			<posy>0</posy>
-			<visible>Skin.HasSetting(PlexLogo1)</visible>
-			
-		</control>
-		<control type="image">
-			<texture>plexicon_2.png</texture>
-			<width>1280</width>
-			<height>266</height>
-			<posx>0</posx>
-			<posy>0</posy>
-			<visible>Skin.HasSetting(PlexLogo2)</visible>
-			
-		</control>
-		<control type="image">
-			<texture>plexicon_3.png</texture>
-			<width>1280</width>
-			<height>266</height>
-			<posx>0</posx>
-			<posy>0</posy>
-			<visible>Skin.HasSetting(PlexLogo3)</visible>
-			
-		</control>
-		<control type="image">
-			<texture>plexicon_4.png</texture>
-			<width>1280</width>
-			<height>266</height>
-			<posx>0</posx>
-			<posy>0</posy>
-			<visible>Skin.HasSetting(PlexLogo4)</visible>
-			
-		</control>
-		<control type="image">
-			<texture>plexicon_5.png</texture>
-			<width>1280</width>
-			<height>266</height>
-			<posx>0</posx>
-			<posy>0</posy>
-			<visible>Skin.HasSetting(PlexLogo5)</visible>
-			
+			<texture>plexlogo.png</texture>
+			<width>125</width>
+			<height>86</height>
+			<posx>1100</posx>
+			<posy>600</posy>
+			<visible>Skin.HasSetting(logo)</visible>			
 		</control>
 		
 		<!--
@@ -416,7 +427,7 @@
 		 <!-- Weather Widget -->
     	<control type="group">
 		<description>Current Weather Summary</description>
-		<posx>985</posx>
+		<posx>935</posx>
 		<posy>11</posy>
 		<control type="group">
 			<posy>7</posy>
@@ -426,7 +437,7 @@
 				<posy>-10</posy>
 				<width>220</width>
 				<align>right</align>
-				<textcolor>WhiteTrans</textcolor>
+				<textcolor>TimeWeatherLowMenu</textcolor>
 				<font>info1</font>
 				<label>$INFO[Weather.Conditions]</label>
 			</control>
@@ -436,7 +447,7 @@
 				<posy>16</posy>
 				<width>220</width>
 				<align>right</align>
-				<textcolor>WhiteTrans</textcolor>
+				<textcolor>TimeWeatherLowMenu</textcolor>
 				<font>info1</font>
 				<label>$INFO[Weather.Temperature]</label>
 			</control>
@@ -444,8 +455,8 @@
 		<control type="image">
 			<description>Weather image</description>
 			<posx>226</posx>
-			<width>50</width>
-			<height>50</height>
+			<width>100</width>
+			<height>100</height>
 			<aspectratio>keep</aspectratio>
 			<info>Weather.Conditions</info>
 		</control>
@@ -455,49 +466,43 @@
         
         <!-- Clock Widget -->
    		<control type="group" id="1">
-			<posx>40</posx>
+			<posx>25</posx>
 			<posy>9</posy>
-            <control type="label" id="1">
-                <textcolor>WhiteTrans</textcolor>
-                <info>System.Time(short)</info>
+			<control type="label" id="1">
+                <textcolor>TimeWeatherLowMenu</textcolor>
+                <info>System.Date</info>
                 <height>40</height>
                 <font>info1</font>
                 <align>left</align>
                 <aligny>center</aligny>
                 <posx>-1</posx>
             </control>
-            <visible>!Skin.HasSetting(Time)</visible>
-		</control> 
-		   <!-- End Clock Widget -->
-		   
-		   <!-- BIG Clock Widget -->
-   		<control type="group" id="1">
-			<posx>390</posx>
-			<posy>120</posy>
             <control type="label" id="1">
-                <textcolor>WhiteTrans</textcolor>
+                <textcolor>TimeWeatherLowMenu</textcolor>
                 <info>System.Time(short)</info>
-                <font>bigclock</font>
+                <height>40</height>
+                <font>info1</font>
                 <align>left</align>
                 <aligny>center</aligny>
                 <posx>-1</posx>
+                <posy>25</posy>
             </control>
-            <visible>Skin.HasSetting(BigTime)</visible>
+            <visible>!Skin.HasSetting(Time)</visible>
 		</control> 
-		   <!-- End BIG Clock Widget -->
+		   <!-- End Clock Widget -->
         
         <!-- RSS Widget-->
 		<control type="rss">
 				<description>RSS feed</description>
 				<posx>0</posx>
-				<posy>225</posy>
+				<posy>280</posy>
 				<height>25</height>
 				<width>1280</width>
 				<font>info1</font>
 				<urlset>1</urlset>
-				<textcolor>WhiteTrans</textcolor>
-				<titlecolor>WhiteTrans</titlecolor>
-				<headlinecolor>WhiteTrans</headlinecolor>
+				<textcolor>TimeWeatherLowMenu</textcolor>
+				<titlecolor>TimeWeatherLowMenu</titlecolor>
+				<headlinecolor>TimeWeatherLowMenu</headlinecolor>
 				<visible>system.getbool(lookandfeel.enablerssfeeds) + Skin.HasSetting(RSS)</visible>
 			</control>
 		<!-- End RSS Widget -->

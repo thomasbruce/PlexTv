@@ -32,6 +32,12 @@
 			<size>200</size>
 		</font>
 		<font>
+			<name>mediumclock</name>
+			<filename>Helvetica</filename>
+			<variant>Bold</variant>
+			<size>160</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>Helvetica</filename>
@@ -155,6 +161,12 @@
 			<size>200</size>
 		</font>
 		<font>
+			<name>mediumclock</name>
+			<filename>Arial.ttf</filename>
+			<variant>Bold</variant>
+			<size>160</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>Arial.ttf</filename>
@@ -274,6 +286,12 @@
 			<filename>coolvetica rg.ttf</filename>
 			<variant>Bold</variant>
 			<size>200</size>
+		</font>
+		<font>
+			<name>mediumclock</name>
+			<filename>coolvetica rg.ttf</filename>
+			<variant>Bold</variant>
+			<size>160</size>
 		</font>
 		<font>
 			<name>plex</name>
@@ -397,6 +415,12 @@
 			<size>200</size>
 		</font>
 		<font>
+			<name>mediumclock</name>
+			<filename>segoeuib.ttf</filename>
+			<variant>Bold</variant>
+			<size>160</size>
+		</font>
+		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>segoeuib.ttf</filename>
@@ -518,6 +542,12 @@
 			<filename>FE11004T.TTF</filename>
 			<variant>Bold</variant>
 			<size>200</size>
+		</font>
+		<font>
+			<name>mediumclock</name>
+			<filename>FE11004T.TTF</filename>
+			<variant>Bold</variant>
+			<size>160</size>
 		</font>
 		<font>
 			<name>plex</name>
