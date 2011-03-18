@@ -136,8 +136,8 @@
 		<visible>true</visible>
 		<width>531</width>
 		<height>22</height>
-		<texturebg border="14,0,14,0">osd/musicOSDProgressBack.png</texturebg>
-		<midtexture border="14,0,14,0">osd/musicOSDProgressMid.png</midtexture>
+		<texturebg border="14,0,14,0">aTVOSD/OSDProgressBack.png</texturebg>
+		<midtexture border="14,0,14,0">aTVOSD/OSDProgressMid.png</midtexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
 	<default type="sliderex">
