@@ -105,7 +105,7 @@
 			<control type="list" id="300">
 				<description>Home Fixedlist</description>
 				<posx>40</posx>
-				<posy>375</posy>
+				<posy>385</posy>
 				<width>300</width>
 				<height>280</height>
 				<onright>400</onright>
@@ -162,7 +162,7 @@
 			<control type="list" id="400">
 				<description>Home Fixedlist</description>
 				<posx>340</posx>
-				<posy>375</posy>
+				<posy>385</posy>
 				<width>300</width>
 				<height>280</height>
 				<scrolltime>200</scrolltime>
@@ -244,7 +244,7 @@
 			<control type="list" id="500">
 				<description>Home Fixedlist</description>
 				<posx>640</posx>
-				<posy>375</posy>
+				<posy>385</posy>
 				<width>300</width>
 				<height>280</height>
 				<onright>600</onright>
@@ -337,7 +337,7 @@
 			<control type="list" id="600">
 				<description>Home Fixedlist</description>
 				<posx>940</posx>
-				<posy>375</posy>
+				<posy>385</posy>
 				<width>300</width>
 				<height>280</height>
 				<onright>300</onright>
