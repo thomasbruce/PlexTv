@@ -90,7 +90,7 @@
 					</control>
 					<control type="image">
 						<posy>0</posy>
-						<posx>410</posx>
+						<posx>425</posx>
 						<visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(AlternateRating)</visible>
 						<width>88</width>
 						<height>34</height>
@@ -317,7 +317,7 @@
 					</control>
 					<control type="image">
 						<posy>0</posy>
-						<posx>410</posx>
+						<posx>425</posx>
 						<visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(AlternateRating)</visible>
 						<width>88</width>
 						<height>34</height>
@@ -530,7 +530,7 @@
 					</control>
 					<control type="image">
 						<posy>0</posy>
-						<posx>410</posx>
+						<posx>425</posx>
 						<visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(AlternateRating)</visible>
 						<width>88</width>
 						<height>34</height>
@@ -740,7 +740,7 @@
 					</control>
 					<control type="image">
 						<posy>0</posy>
-						<posx>410</posx>
+						<posx>425</posx>
 						<visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(AlternateRating)</visible>
 						<width>88</width>
 						<height>34</height>
