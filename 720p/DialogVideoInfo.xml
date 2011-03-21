@@ -70,7 +70,7 @@
 						</control>
 						<control type="image">
 							<posy>0</posy>
-							<posx>600</posx>
+							<posx>615</posx>
 							<visible>!IsEmpty(ListItem.Rating)</visible>
 							<width>88</width>
 							<height>40</height>
