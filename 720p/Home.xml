@@ -152,7 +152,7 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<visible>Skin.HasSetting(Search)</visible>
+						<visible>!Skin.HasSetting(Search)</visible>
 						<description>Search Menu</description>
 						<label> Search </label>
 						<onclick>Plex.ActivateWindow(10051)</onclick>
