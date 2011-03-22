@@ -152,6 +152,12 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
+						<visible>Skin.HasSetting(Search)</visible>
+						<description>Search Menu</description>
+						<label> Search </label>
+						<onclick>Plex.ActivateWindow(10051)</onclick>
+					</item>
+					<item id="2">
 					    <visible>Skin.HasSetting(Favorites)</visible>
 						<description>Favorites Menu</description>
 						<label>Favorites</label>

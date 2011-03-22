@@ -605,6 +605,17 @@
 			<textcolor>White</textcolor>
 		</control>
 	</include>
+	<include name="Search_Keyboard_Button">
+		<font>info1</font>
+		<texturenofocus border="8,3,8,3">-</texturenofocus>
+		<texturefocus border="8,3,8,3">dialogs/buttonKB-focus.png</texturefocus>
+		<textcolor>WhiteTrans</textcolor>
+		<focusedcolor>White</focusedcolor>
+		<width>48</width>
+		<height>48</height>
+		<align>center</align>
+		<textoffsety>10</textoffsety>
+	</include>
 	<include name="SideMenuBackground">
 	    <!-- Divider
 		<control type="image">

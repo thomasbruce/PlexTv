@@ -128,16 +128,21 @@
 				<selected>Skin.HasSetting(RSS)</selected>
 			</control>
 			<control type="radiobutton" id="2029">
+				<label>Hide "Plex Search" in "Media" menu</label>
+				<onclick>Skin.ToggleSetting(Search)</onclick>
+				<selected>Skin.HasSetting(Search)</selected>
+			</control>
+			<control type="radiobutton" id="2030">
 				<label>Hide Time on home screen</label>
 				<onclick>Skin.ToggleSetting(Time)</onclick>
 				<selected>Skin.HasSetting(Time)</selected>
 			</control>
-			<control type="radiobutton" id="2030">
+			<control type="radiobutton" id="2031">
 				<label>Hide Weather on home screen</label>
 				<onclick>Skin.ToggleSetting(Weather)</onclick>
 				<selected>Skin.HasSetting(Weather)</selected>
 			</control>
-			<control type="label" id="2031">
+			<control type="label" id="2032">
 					<description>Third title</description>
 					<label>OSD</label>
 					<posx>30</posx>
@@ -149,7 +154,7 @@
 					<font>title1</font>
 					<textcolor>White</textcolor>
 				</control>
-				<control type="radiobutton" id="2032">
+				<control type="radiobutton" id="2033">
 				<label>Hide Plot/Poster in OSD</label>
 				<onclick>Skin.ToggleSetting(aTVOSDplotposter)</onclick>
 				<selected>Skin.HasSetting(aTVOSDplotposter)</selected>
