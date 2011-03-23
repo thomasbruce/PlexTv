@@ -598,13 +598,13 @@
 					<control type="group" id="7001">
 					  <height>240</height>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9001)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9001)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
@@ -721,13 +721,13 @@
 					<control type="group" id="7002">
 					  <height>235</height>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9002)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9002)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
@@ -819,13 +819,13 @@
 					<control type="group" id="7004">
 					  <height>195</height>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9004)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9004)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
@@ -942,13 +942,13 @@
 					<control type="group" id="7008">
 					  <height>220</height>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9008)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9008)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
@@ -1040,13 +1040,13 @@
 					<control type="group" id="7009">
 					  <height>240</height>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9009)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9009)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
@@ -1163,13 +1163,13 @@
 					<control type="group" id="7010">
 					  <height>240</height>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9010)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9010)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
@@ -1286,13 +1286,13 @@
 					<control type="group" id="7013">
 					  <height>240</height>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9013)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9013)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
@@ -1385,13 +1385,13 @@
 					  <height>700</height>
 					  
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>Control.HasFocus(9012)</visible>
               <texture>search/plex-search-header.png</texture>  
 				    </control>
 					  <control type="image">
-					  <posx>4</posx>
+					  <posx>3</posx>
 					  <posy>-3</posy>
 					    <visible>!Control.HasFocus(9012)</visible>
               <texture>search/plex-search-header-disabled.png</texture>  
