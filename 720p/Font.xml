@@ -352,7 +352,7 @@
 		<font>
 			<name>aTVinfo</name>
 			<filename>coolvetica rg.ttf</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>18</size>
 		</font>
 		<font>
@@ -363,7 +363,7 @@
 		<font>
 			<name>info4</name>
 			<filename>coolvetica rg.ttf</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>12</size>
 		</font>
 		<font>
@@ -479,7 +479,7 @@
 		</font>
 		<font>
 			<name>aTVinfo</name>
-			<filename>segoeui.ttf</filename>
+			<filename>segoeuib.ttf</filename>
 			<variant>Bold</variant>
 			<size>18</size>
 		</font>
@@ -491,7 +491,7 @@
 		</font>
 		<font>
 			<name>info4</name>
-			<filename>segoeui.ttf</filename>
+			<filename>segoeuib.ttf</filename>
 			<variant>Bold</variant>
 			<size>12</size>
 		</font>
@@ -516,73 +516,73 @@
 		<font>
 			<name>title1</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>30</size>
 		</font>
 		<font>
 			<name>HomeMenuItem</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>48</size>
 		</font>
 		<font>
 			<name>homeheader</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>42</size>
 		</font>
 		<font>
 			<name>paused</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>200</size>
 		</font>
 		<font>
 			<name>bigclock</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>200</size>
 		</font>
 		<font>
 			<name>mediumclock</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>160</size>
 		</font>
 		<font>
 			<name>plex</name>
 			<size>80</size>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 		</font>
 		<font>
 			<name>HomeMenuItemNoFocus</name>
 			<size>40</size>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 		</font>
 		<font>
 			<name>info1</name>
 			<size>24</size>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 		</font>
 		<font>
 			<name>list2</name>
 			<size>25</size>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 		</font>
 		<font>
 			<name>list1</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>30</size>
 		</font>
 		<font>
 			<name>settings</name>
 			<filename>FE11004T.TTF</filename>
-			<variant>Bold</variant>
+			<variant>Regular</variant>
 			<size>20</size>
 		</font>
 		<font>
@@ -608,8 +608,8 @@
 		</font>
 		<font>
 			<name>aTVinfo</name>
-			<filename>FE11003T.TTF</filename>
-			<variant>Bold</variant>
+			<filename>FE11004T.TTF</filename>
+			<variant>Regular</variant>
 			<size>18</size>
 		</font>
 		<font>
@@ -620,8 +620,8 @@
 		</font>
 		<font>
 			<name>info4</name>
-			<filename>FE11003T.TTF</filename>
-			<variant>Bold</variant>
+			<filename>FE11004T.TTF</filename>
+			<variant>Regular</variant>
 			<size>12</size>
 		</font>
 		<font>
