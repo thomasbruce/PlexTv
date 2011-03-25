@@ -347,7 +347,7 @@
 				<posx>-170</posx>
 				<posy>-30</posy>
 				<width>800</width>
-				<height>330</height>
+				<height>260</height>
 				<texture>aTVOSD/plot_poster_bg.png</texture>
 				<visible>!VideoPlayer.Content(episodes)</visible>
 			</control>
@@ -407,67 +407,10 @@
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
-					<posy>195</posy>
-					<width>590</width>
-					<height>1</height>
-					<texture>white.png</texture>
-					<aspectratio>scale</aspectratio>
-					<colordiffuse>WhiteTrans</colordiffuse>
-					<visible>!VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="label">
-						<posx>100</posx>
-						<posy>205</posy>
-						<width>83</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>WhiteTrans</textcolor>
-						<label>Duration:</label>
-						<visible>!VideoPlayer.Content(episodes)</visible>
-					</control>
-				<control type="label">
-					<posx>108</posx>
-					<posy>205</posy>
-					<width>550</width>
-					<height>25</height>
-					<font>info2</font>
-					<align>left</align>
-					<textcolor>White</textcolor>
-					<label>$INFO[VideoPlayer.Duration]</label>
-					<visible>!VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="label">
-						<posx>100</posx>
-						<posy>235</posy>
-						<width>200</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>WhiteTrans</textcolor>
-						<label>Finished at:</label>
-						<visible>!VideoPlayer.Content(episodes)</visible>
-					</control>
-				<control type="label">
-					<posx>-10</posx>
-					<posy>235</posy>
-					<width>281</width>
-					<height>28</height>
-					<aligny>center</aligny>
-					<align>center</align>
-					<font>info2</font>
-					<textcolor>White</textcolor>
-					<label>$INFO[Player.FinishTime]</label>
-					<visible>!VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="image">
 				<posx>-323</posx>
 				<posy>-35</posy>
 				<width>843</width>
-				<height>335</height>
+				<height>260</height>
 				<texture>aTVOSD/plot_poster_bg.png</texture>
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
@@ -524,63 +467,6 @@
 					<textcolor>White</textcolor>
 					<font>info2</font>
 					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
-					<visible>VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="image">
-					<posx>-113</posx>
-					<posy>195</posy>
-					<width>590</width>
-					<height>1</height>
-					<texture>white.png</texture>
-					<aspectratio>scale</aspectratio>
-					<colordiffuse>WhiteTrans</colordiffuse>
-					<visible>VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="label">
-						<posx>-13</posx>
-						<posy>205</posy>
-						<width>83</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>WhiteTrans</textcolor>
-						<label>Duration:</label>
-						<visible>VideoPlayer.Content(episodes)</visible>
-					</control>
-				<control type="label">
-					<posx>-5</posx>
-					<posy>205</posy>
-					<width>550</width>
-					<height>25</height>
-					<font>info2</font>
-					<align>left</align>
-					<textcolor>White</textcolor>
-					<label>$INFO[VideoPlayer.Duration]</label>
-					<visible>VideoPlayer.Content(episodes)</visible>
-				</control>
-				<control type="label">
-						<posx>-13</posx>
-						<posy>235</posy>
-						<width>200</width>
-						<height>25</height>
-						<font>info2</font>
-						<align>right</align>
-						<aligny>center</aligny>
-						<textcolor>WhiteTrans</textcolor>
-						<label>Finished at:</label>
-						<visible>VideoPlayer.Content(episodes)</visible>
-					</control>
-				<control type="label">
-					<posx>-123</posx>
-					<posy>235</posy>
-					<width>281</width>
-					<height>28</height>
-					<aligny>center</aligny>
-					<align>center</align>
-					<font>info2</font>
-					<textcolor>White</textcolor>
-					<label>$INFO[Player.FinishTime]</label>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 				<visible>!Skin.HasSetting(aTVOSDplotposter)</visible>

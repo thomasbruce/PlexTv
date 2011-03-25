@@ -221,6 +221,11 @@
                     <onclick>Skin.ToggleSetting(aTVOSDplotposter)</onclick>
                     <selected>Skin.HasSetting(aTVOSDplotposter)</selected>
                 </control>
+                <control type="radiobutton" id="2034">
+                    <label>Show "Time/Finished at" in OSD</label>
+                    <onclick>Skin.ToggleSetting(FinishTime)</onclick>
+                    <selected>Skin.HasSetting(FinishTime)</selected>
+                </control>
             </control>
              <control type="grouplist" id="5">
                 <visible>ControlGroup(3).Hasfocus(14)</visible>
