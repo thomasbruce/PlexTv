@@ -198,15 +198,15 @@
 				</control>
 				
 				<control type="label">
-					<posx>466</posx>
+					<posx>381</posx>
 					<posy>60</posy>
-					<width>350</width>
+					<width>520</width>
 					<height>28</height>
 					<aligny>center</aligny>
 					<align>center</align>
 					<font>info2</font>
 					<textcolor>WhiteTrans</textcolor>
-					<label>Current time $INFO[System.Time(short)] | Finished at $INFO[Player.FinishTime]</label>
+					<label>Current time: $INFO[System.Time(short)] | Duration: $INFO[Player.Duration] | Finished at: $INFO[Player.FinishTime]</label>
 					<visible>Skin.HasSetting(FinishTime)</visible>
 				</control>
 				
