@@ -37,19 +37,19 @@
 	<default type="button">
 		<posx>0</posx>
 		<posy>0</posy>
-		<width>800</width>
-		<height>80</height>
-		<align>center</align>
-		<textoffsetx>50</textoffsetx>
+		<width>300</width>
+		<height>86</height>
+		<align>left</align>
+		<textoffsetx>30</textoffsetx>
 		<aligny>center</aligny>
 		<font>list2</font>
 		<label>-</label>
 		<textcolor>White</textcolor>
 		<focusedcolor>White</focusedcolor>
 		<disabledcolor>Gray</disabledcolor>
-		<texturefocus>button_settings.png</texturefocus>
+		<texturefocus>button_home.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<pulseonselect>false</pulseonselect>
+        <pulseonselect>false</pulseonselect>
 	</default>
 	<default type="togglebutton">
 		<description>Default Togglebutton</description>

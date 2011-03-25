@@ -512,6 +512,7 @@
 							<onright>32</onright>
 							<onup>95</onup>
 							<ondown>-</ondown>
+							<textoffsetx>10</textoffsetx>
 							<label>Delete</label>
 							<onclick/>
 							<texturefocus>search/plex-search-button-wide.png</texturefocus>
@@ -532,6 +533,7 @@
 								<onright>10</onright>
 								<onup>97</onup>
 								<ondown>-</ondown>
+								<textoffsetx>10</textoffsetx>
 								<label>Space</label>
 								<onclick/>
 								<texturefocus>search/plex-search-button-wide.png</texturefocus>
@@ -553,6 +555,7 @@
 								<onright>9001</onright>
 								<onup>99</onup>
 								<ondown>-</ondown>
+								<textoffsetx>17</textoffsetx>
 								<label>Clear</label>
 								<onclick/>
 								<texturefocus>search/plex-search-button-wide.png</texturefocus>

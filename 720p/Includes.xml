@@ -1,48 +1,46 @@
 <?xml version="1.0"?>
 <includes>
-	
-	
-<include name="Background">
-<control type="group">
-<control type="image">
-<width>1280</width>
-<height>720</height>
-<posx>0</posx>
-<posy>0</posy>
-<aspectratio>scale</aspectratio>
-<texture>background.png</texture>
-</control>
-<control type="largeimage">
-				<width>1280</width>
-				<height>720</height>
-				<texture background="true">$INFO[listitem.property(fanart_image)]</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>500</fadetime>
-				<animation effect="fade" start="0" end="90" time="500">Visible</animation>
-				<visible>Skin.HasSetting(Fanart) + !IsEmpty(listitem.property(fanart_image))</visible>
-			</control>
-			<control type="largeimage">
-			<width>1280</width>
-			<height>720</height>
-			<texture border="0">fanart_overlay.png</texture>
-			<aspectratio>stretch</aspectratio>
-			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="90" time="300"/>
-			</animation>
-			<animation type="WindowClose">
-				<effect type="fade" start="90" end="0" time="300"/>
-			</animation>
-			<visible>Skin.HasSetting(Fanart)</visible>
-		</control>
-			</control>
-</include>
-	
-	
-	
+		
+    <include name="Background">
+        <control type="group">
+            <control type="image">
+                <width>1280</width>
+                <height>720</height>
+                <posx>0</posx>
+                <posy>0</posy>
+                <aspectratio>scale</aspectratio>
+                <texture>background.png</texture>
+            </control>
+            <control type="largeimage">
+                <width>1280</width>
+                <height>720</height>
+                <texture background="true">$INFO[listitem.property(fanart_image)]</texture>
+                <aspectratio>scale</aspectratio>
+                <fadetime>500</fadetime>
+                <animation effect="fade" start="0" end="90" time="500">Visible</animation>
+                <visible>Skin.HasSetting(Fanart) + !IsEmpty(listitem.property(fanart_image))</visible>
+            </control>
+            <control type="largeimage">
+                <width>1280</width>
+                <height>720</height>
+                <texture border="0">fanart_overlay.png</texture>
+                <aspectratio>stretch</aspectratio>
+                <animation type="WindowOpen">
+                    <effect type="fade" start="0" end="90" time="300"/>
+                </animation>
+                <animation type="WindowClose">
+                    <effect type="fade" start="90" end="0" time="300"/>
+                </animation>
+                <visible>Skin.HasSetting(Fanart)</visible>
+            </control>
+        </control>
+    </include>
+
 	<include file="Defaults.xml"/>
 	<include file="CommonViews.xml"/>
 	<include file="NowPlayingIncludes.xml"/>
 	<include file="IncludesDialogs.xml"/>
+
 	<include name="DialogBack">
 		<control type="image">
 			<width>520</width>
@@ -466,10 +464,55 @@
 			<textcolor>White</textcolor>
 		</control>
 	</include>
+	<include name="HeaderApp">
+		<control type="label">
+			<description>First title</description>
+			<label>Programs</label>
+			<posx>700</posx>
+			<posy>44</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<visible>IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle) </visible>
+		</control>
+	</include>
+	<include name="HeaderAudio">
+		<control type="label">
+			<description>First title</description>
+			<label>Music</label>
+			<posx>700</posx>
+			<posy>44</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<visible>IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle) </visible>
+		</control>
+	</include>
+	<include name="HeaderPic">
+		<control type="label">
+			<description>First title</description>
+			<label>Photo</label>
+			<posx>700</posx>
+			<posy>44</posy>
+			<width>500</width>
+			<height>56</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+			<visible>IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle) </visible>
+		</control>
+	</include>
 	<include name="HeaderVideo">
 		<control type="label">
 			<description>First title</description>
-			<label>Videos</label>
+			<label>Video</label>
 			<posx>700</posx>
 			<posy>44</posy>
 			<width>500</width>

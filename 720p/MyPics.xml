@@ -5,7 +5,7 @@
 	<controls>
 		<include>Background</include>
 		<control type="group">
-			<include>Header</include>
+			<include>HeaderPic</include>
 			<include>List</include>
 		</control>
 	</controls>

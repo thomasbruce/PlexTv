@@ -439,9 +439,9 @@
 			<posy>7</posy>
 			<control type="label">
 				<description>Weather Conditions</description>
-				<posx>220</posx>
+				<posx>227</posx>
 				<posy>-10</posy>
-				<width>220</width>
+				<width>300</width>
 				<align>right</align>
 				<textcolor>TimeWeatherLowMenu</textcolor>
 				<font>info1</font>

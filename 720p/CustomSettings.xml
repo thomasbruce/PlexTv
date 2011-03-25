@@ -1,173 +1,248 @@
 <?xml version="1.0"?>
 <window id="56">
-	<defaultcontrol always="true">5</defaultcontrol>
+	<defaultcontrol always="true">3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Background</include>
-		<control type="grouplist" id="5">
-			<description>Control Area</description>
-			<posx>170</posx>
+		<control type="label">
+			<description>First title</description>
+			<label>Customize</label>
+			<posx>45</posx>
+			<posy>27</posy>
+			<width>1000</width>
+			<height>72</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>homeheader</font>
+			<textcolor>White</textcolor>
+		</control>
+		<control type="grouplist" id="3">
+			<description>Custom Wraplist</description>
+			<posx>30</posx>
 			<posy>100</posy>
-			<width>900</width>
-			<height>563</height>
-			<itemgap>4</itemgap>
-			<onleft>3</onleft>
-			<onright>3</onright>
+			<width>300</width>
+			<height>480</height>
+			<itemgap>1</itemgap>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
 			<orientation>vertical</orientation>
-			<control type="label" id="2010">
-					<description>First title</description>
-					<label>General</label>
-					<posx>30</posx>
-					<posy>15</posy>
-					<width>1000</width>
-					<height>56</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>title1</font>
-					<textcolor>White</textcolor>
-				</control>
-			<control type="radiobutton" id="2011">
-				<label>Show Fanart as background</label>
-				<onclick>Skin.ToggleSetting(Fanart)</onclick>
-				<selected>Skin.HasSetting(Fanart)</selected>
+			<control type="button" id="1">
+				<description>General</description>
+				<label>General</label>
+				<onclick>-</onclick>
 			</control>
-			<control type="radiobutton" id="2012">
-				<label>Use Posters for TV Shows instead of Fanart</label>
-				<onclick>Skin.ToggleSetting(PosterTVShows)</onclick>
-				<selected>Skin.HasSetting(PosterTVShows)</selected>
+			<control type="button" id="2">
+				<description>Homescreen</description>
+				<label>Home</label>
+				<onclick>-</onclick>
 			</control>
-			<control type="radiobutton" id="2013">
-				<label>Hide Unwatched flags</label>
-				<onclick>Skin.ToggleSetting(NoWatchedFlags)</onclick>
-				<selected>Skin.HasSetting(NoWatchedFlags)</selected>
+			<control type="button" id="12">
+				<description>Flags</description>
+				<label>Flags</label>
+				<onclick>-</onclick>
 			</control>
-			<control type="radiobutton" id="2014">
-				<label>Show HD Icon</label>
-				<onclick>Skin.ToggleSetting(Flags)</onclick>
-				<selected>Skin.HasSetting(Flags)</selected>
+			<control type="button" id="13">
+				<description>OSD</description>
+				<label>OSD</label>
+				<onclick>-</onclick>
 			</control>
-			<control type="radiobutton" id="2015">
-				<label>[COLOR=WhiteTrans]- use metalic HD icon[/COLOR]</label>
-				<onclick>Skin.ToggleSetting(White)</onclick>
-				<onclick>Skin.ToggleSetting(Metal)</onclick>
-				<selected>Skin.HasSetting(White) + Skin.HasSetting(Metal)</selected>
+			<control type="button" id="14">
+				<description>About</description>
+				<label>About</label>
+				<onclick>-</onclick>
 			</control>
-			<control type="radiobutton" id="2016">
-				<label>Show Media flags</label>
-				<onclick>Skin.ToggleSetting(Resolution)</onclick>
-				<selected>Skin.HasSetting(Resolution)</selected>
-			</control>
-			<control type="radiobutton" id="2017">
-				<label>Show Media flags[COLOR=WhiteTrans] (movie information view)[/COLOR]</label>
-				<onclick>Skin.ToggleSetting(ResolutionMovieInfo)</onclick>
-				<selected>Skin.HasSetting(ResolutionMovieInfo)</selected>
-			</control>
-			<control type="radiobutton" id="2018">
-				<label>Show Studio flags</label>
-				<onclick>Skin.ToggleSetting(Studio)</onclick>
-				<selected>Skin.HasSetting(Studio)</selected>
-			</control>
-			<control type="radiobutton" id="2019">
-				<label>Show Studio flags[COLOR=WhiteTrans] (movie information view)[/COLOR]</label>
-				<onclick>Skin.ToggleSetting(StudioMovieInfo)</onclick>
-				<selected>Skin.HasSetting(StudioMovieInfo)</selected>
-			</control>
-			<control type="radiobutton" id="2020">
-				<label>Show top/bottom "Text Fade" in lists</label>
-				<onclick>Skin.ToggleSetting(Fade)</onclick>
-				<selected>Skin.HasSetting(Fade)</selected>
-			</control>
-			<control type="radiobutton" id="2021">
-				<label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Don't wait</label>
-				<onclick>Skin.Reset(WaitShort)</onclick>
-				<onclick>Skin.ToggleSetting(NoWait)</onclick>
-				<selected>Skin.HasSetting(NoWait)</selected>
-			</control>
-			<control type="radiobutton" id="2022">
-				<label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Wait for 1 second</label>
-				<onclick>Skin.Reset(NoWait)</onclick>
-				<onclick>Skin.ToggleSetting(WaitShort)</onclick>
-				<selected>Skin.HasSetting(WaitShort)</selected>
-			</control>
-			<control type="radiobutton" id="2023">
-				<label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Wait for 3 seconds</label>
-				<onclick>Skin.Reset(NoWait)</onclick>
-				<onclick>Skin.Reset(WaitShort)</onclick>
-				<selected>!Skin.HasSetting(WaitShort) + !Skin.HasSetting(NoWait)</selected>
-			</control>
-			<control type="label" id="2024">
-					<description>Second title</description>
-					<label>Home Screen</label>
-					<posx>30</posx>
-					<posy>15</posy>
-					<width>1000</width>
-					<height>56</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>title1</font>
-					<textcolor>White</textcolor>
-				</control>
-			<control type="radiobutton" id="2025">
-				<label>Show Favorites in "Media" menu</label>
-				<onclick>Skin.ToggleSetting(Favorites)</onclick>
-				<selected>Skin.HasSetting(Favorites)</selected>
-			</control>
-			<control type="radiobutton" id="2026">
-				<label>Show Weather in "Apps" menu</label>
-				<onclick>Skin.ToggleSetting(ShowMyWeather)</onclick>
-				<selected>Skin.HasSetting(ShowMyWeather)</selected>
-			</control>
-			<control type="radiobutton" id="2027">
-				<label>Show Logo on home screen</label>
-				<onclick>Skin.ToggleSetting(logo)</onclick>
-				<selected>Skin.HasSetting(logo)</selected>
-			</control>
-			<control type="radiobutton" id="2028">
-				<label>Show RSS on home screen</label>
-				<onclick>Skin.ToggleSetting(RSS)</onclick>
-				<selected>Skin.HasSetting(RSS)</selected>
-			</control>
-			<control type="radiobutton" id="2029">
-				<label>Hide "Plex Search" in "Media" menu</label>
-				<onclick>Skin.ToggleSetting(Search)</onclick>
-				<selected>Skin.HasSetting(Search)</selected>
-			</control>
-			<control type="radiobutton" id="2030">
-				<label>Hide Time on home screen</label>
-				<onclick>Skin.ToggleSetting(Time)</onclick>
-				<selected>Skin.HasSetting(Time)</selected>
-			</control>
-			<control type="radiobutton" id="2031">
-				<label>Hide Weather on home screen</label>
-				<onclick>Skin.ToggleSetting(Weather)</onclick>
-				<selected>Skin.HasSetting(Weather)</selected>
-			</control>
-			<control type="label" id="2032">
-					<description>Third title</description>
-					<label>OSD</label>
-					<posx>30</posx>
-					<posy>15</posy>
-					<width>1000</width>
-					<height>56</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>title1</font>
-					<textcolor>White</textcolor>
-				</control>
-				<control type="radiobutton" id="2033">
-				<label>Hide Plot/Poster in OSD</label>
-				<onclick>Skin.ToggleSetting(aTVOSDplotposter)</onclick>
-				<selected>Skin.HasSetting(aTVOSDplotposter)</selected>
-			</control>
-			<control type="image">
-				<posy>0</posy>
-				<posx>0</posx>
-				<width>510</width>
-				<height>1</height>
-				<texture>white.png</texture>
-				<aspectratio>scale</aspectratio>
-				<colordiffuse>WhiteTrans</colordiffuse>
-			</control>
+		</control>
+		<control type="group" id="200">
+            <control type="grouplist" id="5">
+                <visible>ControlGroup(3).Hasfocus(1)</visible>
+                <description>General Control Area</description>
+                <posx>370</posx>
+                <posy>100</posy>
+                <width>900</width>
+                <height>563</height>
+                <itemgap>1</itemgap>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <orientation>vertical</orientation>
+                <control type="radiobutton" id="2011">
+                    <label>Show Fanart as background</label>
+                    <onclick>Skin.ToggleSetting(Fanart)</onclick>
+                    <selected>Skin.HasSetting(Fanart)</selected>
+                </control>
+                <control type="radiobutton" id="2012">
+                    <label>Use Posters for TV Shows instead of Fanart</label>
+                    <onclick>Skin.ToggleSetting(PosterTVShows)</onclick>
+                    <selected>Skin.HasSetting(PosterTVShows)</selected>
+                </control>
+                <control type="radiobutton" id="2013">
+                    <label>Show HD Icon</label>
+                    <onclick>Skin.ToggleSetting(Flags)</onclick>
+                    <selected>Skin.HasSetting(Flags)</selected>
+                </control>
+                <control type="radiobutton" id="2014">
+                    <label>[COLOR=WhiteTrans]- use metalic HD icon[/COLOR]</label>
+                    <onclick>Skin.ToggleSetting(White)</onclick>
+                    <onclick>Skin.ToggleSetting(Metal)</onclick>
+                    <selected>Skin.HasSetting(White) + Skin.HasSetting(Metal)</selected>
+                </control>
+                <control type="radiobutton" id="2015">
+                    <label>Show top/bottom "Text Fade" in lists</label>
+                    <onclick>Skin.ToggleSetting(Fade)</onclick>
+                    <selected>Skin.HasSetting(Fade)</selected>
+                </control>
+                <control type="radiobutton" id="2016">
+                    <label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Don't wait</label>
+                    <onclick>Skin.Reset(WaitShort)</onclick>
+                    <onclick>Skin.ToggleSetting(NoWait)</onclick>
+                    <selected>Skin.HasSetting(NoWait)</selected>
+                </control>
+                <control type="radiobutton" id="2017">
+                    <label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Wait for 1 second</label>
+                    <onclick>Skin.Reset(NoWait)</onclick>
+                    <onclick>Skin.ToggleSetting(WaitShort)</onclick>
+                    <selected>Skin.HasSetting(WaitShort)</selected>
+                </control>
+                <control type="radiobutton" id="2018">
+                    <label>[COLOR=WhiteTrans]Wait before showing info: [/COLOR]Wait for 3 seconds</label>
+                    <onclick>Skin.Reset(NoWait)</onclick>
+                    <onclick>Skin.Reset(WaitShort)</onclick>
+                    <selected>!Skin.HasSetting(WaitShort) + !Skin.HasSetting(NoWait)</selected>
+                </control>
+            </control>
+            <control type="grouplist" id="5">
+                <visible>ControlGroup(3).Hasfocus(2)</visible>
+                <description>Home Control Area</description>
+                <posx>370</posx>
+                <posy>100</posy>
+                <width>900</width>
+                <height>563</height>
+                <itemgap>3</itemgap>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <orientation>vertical</orientation>
+                <control type="radiobutton" id="2019">
+                    <label>Show Favorites in "Media" menu</label>
+                    <onclick>Skin.ToggleSetting(Favorites)</onclick>
+                    <selected>Skin.HasSetting(Favorites)</selected>
+                </control>
+                <control type="radiobutton" id="2020">
+                    <label>Show Weather in "Apps" menu</label>
+                    <onclick>Skin.ToggleSetting(ShowMyWeather)</onclick>
+                    <selected>Skin.HasSetting(ShowMyWeather)</selected>
+                </control>
+                <control type="radiobutton" id="2021">
+                    <label>Show Logo on home screen</label>
+                    <onclick>Skin.ToggleSetting(logo)</onclick>
+                    <selected>Skin.HasSetting(logo)</selected>
+                </control>
+                <control type="radiobutton" id="2022">
+                    <label>Show RSS on home screen</label>
+                    <onclick>Skin.ToggleSetting(RSS)</onclick>
+                    <selected>Skin.HasSetting(RSS)</selected>
+                </control>
+                 <control type="radiobutton" id="2023">
+                    <label>Hide Search in "Media" menu</label>
+                    <onclick>Skin.ToggleSetting(Search)</onclick>
+                    <selected>Skin.HasSetting(Search)</selected>
+                </control>
+                <control type="radiobutton" id="2024">
+                    <label>Hide Time on home screen</label>
+                    <onclick>Skin.ToggleSetting(Time)</onclick>
+                    <selected>Skin.HasSetting(Time)</selected>
+                </control>
+                <control type="radiobutton" id="2025">
+                    <label>Hide Weather on home screen</label>
+                    <onclick>Skin.ToggleSetting(Weather)</onclick>
+                    <selected>Skin.HasSetting(Weather)</selected>
+                </control>
+            </control>
+            <control type="grouplist" id="5">
+                <visible>ControlGroup(3).Hasfocus(12)</visible>
+                <description>Flags</description>
+                <posx>370</posx>
+                <posy>100</posy>
+                <width>900</width>
+                <height>563</height>
+                <itemgap>1</itemgap>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <orientation>vertical</orientation>
+                <control type="radiobutton" id="2026">
+                    <label>Hide Unwatched flags</label>
+                    <onclick>Skin.ToggleSetting(NoWatchedFlags)</onclick>
+                    <selected>Skin.HasSetting(NoWatchedFlags)</selected>
+                </control>
+                <control type="radiobutton" id="2027">
+                    <label>Show Media flags [COLOR=WhiteTrans](movies)[/COLOR]</label>
+                    <onclick>Skin.ToggleSetting(Resolution)</onclick>
+                    <selected>Skin.HasSetting(Resolution)</selected>
+                </control>
+                <control type="radiobutton" id="2028">
+                    <label>Show Media flags[COLOR=WhiteTrans] (episodes)[/COLOR]</label>
+                    <onclick>Skin.ToggleSetting(ResolutionEpisodes)</onclick>
+                    <selected>Skin.HasSetting(ResolutionEpisodes)</selected>
+                </control>
+                <control type="radiobutton" id="2029">
+                    <label>Show Studio flags[COLOR=WhiteTrans] (movies)[/COLOR]</label>
+                    <onclick>Skin.ToggleSetting(Studio)</onclick>
+                    <selected>Skin.HasSetting(Studio)</selected>
+                </control>
+                <control type="radiobutton" id="2030">
+                    <label>Show Studio flags[COLOR=WhiteTrans] (tv shows)[/COLOR]</label>
+                    <onclick>Skin.ToggleSetting(StudioTvshows)</onclick>
+                    <selected>Skin.HasSetting(StudioTvshows)</selected>
+                </control>
+                <control type="radiobutton" id="2031">
+                    <label>Show MPAA flags[COLOR=WhiteTrans] (movies)[/COLOR]</label>
+                    <onclick>Skin.ToggleSetting(MPAA)</onclick>
+                    <selected>Skin.HasSetting(MPAA)</selected>
+                </control>
+                <control type="radiobutton" id="2032">
+                    <label>Show MPAA flags[COLOR=WhiteTrans] (tv shows)[/COLOR]</label>
+                    <onclick>Skin.ToggleSetting(MPAATvShows)</onclick>
+                    <selected>Skin.HasSetting(MPAATvShows)</selected>
+                </control>
+            </control>
+            <control type="grouplist" id="5">
+                <visible>ControlGroup(3).Hasfocus(13)</visible>
+                <description>OSD Control Area</description>
+                <posx>370</posx>
+                <posy>100</posy>
+                <width>900</width>
+                <height>563</height>
+                <itemgap>1</itemgap>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <orientation>vertical</orientation>
+                <control type="radiobutton" id="2033">
+                    <label>Hide Plot/Poster in OSD</label>
+                    <onclick>Skin.ToggleSetting(aTVOSDplotposter)</onclick>
+                    <selected>Skin.HasSetting(aTVOSDplotposter)</selected>
+                </control>
+            </control>
+             <control type="grouplist" id="5">
+                <visible>ControlGroup(3).Hasfocus(14)</visible>
+                <description>About</description>
+                <posx>370</posx>
+                <posy>100</posy>
+                <width>900</width>
+                <height>563</height>
+                <itemgap>1</itemgap>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <orientation>vertical</orientation>
+                <control type="textbox">
+						<label>[COLOR=WhiteTrans]PlexTv is based on FrontSeat. Maintained by [COLOR=White]thomasbruce[/COLOR]. Thanks to [COLOR=White]jaaps[/COLOR] for creating the FrontSeat Skin and letting the skin be modded.[CR][CR][CR]Thanks to all of you who helped with this skin![CR][CR][CR]Credits:[/COLOR] jaaps, kruisje, irishv, Mr Power, someone, gedoode</label>
+						<width>840</width>
+						<height>500</height>
+						<align>left</align>
+						<textcolor>White</textcolor>
+						<font>info2</font>
+                </control>
+            </control>
+            
 		</control>
 	</controls>
 </window>
