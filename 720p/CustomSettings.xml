@@ -222,7 +222,7 @@
                     <selected>Skin.HasSetting(aTVOSDplotposter)</selected>
                 </control>
                 <control type="radiobutton" id="2034">
-                    <label>Show "Time/Finished at" in OSD</label>
+                    <label>Show "Time/Duration/Finished at" in OSD</label>
                     <onclick>Skin.ToggleSetting(FinishTime)</onclick>
                     <selected>Skin.HasSetting(FinishTime)</selected>
                 </control>
