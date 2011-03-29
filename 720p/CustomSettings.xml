@@ -217,14 +217,22 @@
                 <onright>3</onright>
                 <orientation>vertical</orientation>
                 <control type="radiobutton" id="2033">
-                    <label>Hide Plot/Poster in OSD</label>
-                    <onclick>Skin.ToggleSetting(aTVOSDplotposter)</onclick>
-                    <selected>Skin.HasSetting(aTVOSDplotposter)</selected>
+                    <label>Change to alternative OSD panel</label>
+                    <onclick>Skin.ToggleSetting(ChangeOSD)</onclick>
+                    <selected>Skin.HasSetting(ChangeOSD)</selected>
                 </control>
                 <control type="radiobutton" id="2034">
-                    <label>Show "Time/Duration/Finished at" in OSD</label>
+                    <label>Show "Time/Finished at" in alternative OSD</label>
                     <onclick>Skin.ToggleSetting(FinishTime)</onclick>
                     <selected>Skin.HasSetting(FinishTime)</selected>
+                </control>
+                <control type="textbox">
+						<label>[CR][CR]Plex sometimes needs to be restarted for changes to take effect when changing OSD panel</label>
+						<width>840</width>
+						<height>500</height>
+						<align>left</align>
+						<textcolor>WhiteTrans</textcolor>
+						<font>info2</font>
                 </control>
             </control>
              <control type="grouplist" id="5">

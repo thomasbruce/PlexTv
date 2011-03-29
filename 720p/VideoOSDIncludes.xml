@@ -1,0 +1,1783 @@
+<?xml version="1.0"?>
+<includes>
+	
+	<!-- VideoOSD -->
+	
+	<include name="ATvOSD">
+	
+	<controls>
+	<control type="group">
+			<visible>!Window.IsActive(123) + !Window.IsActive(124)</visible>
+			<control type="group">
+				<posx>1043</posx>
+				<posy>20</posy>
+				<width>200</width>
+				<height>80</height>
+				<visible>!Window.IsActive(125) + Skin.HasSetting(ShowTimeOSD)</visible>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>80</height>
+					<width>200</width>
+					<texture>aTVOSD/osd_time.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<visible>true + System.timeisampm</visible>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeNoAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+				<control type="label">
+					<visible>true + !System.timeisampm</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+			</control>
+			
+		<control type="group">
+				<posx>412</posx>
+				<posy>100</posy>
+			<control type="image">
+				<posx>-170</posx>
+				<posy>-30</posy>
+				<width>800</width>
+				<height>300</height>
+				<texture>aTVOSD/plot_poster_bg.png</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
+				<posx>-190</posx>
+				<posy>-30</posy>
+				<width>843</width>
+				<height>300</height>
+				<texture>aTVOSD/plot_poster_bg.png</texture>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+		</control>
+			
+			<control type="group">
+				<posx>0</posx>
+				<posy>590</posy>
+				<width>1280</width>
+				<height>108</height>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>108</height>
+					<width>1280</width>
+					<texture>aTVOSD/osd_back.png</texture>
+				</control>
+				<control type="grouplist" id="213">
+					<width>400</width>
+					<posx>410</posx>
+					<posy>-295</posy>
+					<height>40</height>
+					<itemgap>5</itemgap>
+					<onup>-</onup>
+					<ondown>-</ondown>
+					<orientation>horizontal</orientation>
+					<control type="button" id="8">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+						<visible>VideoPlayer.HasMenu</visible>
+					</control>
+					<control type="button" id="10">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.ActivateWindow(125)</onclick>
+					</control>
+					<control type="button" id="11">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.PlayerControl(Previous)</onclick>
+					</control>
+					<control type="button" id="12">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.PlayerControl(Rewind)</onclick>
+					</control>
+					<control type="button" id="13">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.PlayerControl(Stop)</onclick>
+					</control>
+					<control type="button" id="14">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.PlayerControl(Play)</onclick>
+					</control>
+					<control type="button" id="15">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.PlayerControl(Forward)</onclick>
+					</control>
+					<control type="button" id="16">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.PlayerControl(Next)</onclick>
+					</control>
+					<control type="button" id="17">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.ActivateWindow(124)</onclick>
+					</control>
+					<control type="button" id="18">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.ActivateWindow(123)</onclick>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="215">
+					<width>400</width>
+					<posx>918</posx>
+					<posy>-295</posy>
+					<height>40</height>
+					<itemgap>5</itemgap>
+					<onup>-</onup>
+					<ondown>-</ondown>
+					<orientation>horizontal</orientation>
+					<control type="button" id="17">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.ActivateWindow(124)</onclick>
+					</control>
+					<control type="button" id="18">
+						<texturefocus>-</texturefocus>
+						<onclick>XBMC.ActivateWindow(123)</onclick>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="214">
+				<visible>!VideoPlayer.Content(episodes)</visible>
+					<width>400</width>
+					<posx>410</posx>
+					<posy>-295</posy>
+					<height>40</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button">
+						<width>31</width>
+						<height>22</height>
+						<texturenofocus>aTVOSD/osd_button_dvd.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(8)">Conditional</animation>
+						<visible>VideoPlayer.HasMenu</visible>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_book.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(10)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_skipbwd.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(11)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_rew.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(12)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_stop.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(13)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_play.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(14)">Conditional</animation>
+						<visible>Player.Paused</visible>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_pause.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(14)">Conditional</animation>
+						<visible>!Player.Paused</visible>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_ff.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(15)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_skipfwd.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(16)">Conditional</animation>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="216">
+				<visible>!VideoPlayer.Content(episodes)</visible>
+					<width>400</width>
+					<posx>918</posx>
+					<posy>-295</posy>
+					<height>40</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_audio.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(17)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_video.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(18)">Conditional</animation>
+					</control>
+				</control>
+				<control type="grouplist" id="214">
+				<visible>VideoPlayer.Content(episodes)</visible>
+					<width>400</width>
+					<posx>425</posx>
+					<posy>-295</posy>
+					<height>40</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button">
+						<width>31</width>
+						<height>22</height>
+						<texturenofocus>aTVOSD/osd_button_dvd.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(8)">Conditional</animation>
+						<visible>VideoPlayer.HasMenu</visible>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_book.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(10)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_skipbwd.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(11)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_rew.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(12)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_stop.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(13)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_play.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(14)">Conditional</animation>
+						<visible>Player.Paused</visible>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_pause.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(14)">Conditional</animation>
+						<visible>!Player.Paused</visible>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_ff.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(15)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_skipfwd.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(16)">Conditional</animation>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="216">
+				<visible>VideoPlayer.Content(episodes)</visible>
+					<width>400</width>
+					<posx>933</posx>
+					<posy>-295</posy>
+					<height>40</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_audio.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(17)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>aTVOSD/osd_button_video.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(18)">Conditional</animation>
+					</control>
+				</control>
+
+				
+				
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>108</height>
+					<texture>aTVOSD/pause.png</texture>
+					<visible>Player.Paused</visible>
+				</control>
+				
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 2X</label>
+					<visible>Player.Rewinding2x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 4X</label>
+					<visible>Player.Rewinding4x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 8X</label>
+					<visible>Player.Rewinding8x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 16X</label>
+					<visible>Player.Rewinding16x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 32X</label>
+					<visible>Player.Rewinding32x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 2X</label>
+					<visible>Player.Forwarding2x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 4X</label>
+					<visible>Player.Forwarding4x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 8X</label>
+					<visible>Player.Forwarding8x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 16X</label>
+					<visible>Player.Forwarding16x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 32X</label>
+					<visible>Player.Forwarding32x</visible>
+				</control>
+				<control type="label">
+					<posx>1115</posx>
+					<posy>25</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>aTVinfo</font>
+					<align>left</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[VideoPlayer.Time]</label>
+				</control>
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<texturebg border="14,0,14,0">aTVOSD/blank_OSDProgressBack.png</texturebg>
+		            <midtexture border="14,0,14,0">aTVOSD/OSDProgressMid.png</midtexture>
+					<posx>180</posx>
+					<posy>26</posy>
+					<width>880</width>
+					<height>30</height>
+					<info>Player.Progress</info>
+					<visible>true</visible>
+				</control>
+			</control>
+			<!-- Tilte/Plot -->
+			<control type="group">
+				<posx>412</posx>
+				<posy>100</posy>
+				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
+				
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>580</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>30</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[VideoPlayer.Director]</label>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>563</posx>
+					<posy>30</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[VideoPlayer.Rating]</label>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>57</posy>
+					<width>590</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="textbox">
+					<description>Movie Plot/Details</description>
+					<posx>0</posx>
+			        <posy>60</posy>
+					<width>597</width>
+					<height>118</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				
+				<control type="label">
+					<posx>-113</posx>
+					<posy>0</posy>
+					<width>580</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>-113</posx>
+					<posy>30</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[VideoPlayer.TVShowTitle]</label>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>450</posx>
+					<posy>30</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>WhiteTrans</textcolor>
+					<label>$INFO[VideoPlayer.Rating]</label>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="image">
+					<posx>-113</posx>
+					<posy>57</posy>
+					<width>590</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="textbox">
+					<description>Tv shows Plot/Details</description>
+					<posx>-113</posx>
+			        <posy>60</posy>
+					<width>597</width>
+					<height>118</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+			</control>
+			<!-- End Tilte/Plot -->
+
+			<!-- Poster/Cover -->
+			<control type="group">
+			<visible>!Window.IsVisible(125)</visible>
+			<posx>282</posx>
+			<posy>110</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Movie poster size
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-1</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Movie poster size -->
+			
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-3</posy>
+				<width>218</width>
+				<height>115</height>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
+				<posx>-23</posx>
+				<posy>0</posy>
+				<width>150</width>
+				<height>85</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Tv show poster size
+			<control type="image">
+				<posx>-90</posx>
+				<posy>48</posy>
+				<width>195</width>
+				<height>111</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Tv show poster size -->
+				
+		</control>
+		<!-- End Poster/Cover -->
+			
+		</control>
+		
+	</controls>
+		
+    </include>
+    
+    <include name="BigOSD">
+    
+    <controls>
+	<control type="group">
+			<visible>!Window.IsActive(123) + !Window.IsActive(124)</visible>
+			<control type="group">
+				<posx>1043</posx>
+				<posy>20</posy>
+				<width>200</width>
+				<height>80</height>
+				<visible>!Window.IsActive(125) + Skin.HasSetting(ShowTimeOSD)</visible>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>80</height>
+					<width>200</width>
+					<texture>osd/osd_time.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<visible>true + System.timeisampm</visible>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeNoAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+				<control type="label">
+					<visible>true + !System.timeisampm</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+			</control>
+			
+			
+			<!-- Poster/Cover -->
+			<control type="group">
+			<visible>!Window.IsVisible(125)</visible>
+			<posx>60</posx>
+			<posy>530</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Movie poster size
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-1</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Movie poster size -->
+			
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-3</posy>
+				<width>218</width>
+				<height>115</height>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>2</posy>
+				<width>140</width>
+				<height>79</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Tv show poster size
+			<control type="image">
+				<posx>-90</posx>
+				<posy>48</posy>
+				<width>195</width>
+				<height>111</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Tv show poster size -->
+				
+		</control>
+		<!-- End Poster/Cover -->
+			
+			
+			<control type="group">
+				<posx>0</posx>
+				<posy>590</posy>
+				<width>1280</width>
+				<height>108</height>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>-100</posy>
+					<height>240</height>
+					<width>1280</width>
+					<texture>osd/big_osd_back.png</texture>
+				</control>
+				
+				<control type="grouplist" id="213">
+					<width>400</width>
+					<posx>905</posx>
+					<posy>-67</posy>
+					<height>48</height>
+					<itemgap>5</itemgap>
+					<onup>213</onup>
+					<ondown>215</ondown>
+					<orientation>horizontal</orientation>
+					<control type="button" id="8">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_dvd_focus.png</texturefocus>
+						<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+						<visible>VideoPlayer.HasMenu</visible>
+					</control>
+					<control type="button" id="10">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_book_focus.png</texturefocus>
+						<onclick>XBMC.ActivateWindow(125)</onclick>
+					</control>
+					<control type="button" id="11">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_skipbwd_focus.png</texturefocus>
+						<onclick>XBMC.PlayerControl(Previous)</onclick>
+					</control>
+					<control type="button" id="12">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_rew_focus.png</texturefocus>
+						<onclick>XBMC.PlayerControl(Rewind)</onclick>
+					</control>
+					<control type="button" id="13">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_stop_focus.png</texturefocus>
+						<onclick>XBMC.PlayerControl(Stop)</onclick>
+					</control>
+					<control type="button" id="14">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_play_focus.png</texturefocus>
+						<onclick>XBMC.PlayerControl(Play)</onclick>
+					</control>
+					<control type="button" id="15">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_ff_focus.png</texturefocus>
+						<onclick>XBMC.PlayerControl(Forward)</onclick>
+					</control>
+					<control type="button" id="16">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_skipfwd_focus.png</texturefocus>
+						<onclick>XBMC.PlayerControl(Next)</onclick>
+					</control>	
+				</control>
+				
+				<control type="grouplist" id="215">
+					<width>400</width>
+					<posx>1130</posx>
+					<posy>-25</posy>
+					<height>48</height>
+					<itemgap>5</itemgap>
+					<onup>213</onup>
+					<ondown>215</ondown>
+					<orientation>horizontal</orientation>
+					<control type="button" id="17">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_audio_focus.png</texturefocus>
+						<onclick>XBMC.ActivateWindow(124)</onclick>
+					</control>
+					<control type="button" id="18">
+						<width>40</width>
+						<height>40</height>
+						<texturefocus>osd/osd_button_video_focus.png</texturefocus>
+						<onclick>XBMC.ActivateWindow(123)</onclick>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="214">
+					<width>400</width>
+					<posx>905</posx>
+					<posy>-67</posy>
+					<height>48</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_dvd.png</texturenofocus>
+						<visible>VideoPlayer.HasMenu</visible>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_book.png</texturenofocus>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_skipbwd.png</texturenofocus>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_rew.png</texturenofocus>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_stop.png</texturenofocus>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_play.png</texturenofocus>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_ff.png</texturenofocus>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_skipfwd.png</texturenofocus>
+					</control>
+				</control>
+				
+				<control type="grouplist" id="216">
+					<width>400</width>
+					<posx>1130</posx>
+					<posy>-25</posy>
+					<height>48</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_audio.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(17)">Conditional</animation>
+					</control>
+					<control type="button">
+						<width>40</width>
+						<height>40</height>
+						<texturenofocus>osd/osd_button_video.png</texturenofocus>
+						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(18)">Conditional</animation>
+					</control>
+				</control>
+				
+
+				
+				<control type="group">
+					<posx>665</posx>
+					<posy>53</posy>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osdPause.png</texture>
+					<visible>Player.Paused</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd2x.png</texture>
+					<visible>Player.Rewinding2x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd4x.png</texture>
+					<visible>Player.Rewinding4x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd8x.png</texture>
+					<visible>Player.Rewinding8x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd16x.png</texture>
+					<visible>Player.Rewinding16x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd32x.png</texture>
+					<visible>Player.Rewinding32x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd2x.png</texture>
+					<visible>Player.Forwarding2x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd4x.png</texture>
+					<visible>Player.Forwarding4x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd8x.png</texture>
+					<visible>Player.Forwarding8x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd16x.png</texture>
+					<visible>Player.Forwarding16x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd32x.png</texture>
+					<visible>Player.Forwarding32x</visible>
+				</control>
+			</control>
+				
+				<control type="label">
+					<posx>1095</posx>
+					<posy>49</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[Player.Duration]</label>
+				</control>
+				<control type="label">
+					<posx>1095</posx>
+					<posy>68</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[VideoPlayer.Time]</label>
+				</control>
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<texturebg border="14,0,14,0">osd/OSDProgressBack.png</texturebg>
+		            <midtexture border="14,0,14,0">osd/OSDProgressMid.png</midtexture>
+					<posx>190</posx>
+					<posy>60</posy>
+					<width>880</width>
+					<height>24</height>
+					<info>Player.Progress</info>
+					<visible>true</visible>
+				</control>
+			</control>
+			<!-- Tilte/Plot -->
+			<control type="group">
+				<posx>412</posx>
+				<posy>100</posy>
+				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
+				<control type="label">
+					<posx>-220</posx>
+			        <posy>425</posy>
+					<width>580</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="textbox">
+					<description>Movie Plot/Details</description>
+					<posx>-220</posx>
+			        <posy>460</posy>
+					<width>650</width>
+					<height>70</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+
+				<control type="label">
+					<posx>-320</posx>
+			        <posy>425</posy>
+					<width>580</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>-130</posx>
+			        <posy>435</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>White</textcolor>
+					<label>($INFO[VideoPlayer.TVShowTitle])</label>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="textbox">
+					<description>Tv shows Plot/Details</description>
+					<posx>-320</posx>
+			        <posy>460</posy>
+					<width>650</width>
+					<height>70</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+			</control>
+			<!-- End Tilte/Plot -->
+
+			
+			
+		</control>
+		
+	</controls>
+    
+    </include>
+    
+    
+    <!-- Dialog Seekbar -->
+    
+    <include name="ATvOSDseekbar">
+    <controls>
+	<control type="group">
+			<visible>!Window.IsActive(123) + !Window.IsActive(124)</visible>
+			<control type="group">
+				<posx>1043</posx>
+				<posy>20</posy>
+				<width>200</width>
+				<height>80</height>
+				<visible>!Window.IsActive(125) + Skin.HasSetting(ShowTimeOSD)</visible>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>80</height>
+					<width>200</width>
+					<texture>aTVOSD/osd_time.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<visible>true + System.timeisampm</visible>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeNoAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+				<control type="label">
+					<visible>true + !System.timeisampm</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+			</control>
+			<control type="group">
+				<posx>0</posx>
+				<posy>590</posy>
+				<width>1280</width>
+				<height>108</height>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>108</height>
+					<width>1280</width>
+					<texture>aTVOSD/osd_back.png</texture>
+					<visible>!Skin.HasSetting(FinishTime)</visible>
+				</control>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>108</height>
+					<width>1280</width>
+					<texture>aTVOSD/osd_back_buttons.png</texture>
+					<visible>Skin.HasSetting(FinishTime)</visible>
+				</control>
+			
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>108</height>
+					<texture>aTVOSD/pause.png</texture>
+					<visible>Player.Paused</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 2X</label>
+					<visible>Player.Rewinding2x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 4X</label>
+					<visible>Player.Rewinding4x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 8X</label>
+					<visible>Player.Rewinding8x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 16X</label>
+					<visible>Player.Rewinding16x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>RWD 32X</label>
+					<visible>Player.Rewinding32x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 2X</label>
+					<visible>Player.Forwarding2x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 4X</label>
+					<visible>Player.Forwarding4x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 8X</label>
+					<visible>Player.Forwarding8x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 16X</label>
+					<visible>Player.Forwarding16x</visible>
+				</control>
+				<control type="label">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>281</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>aTVinfo</font>
+					<textcolor>White</textcolor>
+					<label>FWD 32X</label>
+					<visible>Player.Forwarding32x</visible>
+				</control>
+				
+				<control type="label">
+					<posx>381</posx>
+					<posy>60</posy>
+					<width>520</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>info2</font>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Current time: $INFO[System.Time(short)] | Duration: $INFO[Player.Duration] | Finished at: $INFO[Player.FinishTime]</label>
+					<visible>Skin.HasSetting(FinishTime)</visible>
+				</control>
+				
+				<control type="label">
+					<posx>1115</posx>
+					<posy>25</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>aTVinfo</font>
+					<align>left</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[VideoPlayer.Time]</label>
+				</control>
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<texturebg border="14,0,14,0">aTVOSD/blank_OSDProgressBack.png</texturebg>
+		            <midtexture border="14,0,14,0">aTVOSD/OSDProgressMid.png</midtexture>
+					<posx>180</posx>
+					<posy>26</posy>
+					<width>880</width>
+					<height>30</height>
+					<info>Player.Progress</info>
+					<visible>true</visible>
+				</control>
+			</control>
+		</control>
+		
+	</controls>
+	</include>
+	
+	
+	<include name="BigOSDseekbar">
+    <controls>
+	<control type="group">
+			<visible>!Window.IsActive(123) + !Window.IsActive(124)</visible>
+			<control type="group">
+				<posx>1043</posx>
+				<posy>20</posy>
+				<width>200</width>
+				<height>80</height>
+				<visible>!Window.IsActive(125) + Skin.HasSetting(ShowTimeOSD)</visible>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>80</height>
+					<width>200</width>
+					<texture>osd/osd_time.png</texture>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<visible>true + System.timeisampm</visible>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeNoAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+				<control type="label">
+					<visible>true + !System.timeisampm</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>80</height>
+					<label>$INFO[System.TimeAmPm]</label>
+					<font>info2</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>White</textcolor>
+				</control>
+			</control>
+			
+			<!-- Poster/Cover -->
+			<control type="group">
+			<visible>!Window.IsVisible(125)</visible>
+			<posx>60</posx>
+			<posy>530</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Movie poster size
+			<control type="image">
+				<posx>-2</posx>
+				<posy>-1</posy>
+				<width>108</width>
+				<height>159</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Movie poster size -->
+			
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-3</posy>
+				<width>218</width>
+				<height>115</height>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>2</posy>
+				<width>140</width>
+				<height>79</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			
+			<!-- Old Tv show poster size
+			<control type="image">
+				<posx>-90</posx>
+				<posy>48</posy>
+				<width>195</width>
+				<height>111</height>
+				<texture>$INFO[VideoPlayer.Cover]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			End Tv show poster size -->
+				
+		</control>
+		<!-- End Poster/Cover -->
+			
+			
+			<control type="group">
+				<posx>0</posx>
+				<posy>590</posy>
+				<width>1280</width>
+				<height>108</height>
+				<control type="image">
+					<description>Panel</description>
+					<posx>0</posx>
+					<posy>-100</posy>
+					<height>240</height>
+					<width>1280</width>
+					<texture>osd/big_osd_back.png</texture>
+				</control>
+			
+				
+				<control type="group">
+					<posx>665</posx>
+					<posy>53</posy>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osdPause.png</texture>
+					<visible>Player.Paused</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd2x.png</texture>
+					<visible>Player.Rewinding2x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd4x.png</texture>
+					<visible>Player.Rewinding4x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd8x.png</texture>
+					<visible>Player.Rewinding8x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd16x.png</texture>
+					<visible>Player.Rewinding16x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd32x.png</texture>
+					<visible>Player.Rewinding32x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd2x.png</texture>
+					<visible>Player.Forwarding2x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd4x.png</texture>
+					<visible>Player.Forwarding4x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd8x.png</texture>
+					<visible>Player.Forwarding8x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd16x.png</texture>
+					<visible>Player.Forwarding16x</visible>
+				</control>
+				<control type="image">
+					<posx>499</posx>
+					<posy>-6</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>osd/osd32x.png</texture>
+					<visible>Player.Forwarding32x</visible>
+				</control>
+			</control>
+			
+			<control type="label">
+					<posx>845</posx>
+					<posy>-60</posy>
+					<width>520</width>
+					<height>28</height>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>info2</font>
+					<textcolor>White</textcolor>
+					<label>$INFO[System.Time(short)] | Finished at $INFO[Player.FinishTime]</label>
+					<visible>Skin.HasSetting(FinishTime)</visible>
+				</control>
+				<control type="label">
+					<posx>1095</posx>
+					<posy>49</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[Player.Duration]</label>
+				</control>
+				<control type="label">
+					<posx>1095</posx>
+					<posy>68</posy>
+					<width>160</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<colordiffuse>d0FFFFFF</colordiffuse>
+					<label>$INFO[VideoPlayer.Time]</label>
+				</control>
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<texturebg border="14,0,14,0">osd/OSDProgressBack.png</texturebg>
+		            <midtexture border="14,0,14,0">osd/OSDProgressMid.png</midtexture>
+					<posx>190</posx>
+					<posy>60</posy>
+					<width>880</width>
+					<height>24</height>
+					<info>Player.Progress</info>
+					<visible>true</visible>
+				</control>
+			</control>
+			
+			<!-- Tilte/Plot -->
+			<control type="group">
+				<posx>412</posx>
+				<posy>100</posy>
+				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
+				<control type="label">
+					<posx>-220</posx>
+			        <posy>425</posy>
+					<width>580</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="textbox">
+					<description>Movie Plot/Details</description>
+					<posx>-220</posx>
+			        <posy>460</posy>
+					<width>650</width>
+					<height>70</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+
+				<control type="label">
+					<posx>-320</posx>
+			        <posy>425</posy>
+					<width>580</width>
+					<height>40</height>
+					<font>list2</font>
+					<label>$INFO[VideoPlayer.Title]</label>
+					<textcolor>White</textcolor>
+					<scroll>true</scroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>-130</posx>
+			        <posy>435</posy>
+					<width>550</width>
+					<height>25</height>
+					<font>info3</font>
+					<align>left</align>
+					<textcolor>White</textcolor>
+					<label>($INFO[VideoPlayer.TVShowTitle])</label>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="textbox">
+					<description>Tv shows Plot/Details</description>
+					<posx>-320</posx>
+			        <posy>460</posy>
+					<width>650</width>
+					<height>70</height>
+					<info>VideoPlayer.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+					<visible>VideoPlayer.Content(episodes)</visible>
+				</control>
+			</control>
+			<!-- End Tilte/Plot -->
+			
+		</control>
+		
+	</controls>
+	</include>
+	
+	
+	<!-- Volumebar -->
+	
+	<include name="ATvOSDvolumebar">
+	<controls>
+		<control type="image">
+			<width>300</width>
+			<height>120</height>
+			<texture>aTVOSD/osd_time.png</texture>
+		</control>
+		<control type="label">
+			<posx>34</posx>
+			<posy>28</posy>
+			<width>232</width>
+			<label>$LOCALIZE[13376]</label>
+			<font>info1</font>
+			<align>center</align>
+			<textcolor>WhiteTrans</textcolor>
+		</control>
+		<control type="progress" id="1">
+			<description>progress control</description>
+			<posx>34</posx>
+			<posy>65</posy>
+			<width>230</width>
+			<height>18</height>
+			<info>Player.Volume</info>
+		</control>
+		<control type="label" id="1">
+			<posx>20r</posx>
+			<align>right</align>
+			<label>$INFO[Player.Volume]</label>
+			<include>notificationSide</include>
+		</control>
+	</controls>
+    </include>
+	
+	
+	<include name="BigOSDvolumebar">
+	<controls>
+		<control type="image">
+			<width>300</width>
+			<height>120</height>
+			<texture>osd/osd_time.png</texture>
+		</control>
+		<control type="label">
+			<posx>34</posx>
+			<posy>28</posy>
+			<width>232</width>
+			<label>$LOCALIZE[13376]</label>
+			<font>info1</font>
+			<align>center</align>
+			<textcolor>White</textcolor>
+		</control>
+		<control type="progress" id="1">
+			<description>progress control</description>
+			<posx>34</posx>
+			<posy>65</posy>
+			<texturebg border="14,0,14,0">osd/OSDProgressBack.png</texturebg>
+		    <midtexture border="14,0,14,0">osd/OSDProgressMid.png</midtexture>
+			<width>230</width>
+			<height>18</height>
+			<info>Player.Volume</info>
+		</control>
+		<control type="label" id="1">
+			<posx>20r</posx>
+			<align>right</align>
+			<label>$INFO[Player.Volume]</label>
+			<include>notificationSide</include>
+		</control>
+	</controls>
+    </include>
+    
+</includes>
