@@ -1078,7 +1078,7 @@
 					<width>580</width>
 					<height>40</height>
 					<font>list2</font>
-					<label>$INFO[VideoPlayer.Title]</label>
+					<label>$INFO[VideoPlayer.Title]  ($INFO[VideoPlayer.Year])</label>
 					<textcolor>White</textcolor>
 					<scroll>true</scroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
@@ -1102,22 +1102,12 @@
 					<width>580</width>
 					<height>40</height>
 					<font>list2</font>
-					<label>$INFO[VideoPlayer.Title]</label>
+					<label>$INFO[VideoPlayer.Title]  ($INFO[VideoPlayer.TVShowTitle])</label>
 					<textcolor>White</textcolor>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
-				<control type="label">
-					<posx>-130</posx>
-			        <posy>435</posy>
-					<width>550</width>
-					<height>25</height>
-					<font>info3</font>
-					<align>left</align>
-					<textcolor>White</textcolor>
-					<label>($INFO[VideoPlayer.TVShowTitle])</label>
-					<visible>VideoPlayer.Content(episodes)</visible>
-				</control>
+
 				<control type="textbox">
 					<description>Tv shows Plot/Details</description>
 					<posx>-320</posx>
@@ -1648,7 +1638,7 @@
 					<width>580</width>
 					<height>40</height>
 					<font>list2</font>
-					<label>$INFO[VideoPlayer.Title]</label>
+					<label>$INFO[VideoPlayer.Title]  ($INFO[VideoPlayer.Year])</label>
 					<textcolor>White</textcolor>
 					<scroll>true</scroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
@@ -1672,22 +1662,12 @@
 					<width>580</width>
 					<height>40</height>
 					<font>list2</font>
-					<label>$INFO[VideoPlayer.Title]</label>
+					<label>$INFO[VideoPlayer.Title]  ($INFO[VideoPlayer.TVShowTitle])</label>
 					<textcolor>White</textcolor>
 					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
-				<control type="label">
-					<posx>-130</posx>
-			        <posy>435</posy>
-					<width>550</width>
-					<height>25</height>
-					<font>info3</font>
-					<align>left</align>
-					<textcolor>White</textcolor>
-					<label>($INFO[VideoPlayer.TVShowTitle])</label>
-					<visible>VideoPlayer.Content(episodes)</visible>
-				</control>
+
 				<control type="textbox">
 					<description>Tv shows Plot/Details</description>
 					<posx>-320</posx>
