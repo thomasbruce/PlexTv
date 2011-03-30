@@ -156,6 +156,17 @@
 				<visible>Container(300).HasFocus(1) + Control.HasFocus(300)</visible>
 				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
 				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
+				<texture>search.png</texture>
+				<posx>0</posx>
+				<posy>-120</posy>
+				<width>1280</width>
+				<height>720</height>
+				<visible>true</visible>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(2) + Control.HasFocus(300)</visible>
+				<animation effect="fade" end="100" time="600" delay="300">Visible</animation>
+				<animation effect="fade" end="0" time="600" delay="600">Hidden</animation>
 				<texture>favorites.png</texture>
 				<posx>0</posx>
 				<posy>-120</posy>
