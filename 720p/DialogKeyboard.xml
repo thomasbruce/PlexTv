@@ -3,28 +3,28 @@
 	<defaultcontrol always="true">310</defaultcontrol>
 	<coordinates>
 		<posx>335</posx>
-		<posy>160</posy>
+		<posy>300</posy>
 	</coordinates>
 	<include>dialogOpen</include>
 	<controls>
 	
 		<control type="group">
 			<visible>!Window.IsVisible(numericinput)</visible>
-			<animation effect="slide" start="0,0" end="0,200" time="0" condition="Skin.HasSetting(keyboardButtons)">Conditional</animation>
-			<control type="image" id="1">
-				<include>dialogWindow</include>
-				<width>610</width>
-				<height>435</height>
-				<visible>!Skin.HasSetting(keyboardButtons)</visible>
-			</control>
-			<control type="image" id="1">
-				<include>dialogWindow</include>
-				<width>610</width>
-				<height>150</height>
-				<visible>Skin.HasSetting(keyboardButtons)</visible>
-			</control>
+			<animation effect="slide" time="400" tween="circle" easing="out" start="0,300" end="0,0">Visible</animation>
+			<animation effect="slide" time="400" tween="circle" easing="out" start="0,300" end="0,0">WindowOpen</animation>
+			<animation effect="slide" time="400" tween="circle" easing="out" start="0,0" end="0,300">Hidden</animation>
+			<animation effect="slide" time="400" tween="circle" easing="out" start="0,0" end="0,300">WindowClose</animation>
+			<control type="image">
+                <width>1280</width>
+                <height>720</height>
+                <posx>-335</posx>
+                <posy>-300</posy>
+                <aspectratio>scale</aspectratio>
+                <texture>dialogs/black_keyboard_bg.png</texture>
+            </control>
 			<control type="label" id="311">
 				<posx>34</posx>
+				<posy>10</posy>
 				<width>542</width>
 				<include>dialogHeading</include>
 			</control>
