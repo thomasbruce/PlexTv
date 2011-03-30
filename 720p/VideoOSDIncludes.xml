@@ -85,7 +85,7 @@
 				<control type="grouplist" id="213">
 					<width>400</width>
 					<posx>410</posx>
-					<posy>-295</posy>
+					<posy>-298</posy>
 					<height>40</height>
 					<itemgap>5</itemgap>
 					<onup>-</onup>
@@ -137,7 +137,7 @@
 				<control type="grouplist" id="215">
 					<width>400</width>
 					<posx>918</posx>
-					<posy>-295</posy>
+					<posy>-298</posy>
 					<height>40</height>
 					<itemgap>5</itemgap>
 					<onup>-</onup>
@@ -157,7 +157,7 @@
 				<visible>!VideoPlayer.Content(episodes)</visible>
 					<width>400</width>
 					<posx>410</posx>
-					<posy>-295</posy>
+					<posy>-298</posy>
 					<height>40</height>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
@@ -224,7 +224,7 @@
 				<visible>!VideoPlayer.Content(episodes)</visible>
 					<width>400</width>
 					<posx>918</posx>
-					<posy>-295</posy>
+					<posy>-298</posy>
 					<height>40</height>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
@@ -749,8 +749,8 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>2</posy>
-				<width>140</width>
-				<height>79</height>
+				<width>170</width>
+				<height>96</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
 				<aspectratio>scale</aspectratio>
 				<visible>VideoPlayer.Content(episodes)</visible>
@@ -930,13 +930,11 @@
 						<width>40</width>
 						<height>40</height>
 						<texturenofocus>osd/osd_button_audio.png</texturenofocus>
-						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(17)">Conditional</animation>
 					</control>
 					<control type="button">
 						<width>40</width>
 						<height>40</height>
 						<texturenofocus>osd/osd_button_video.png</texturenofocus>
-						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(18)">Conditional</animation>
 					</control>
 				</control>
 				
@@ -1064,7 +1062,18 @@
 					<width>880</width>
 					<height>24</height>
 					<info>Player.Progress</info>
-					<visible>true</visible>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<texturebg border="14,0,14,0">osd/OSDProgressBack.png</texturebg>
+		            <midtexture border="14,0,14,0">osd/OSDProgressMid.png</midtexture>
+					<posx>60</posx>
+					<posy>60</posy>
+					<width>1010</width>
+					<height>24</height>
+					<info>Player.Progress</info>
+					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
 			<!-- Tilte/Plot -->
@@ -1097,7 +1106,7 @@
 				</control>
 
 				<control type="label">
-					<posx>-320</posx>
+					<posx>-295</posx>
 			        <posy>425</posy>
 					<width>580</width>
 					<height>40</height>
@@ -1110,7 +1119,7 @@
 
 				<control type="textbox">
 					<description>Tv shows Plot/Details</description>
-					<posx>-320</posx>
+					<posx>-295</posx>
 			        <posy>460</posy>
 					<width>650</width>
 					<height>70</height>
@@ -1451,8 +1460,8 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>2</posy>
-				<width>140</width>
-				<height>79</height>
+				<width>170</width>
+				<height>96</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
 				<aspectratio>scale</aspectratio>
 				<visible>VideoPlayer.Content(episodes)</visible>
@@ -1623,7 +1632,18 @@
 					<width>880</width>
 					<height>24</height>
 					<info>Player.Progress</info>
-					<visible>true</visible>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="progress" id="23">
+					<description>Progressbar</description>
+					<texturebg border="14,0,14,0">osd/OSDProgressBack.png</texturebg>
+		            <midtexture border="14,0,14,0">osd/OSDProgressMid.png</midtexture>
+					<posx>60</posx>
+					<posy>60</posy>
+					<width>1010</width>
+					<height>24</height>
+					<info>Player.Progress</info>
+					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
 			
@@ -1657,7 +1677,7 @@
 				</control>
 
 				<control type="label">
-					<posx>-320</posx>
+					<posx>-295</posx>
 			        <posy>425</posy>
 					<width>580</width>
 					<height>40</height>
@@ -1670,7 +1690,7 @@
 
 				<control type="textbox">
 					<description>Tv shows Plot/Details</description>
-					<posx>-320</posx>
+					<posx>-295</posx>
 			        <posy>460</posy>
 					<width>650</width>
 					<height>70</height>
