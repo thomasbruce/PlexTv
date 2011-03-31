@@ -1,5 +1,56 @@
 <?xml version="1.0"?>
 <includes>
+	<!-- Here is the new left-side menu. You'll need to create better animations for it, and format it the way you want -->
+	<include name="LibraryVideoMenu">
+		<!-- MENU BACKGROUND-->
+		<control type="image">
+			<animation effect="slide" start="0" end="150" time="380" condition="ControlGroup(300).HasFocus()">Conditional</animation>
+			<animation effect="slide" start="240" end="0" time="380" condition="!ControlGroup(300).HasFocus()">Conditional</animation>
+					<description>sidemneubg</description>
+					<posx>-450</posx>
+					<posy>0</posy>
+					<height>720</height>
+					<width>450</width>
+					<texture>dialogs/sidemenu.png</texture>
+				</control>
+	
+		<!-- MENU -->
+		<control type="group" id="300">
+			<posx>-255</posx>
+			<posy>64</posy>
+			<width>250</width>
+			<height>650</height>
+			<onup>9100</onup>
+			<ondown>9100</ondown>
+			<include>transition2</include>
+			<orientation>vertical</orientation>
+			<scrolltime>150</scrolltime>
+			<visible allowhiddenfocus="true">-</visible>
+			<animation effect="slide" start="0" end="150" time="400" condition="ControlGroup(300).HasFocus()">Conditional</animation>
+			<animation effect="slide" start="150" end="0" time="400" condition="!ControlGroup(300).HasFocus()">Conditional</animation>
+			<control type="grouplist" id="9100">
+				<onup>9100</onup>
+				<ondown>9100</ondown>
+				<onleft>-</onleft>
+				<onright>50</onright>
+				<itemgap>0</itemgap>
+				<!-- list view -->
+				<control type="button" id="9004">
+					<label>List</label>
+					<onclick>Container.SetViewMode(50)</onclick>
+					<font>settings</font>
+					<textcolor>White</textcolor>
+				</control>
+				<!-- new list view -->
+				<control type="button" id="9005">
+					<label>List (more info)</label>
+					<onclick>Container.SetViewMode(51)</onclick>
+					<font>settings</font>
+					<textcolor>White</textcolor>
+				</control>
+			</control>
+		</control>
+	</include>
 		
     <include name="Background">
         <control type="group">

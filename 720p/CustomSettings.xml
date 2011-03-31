@@ -247,7 +247,7 @@
                 <onright>3</onright>
                 <orientation>vertical</orientation>
                 <control type="textbox">
-						<label>[COLOR=WhiteTrans]PlexTv is based on FrontSeat. Maintained by [COLOR=White]thomasbruce[/COLOR]. Thanks to [COLOR=White]jaaps[/COLOR] for creating the FrontSeat Skin and letting the skin be modded.[CR][CR][CR]Thanks to all of you who helped with this skin![CR][CR][CR]Credits:[/COLOR] jaaps, kruisje, irishv, Mr Power, someone, gedoode</label>
+						<label>[COLOR=WhiteTrans]PlexTv is based on FrontSeat. Maintained by [COLOR=White]thomasbruce[/COLOR]. Thanks to [COLOR=White]jaaps[/COLOR] for creating the FrontSeat Skin and letting the skin be modded.[CR][CR][CR]Thanks to all of you who helped with this skin![CR][CR][CR]Credits:[/COLOR] jaaps, se.bastian, kruisje, irishv, Mr Power, someone, gedoode</label>
 						<width>840</width>
 						<height>500</height>
 						<align>left</align>

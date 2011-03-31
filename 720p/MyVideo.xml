@@ -1,14 +1,29 @@
 <?xml version="1.0"?>
 <window id="6">
-	<defaultcontrol always="true">50</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+	<!-- Here, if "defaultcontrol always" is set to "true", it will always select the view value noted here when returning, even if the user had selected another one when last time there. It won't stick, because it's set to be *always* the same one, independently of the choice a user makes. In other words, for a view selection to be able to be set by the user, it needs to be "false". When "false", the view by default (when coming there for the first time etc.) is the view with the value noted here, but if the user selects another one, it will stick for the next time they come back. -->
+	
+	<defaultcontrol always="false">51</defaultcontrol>	
+	<allowoverlay>yes</allowoverlay>	
+	
+	<!-- Here, you need to list the views available for "MyVideo" windows. If not, they are not available for selection. this means also that you need to give values to all your views, individually. For example, traditionally the "List" view is "50", but you can do them how you like. Here, i have listed the 2 views available, and given them the values of "50" (the original "List" view) and "51" (the new "List" view) -->
+	
+	<views>50,51</views>
+	
 	<include>dialogOpen</include>
 	<controls>
 		<include>Background</include>
 		<control type="group">
 			<include>Header</include>
 			<include>HeaderVideo</include>
+			
+			<!-- Here you need to include the view "includes". Above, where you listed the view "values", you've only stated that the listed views are going to be available if ever they are encountered in the file. Here you need to declare them to be in use if you wish to be able to actually use them. I've added the new view here under the original "List". -->
+			
 			<include>List</include>
+			<include>InfoList</include>
+			
+			<!-- Also, the new left-side menu (LibraryVideoMenu, in the Includes.xml file) needs to be declared here, so that it can appear on the same screen. -->
+			
+			<include>LibraryVideoMenu</include>
 		</control>
 	</controls>
 </window>
