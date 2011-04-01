@@ -7,7 +7,7 @@
 	
 	<!-- Here, you need to list the views available for "MyVideo" windows. If not, they are not available for selection. this means also that you need to give values to all your views, individually. For example, traditionally the "List" view is "50", but you can do them how you like. Here, i have listed the 2 views available, and given them the values of "50" (the original "List" view) and "51" (the new "List" view) -->
 	
-	<views>50,51</views>
+	<views>50,51,52</views>
 	
 	<include>dialogOpen</include>
 	<controls>
@@ -20,6 +20,7 @@
 			
 			<include>List</include>
 			<include>InfoList</include>
+			<include>Poster</include>
 			
 			<!-- Also, the new left-side menu (LibraryVideoMenu, in the Includes.xml file) needs to be declared here, so that it can appear on the same screen. -->
 			

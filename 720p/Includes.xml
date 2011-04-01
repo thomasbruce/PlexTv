@@ -48,6 +48,12 @@
 					<font>settings</font>
 					<textcolor>White</textcolor>
 				</control>
+				<control type="button" id="9006">
+					<label>Poster view</label>
+					<onclick>Container.SetViewMode(52)</onclick>
+					<font>settings</font>
+					<textcolor>White</textcolor>
+				</control>
 			</control>
 		</control>
 	</include>

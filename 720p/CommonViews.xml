@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <includes>
+
+	<!-- BEGIN: LIST VIEW -->	
 	<include name="List">
 		<control type="group">
 			<description>List View</description>
@@ -213,7 +215,7 @@
 				</control>
 				<control type="grouplist">
 					<height>59</height>
-					<!-- 333 -->
+					<!-- MEDIA FLAGS -->
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<visible>!Container.Content(episodes)</visible>
@@ -300,6 +302,8 @@
 						</control>
 						-->
 				</control>
+				<!-- END: MEDIA FLAGS -->
+				
 			</control>
 			<control type="grouplist">
 				<animation effect="fade" start="0" end="100" delay="280" time="100">Visible</animation>
@@ -455,7 +459,7 @@
 				</control>
 				<control type="grouplist">
 					<height>59</height>
-					<!-- 333 -->
+					<!-- MEDIA FLAGS -->
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<visible>Container.Content(tvshows)</visible>
@@ -484,6 +488,7 @@
 						<visible>Skin.HasSetting(MPAATvShows)</visible>
 					</control>
 				</control>
+				<!-- END: MEDIA FLAGS -->
 			</control>
 			<control type="grouplist">
 				<animation effect="fade" start="0" end="100" delay="280" time="100">Visible</animation>
@@ -692,7 +697,7 @@
 				</control>
 				<control type="grouplist">
 					<height>43</height>
-					<!-- 333 -->
+					<!-- MEDIA FLAGS -->
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<control type="image">
@@ -762,6 +767,7 @@
 						</control>		
 						-->
 				</control>
+				<!-- END: MEDIA FLAGS -->
 			</control>
 			<control type="grouplist">
 				<animation effect="fade" start="0" end="100" delay="280" time="100">Visible</animation>
@@ -1365,6 +1371,8 @@
 			</control>
 		</control>
 	</include>
+	
+	<!-- BEGIN: LIST INFO VIEW -->
 	<include name="InfoList">
 		<control type="group">
 			<description>Info List View</description>
@@ -1632,7 +1640,7 @@
 				</control>
 				<control type="grouplist">
 					<height>59</height>
-					<!-- 333 -->
+					<!-- MEDIA FLAGS -->
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<visible>!Container.Content(episodes)</visible>
@@ -1719,6 +1727,8 @@
 						</control>
 						-->
 				</control>
+				<!-- END: MEDIA FLAGS -->
+				
 			</control>
 			<control type="group">
 				<visible>Container.Content(tvshows)</visible>
@@ -1898,7 +1908,7 @@
 				</control>
 				<control type="grouplist">
 					<height>59</height>
-					<!-- 333 -->
+					<!-- MEDIA FLAGS -->
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<visible>Container.Content(tvshows)</visible>
@@ -1911,6 +1921,7 @@
 						<visible>Skin.HasSetting(StudioTvshows)</visible>
 					</control>
 				</control>
+				<!-- END: MEDIA FLAGS -->
 			</control>
 			<control type="group">
 				<visible>Container.Content(episodes)</visible>
@@ -2129,7 +2140,7 @@
 				</control>
 				<control type="grouplist">
 					<height>43</height>
-					<!-- 333 -->
+					<!-- MEDIA FLAGS -->
 					<orientation>horizontal</orientation>
 					<itemgap>5</itemgap>
 					<control type="image">
@@ -2199,6 +2210,7 @@
 						</control>		
 						-->
 				</control>
+				<!-- END: MEDIA FLAGS -->
 			</control>
 			<control type="grouplist">
 				<visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(artists) + !IsEmpty(ListItem.Plot)</visible>
@@ -2662,5 +2674,782 @@
 				<visible>Skin.HasSetting(Fade)</visible>
 			</control>
 		</control>
+	</include>
+	
+	<!-- BEGIN: POSTER VIEW -->
+	<include name="Poster">
+		<description>Poster View</description>
+		<!-- POSTERS/FANART -->
+		<control type="panel" id="52">
+			<viewtype label="Poster">panel</viewtype>
+			<visible>!Container.Content(episodes) + !Container.Content(Pictures) + !Container.Content(songs) + !Container.Content(artists) + !Container.Content(secondary) + !Container.Content(albums)</visible>
+			<visible/>
+			<onleft>300</onleft>
+			<posx>40</posx>
+			<posy>100</posy>
+			<width>760</width>
+			<height>575</height>
+			<scrolltime>300</scrolltime>
+			<orientation>vertical</orientation>
+			<itemlayout height="192" width="144">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>144</width>
+					<height>192</height>
+					<bordertexture border="10">thumb_background.png</bordertexture>
+					<bordersize>10</bordersize>
+					<texture blend="false">$INFO[ListItem.Thumb]</texture>
+					<aspectratio scalediffuse="false">fit</aspectratio>
+					<fadetime>200</fadetime>
+				</control>
+			</itemlayout>
+			<focusedlayout height="192" width="144">
+				<control type="image">
+					<posx>-10</posx>
+					<posy>-10</posy>
+					<width>164</width>
+					<height>212</height>
+					<bordertexture border="20">thumb_background.png</bordertexture>
+					<bordersize>20</bordersize>
+					<texture blend="false">$INFO[ListItem.Thumb]</texture>
+					<aspectratio scalediffuse="false">fit</aspectratio>
+					<fadetime>200</fadetime>
+					<animation type="Focus" reversible="false">
+					<effect type="zoom" center="100,150" start="100" end="125" time="400" tween="back" easing="out"/>
+					</animation>
+					<animation type="UnFocus" reversible="false">
+					<effect type="zoom" center="100,150" start="125" end="100" time="150" tween="back" easing="out"/>
+					</animation>
+				</control>
+				<control type="image">
+					<visible>IsEmpty(ListItem.Thumb)</visible>
+					<posx>-10</posx>
+					<posy>-10</posy>
+					<width>164</width>
+					<height>212</height>
+					<bordertexture border="20">thumb_background.png</bordertexture>
+					<bordersize>20</bordersize>
+					<texture>BlackTransparent.png</texture>
+					<fadetime>200</fadetime>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="panel" id="52">
+			<viewtype label="Poster">panel</viewtype>
+			<visible>Container.Content(albums)</visible>
+			<visible/>
+			<onleft>300</onleft>
+			<posx>40</posx>
+			<posy>100</posy>
+			<width>760</width>
+			<height>575</height>
+			<scrolltime>300</scrolltime>
+			<orientation>vertical</orientation>
+			<itemlayout height="144" width="144">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>144</width>
+					<height>144</height>
+					<bordertexture border="10">thumb_background.png</bordertexture>
+					<bordersize>10</bordersize>
+					<texture blend="false">$INFO[ListItem.Thumb]</texture>
+					<aspectratio scalediffuse="false">fit</aspectratio>
+					<fadetime>200</fadetime>
+				</control>
+				<control type="image">
+					<visible>IsEmpty(ListItem.Thumb)</visible>
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>124</width>
+					<height>124</height>
+					<texture>BlackTransparent.png</texture>
+					<fadetime>200</fadetime>
+				</control>
+				<control type="label">
+					<visible>IsEmpty(ListItem.Thumb)</visible>
+					<height>104</height>
+					<width>104</width>
+					<aligny>center</aligny>
+					<align>center</align>
+					<posx>72</posx>
+					<posy>20</posy>
+					<label>$INFO[ListItem.Label]</label>
+					<font>info2</font>
+					<color>White</color>
+					<wrapmultiline>true</wrapmultiline>
+					<scroll>false</scroll>
+				</control>
+			</itemlayout>
+			<focusedlayout height="144" width="144">
+				<control type="image">
+					<posx>-10</posx>
+					<posy>-10</posy>
+					<width>164</width>
+					<height>164</height>
+					<bordertexture border="20">thumb_background.png</bordertexture>
+					<bordersize>20</bordersize>
+					<texture blend="false">$INFO[ListItem.Thumb]</texture>
+					<aspectratio scalediffuse="false">fit</aspectratio>
+					<fadetime>200</fadetime>
+					<animation type="Focus" reversible="false">
+					<effect type="zoom" center="100,150" start="100" end="125" time="400" tween="back" easing="out"/>
+					</animation>
+					<animation type="UnFocus" reversible="false">
+					<effect type="zoom" center="100,150" start="125" end="100" time="150" tween="back" easing="out"/>
+					</animation>
+				</control>
+				<control type="image">
+					<visible>IsEmpty(ListItem.Thumb)</visible>
+					<posx>-10</posx>
+					<posy>-10</posy>
+					<width>164</width>
+					<height>164</height>
+					<bordertexture border="20">thumb_background.png</bordertexture>
+					<bordersize>20</bordersize>
+					<texture>BlackTransparent.png</texture>
+					<fadetime>200</fadetime>
+				</control>
+				<control type="label">
+					<visible>IsEmpty(ListItem.Thumb)</visible>
+					<height>104</height>
+					<width>104</width>
+					<aligny>center</aligny>
+					<align>center</align>
+					<posx>72</posx>
+					<posy>20</posy>
+					<label>$INFO[ListItem.Label]</label>
+					<font>info2</font>
+					<color>White</color>
+					<wrapmultiline>true</wrapmultiline>
+					<scroll>false</scroll>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="10" end="100" time="200" center="auto"/>
+						<effect type="fade" start="30" end="100" time="500"/>
+					</animation>
+				</control>
+			</focusedlayout>
+		</control>
+		<!-- END: POSTERS/FANART -->
+		
+		<!-- TV -->
+		<control type="group">
+				<visible>Container.Content(tvshows)</visible>
+				<visible>!Container.OnNext + !Container.OnPrevious</visible>
+				<visible>Control.IsVisible(52)</visible>
+				<posx>775</posx>
+				<posy>295</posy>
+				<control type="label">
+					<posx>15</posx>
+					<posy>-20</posy>
+					<width>430</width>
+					<height>36</height>
+					<font>info1</font>
+					<align>left</align>
+					<aligny>bottom</aligny>
+					<textcolor>White</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>83</posx>
+					<posy>25</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Genres:</label>
+				</control>
+				<control type="label">
+					<posx>128</posx>
+					<posy>50</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>First aired in:</label>
+				</control>
+				<control type="label">
+					<posx>164</posx>
+					<posy>75</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Episode duration:</label>
+				</control>
+				<control type="label">
+					<posx>93</posx>
+					<posy>100</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Channel:</label>
+				</control>
+				<control type="label">
+					<posx>90</posx>
+					<posy>25</posy>
+					<width>255</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>ListItem.Genre</info>
+				</control>
+				<control type="label">
+					<posx>135</posx>
+					<posy>50</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>ListItem.Year</info>
+				</control>
+				<control type="label">
+					<posx>173</posx>
+					<posy>75</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>ListItem.Duration</info>
+				</control>
+				<control type="label">
+					<posx>101</posx>
+					<posy>100</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>Listitem.Property(mediaTag-Studio)</info>
+				</control>
+				<control type="grouplist">
+					<posx>115</posx>
+					<posy>125</posy>
+					<visible>Skin.HasSetting(Flags)</visible>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>!Skin.HasSetting(White)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/,.png]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>!Skin.HasSetting(White)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/,.png]</texture>
+						<colordiffuse>00ffffff</colordiffuse>
+						<aspectratio align="left" aligny="top">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>Skin.HasSetting(Metal)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution_metalic/,.png]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>Skin.HasSetting(Metal)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution_metalic/,.png]</texture>
+						<colordiffuse>00ffffff</colordiffuse>
+						<aspectratio align="left" aligny="top">keep</aspectratio>
+					</control>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>115</posy>
+					<width>88</width>
+					<height>34</height>
+					<info>ListItem.StarRating</info>
+					<aspectratio aligny="bottom" align="left">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>399</posx>
+					<posy>107</posy>
+					<description>MPAA Rating</description>
+					<width>50</width>
+					<height>42</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[Listitem.MPAA,flags/contentrating/,.png]</texture>
+					<align>right</align>
+					<visible>Skin.HasSetting(MPAATvShows)</visible>
+				</control>
+			</control>
+			<control type="grouplist">
+				<visible>Container.Content(tvshows)</visible>
+				<visible>!Container.OnNext + !Container.OnPrevious</visible>
+				<visible>Control.IsVisible(52)</visible>
+				<posx>790</posx>
+				<posy>455</posy>
+				<itemgap>5</itemgap>
+				<orientation>vertical</orientation>
+				<usecontrolcoords>false</usecontrolcoords>
+				<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>430</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+				</control>
+				<control type="textbox">
+					<description>Plot/Details</description>
+					<width>430</width>
+					<height>185</height>
+					<info>ListItem.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+				</control>
+				<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>430</width>
+					<height>10</height>
+				</control>
+				<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>430</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+				</control>
+			</control>
+			<control type="grouplist">
+			<visible>Container.Content(seasons)</visible>
+			<visible>!Container.OnNext + !Container.OnPrevious</visible>
+			<visible>Control.IsVisible(52)</visible>
+			<posx>795</posx>
+			<posy>600</posy>
+			<width>352</width>
+			<height>534</height>
+			<itemgap>8</itemgap>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<control type="label">
+				<width>352</width>
+				<height>36</height>
+				<font>info1</font>
+				<align>left</align>
+				<aligny>top</aligny>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<posy>3</posy>
+				<posx>5</posx>
+				<visible>!IsEmpty(ListItem.Rating) + Skin.HasSetting(AlternateRating)</visible>
+				<width>300</width>
+				<height>30</height>
+				<font>info2</font>
+				<textcolor>White</textcolor>
+				<label>Rating: $INFO[ListItem.Rating]</label>
+			</control>
+			<control type="image">
+				<posy>3</posy>
+				<posx>5</posx>
+				<visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(AlternateRating)</visible>
+				<width>90</width>
+				<height>26</height>
+				<info>ListItem.StarRating</info>
+				<colordiffuse>WhiteTrans</colordiffuse>
+				<aspectratio aligny="center" align="left">keep</aspectratio>
+			</control>
+			<control type="label">
+				<posx>102</posx>
+				<posy>0</posy>
+				<width>350</width>
+				<height>30</height>
+				<font>info2</font>
+				<align>left</align>
+				<aligny>top</aligny>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes)] unwatched episodes</label>
+			</control>
+		</control>
+		<!-- END: TV -->
+		
+		<!-- GENERAL -->
+		<control type="grouplist">
+			<visible>!Container.Content(secondary) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(Pictures) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(artists)</visible>
+			<visible>!Container.OnNext + !Container.OnPrevious</visible>
+			<visible>Control.IsVisible(52)</visible>
+			<posx>795</posx>
+			<posy>400</posy>
+			<width>380</width>
+			<height>534</height>
+			<itemgap>5</itemgap>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>false</usecontrolcoords>
+			<control type="label">
+				<width>430</width>
+				<height>36</height>
+				<font>info1</font>
+				<align>left</align>
+				<aligny>top</aligny>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="label">
+				<posy>3</posy>
+				<posx>5</posx>
+				<visible>!IsEmpty(ListItem.Rating) + Skin.HasSetting(AlternateRating)</visible>
+				<width>430</width>
+				<height>30</height>
+				<font>info2</font>
+				<textcolor>White</textcolor>
+				<label>Rating: $INFO[ListItem.Rating]</label>
+			</control>
+			<control type="image">
+				<posy>3</posy>
+				<posx>5</posx>
+				<visible>!IsEmpty(ListItem.Rating) + !Skin.HasSetting(AlternateRating)</visible>
+				<width>90</width>
+				<height>26</height>
+				<info>ListItem.StarRating</info>
+				<aspectratio aligny="center" align="left">keep</aspectratio>
+			</control>
+			<control type="label">
+				<posx>102</posx>
+				<posy>0</posy>
+				<width>430</width>
+				<height>30</height>
+				<font>info2</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<textcolor>WhiteTrans</textcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>!IsEmpty(ListItem.Label2)</visible>
+			</control>
+			<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>440</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+				</control>
+			<control type="textbox">
+				<description>Plot/Details</description>
+				<width>430</width>
+				<height>188</height>
+				<info>ListItem.Plot</info>
+				<textcolor>White</textcolor>
+				<font>info2</font>
+				<autoscroll delay="9001" time="2000" repeat="10000">true</autoscroll>
+			</control>
+			<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>440</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+				</control>
+		</control>
+		<!-- END: GENERAL -->
+		
+		<!-- MOVIES -->
+		<control type="group">
+				<visible>Container.Content(Movies)</visible>
+				<visible>!Container.OnNext + !Container.OnPrevious</visible>
+				<visible>Control.IsVisible(52)</visible>
+				<posx>775</posx>
+				<posy>218</posy>	
+				<control type="label">
+					<posx>15</posx>
+					<posy>-20</posy>
+					<width>430</width>
+					<height>36</height>
+					<font>info1</font>
+					<align>left</align>
+					<aligny>bottom</aligny>
+					<textcolor>White</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>83</posx>
+					<posy>25</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Genres:</label>
+				</control>
+				<control type="label">
+					<posx>133</posx>
+					<posy>50</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Release year:</label>
+				</control>
+				<control type="label">
+					<posx>146</posx>
+					<posy>75</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Movie duration:</label>
+				</control>
+				<control type="label">
+					<posx>76</posx>
+					<posy>100</posy>
+					<width>183</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<label>Studio:</label>
+				</control>
+				<control type="label">
+					<posx>90</posx>
+					<posy>25</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>ListItem.Genre</info>
+				</control>
+				<control type="label">
+					<posx>140</posx>
+					<posy>50</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>ListItem.Year</info>
+				</control>
+				<control type="label">
+					<posx>153</posx>
+					<posy>75</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>ListItem.Duration</info>
+				</control>
+				<control type="label">
+					<posx>83</posx>
+					<posy>100</posy>
+					<width>400</width>
+					<height>25</height>
+					<font>info2</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>WhiteTrans</textcolor>
+					<info>Listitem.Property(mediaTag-Studio)</info>
+				</control>
+				<control type="grouplist">
+					<posx>115</posx>
+					<posy>125</posy>
+					<visible>Skin.HasSetting(Flags)</visible>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>!Skin.HasSetting(White)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/,.png]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>!Skin.HasSetting(White)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution/,.png]</texture>
+						<colordiffuse>00ffffff</colordiffuse>
+						<aspectratio align="left" aligny="top">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>Skin.HasSetting(Metal)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution_metalic/,.png]</texture>
+						<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>38</width>
+						<height>22</height>
+						<visible>Skin.HasSetting(Metal)</visible>
+						<texture>$INFO[Listitem.Property(mediaTag-videoResolution),flags/resolution_metalic/,.png]</texture>
+						<colordiffuse>00ffffff</colordiffuse>
+						<aspectratio align="left" aligny="top">keep</aspectratio>
+					</control>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>115</posy>
+					<width>88</width>
+					<height>34</height>
+					<info>ListItem.StarRating</info>
+					<aspectratio aligny="bottom" align="left">keep</aspectratio>
+				</control>
+				<control type="image">
+					<posx>379</posx>
+					<posy>107</posy>
+					<description>MPAA Rating</description>
+					<width>76</width>
+					<height>64</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[Listitem.MPAA,flags/contentrating/,.png]</texture>
+					<align>right</align>
+					<visible>Skin.HasSetting(MPAA)</visible>
+				</control>
+			</control>
+			<control type="grouplist">
+				<visible>Container.Content(Movies)</visible>
+				<visible>!Container.OnNext + !Container.OnPrevious</visible>
+				<visible>Control.IsVisible(52)</visible>
+				<posx>790</posx>
+				<posy>384</posy>
+				<itemgap>5</itemgap>
+				<orientation>vertical</orientation>
+				<usecontrolcoords>false</usecontrolcoords>
+				<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>440</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+				</control>
+				<control type="textbox">
+					<description>Plot/Details</description>
+					<width>440</width>
+					<height>185</height>
+					<info>ListItem.Plot</info>
+					<textcolor>White</textcolor>
+					<font>info2</font>
+					<autoscroll delay="8000" time="2000" repeat="10000">true</autoscroll>
+				</control>
+				<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>440</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+				</control>
+				<control type="group">
+					<height>75</height>
+					<control type="label">
+						<posx>73</posx>
+						<posy>0</posy>
+						<width>83</width>
+						<height>25</height>
+						<font>info2</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>WhiteTrans</textcolor>
+						<label>Starring:</label>
+					</control>
+					<control type="label">
+						<posx>93</posx>
+						<posy>25</posy>
+						<width>110</width>
+						<height>25</height>
+						<font>info2</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>WhiteTrans</textcolor>
+						<label>Written by:</label>
+					</control>
+					<control type="label">
+						<posx>103</posx>
+						<posy>50</posy>
+						<width>110</width>
+						<height>25</height>
+						<font>info2</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>WhiteTrans</textcolor>
+						<label>Directed by:</label>
+					</control>
+					<control type="label">
+						<posx>80</posx>
+						<posy>0</posy>
+						<width>357</width>
+						<height>25</height>
+						<font>info2</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>White</textcolor>
+						<info>ListItem.Cast</info>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>25</posy>
+						<width>337</width>
+						<height>25</height>
+						<font>info2</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>White</textcolor>
+						<info>ListItem.Writer</info>
+					</control>
+					<control type="label">
+						<posx>110</posx>
+						<posy>50</posy>
+						<width>327</width>
+						<height>25</height>
+						<font>info2</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>White</textcolor>
+						<info>ListItem.Director</info>
+					</control>
+				</control>
+				<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>440</width>
+					<height>1</height>
+					<texture>white.png</texture>
+					<aspectratio>scale</aspectratio>
+					<colordiffuse>WhiteTrans</colordiffuse>
+				</control>
+				</control>
+		<!-- END: MOVIES -->
+		
 	</include>
 </includes>
