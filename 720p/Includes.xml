@@ -6,15 +6,14 @@
 		<control type="image">
 			<animation effect="slide" start="0" end="150" time="380" condition="ControlGroup(300).HasFocus()">Conditional</animation>
 			<animation effect="slide" start="240" end="0" time="380" condition="!ControlGroup(300).HasFocus()">Conditional</animation>
-					<description>sidemneubg</description>
-					<posx>-450</posx>
-					<posy>0</posy>
-					<height>720</height>
-					<width>450</width>
-					<texture>dialogs/sidemenu.png</texture>
-				</control>
-	
-		<!-- MENU -->
+            <description>sidemneubg</description>
+            <posx>-450</posx>
+            <posy>0</posy>
+            <height>720</height>
+            <width>450</width>
+            <texture>dialogs/sidemenu.png</texture>
+        </control>
+        <!-- MENU -->
 		<control type="group" id="300">
 			<posx>-255</posx>
 			<posy>64</posy>
@@ -34,25 +33,46 @@
 				<onleft>-</onleft>
 				<onright>50</onright>
 				<itemgap>0</itemgap>
+                <control type="label" id="9003">
+                    <label>View Options</label>
+                    <width>300</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>White</textcolor>
+                    <font>info1</font>
+                </control>-->
 				<!-- list view -->
 				<control type="button" id="9004">
+                    <width>300</width>
+                    <height>70</height>
+                    <textoffsetx>50</textoffsetx>
+                    <texturefocus>button_home.png</texturefocus>
 					<label>List</label>
-					<onclick>Container.SetViewMode(50)</onclick>
 					<font>settings</font>
 					<textcolor>White</textcolor>
+					<onclick>Container.SetViewMode(50)</onclick>
 				</control>
 				<!-- new list view -->
 				<control type="button" id="9005">
-					<label>List (more info)</label>
+                    <width>300</width>
+                    <height>70</height>
+                    <textoffsetx>50</textoffsetx>
+                    <texturefocus>button_home.png</texturefocus>
+					<label>Info List</label>
+					<font>settings</font>
+					<textcolor>White</textcolor>
 					<onclick>Container.SetViewMode(51)</onclick>
-					<font>settings</font>
-					<textcolor>White</textcolor>
 				</control>
+				<!-- poster view -->
 				<control type="button" id="9006">
-					<label>Poster view</label>
-					<onclick>Container.SetViewMode(52)</onclick>
+                    <width>300</width>
+                    <height>70</height>
+                    <textoffsetx>50</textoffsetx>
+                    <texturefocus>button_home.png</texturefocus>
+					<label>Poster View</label>
 					<font>settings</font>
 					<textcolor>White</textcolor>
+					<onclick>Container.SetViewMode(52)</onclick>
 				</control>
 			</control>
 		</control>
@@ -738,6 +758,14 @@
 			<texture>divider.png</texture>
 		</control>
 		End divider -->
+	</include>
+	<include name="settingsLeftMenuFormat">
+		<texturefocus>button_home.png</texturefocus>
+		<texturenofocus>-</texturenofocus>
+	</include>
+	<include name="settingsLeftMenuFormat2">
+		<texturefocus>-</texturefocus>
+		<texturenofocus diffuse="white.png">button_home.png</texturenofocus>
 	</include>
 	<include name="WindowID">
 		<posx>10</posx>

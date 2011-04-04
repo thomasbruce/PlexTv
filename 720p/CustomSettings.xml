@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <window id="56">
-	<defaultcontrol always="true">3</defaultcontrol>
+	<defaultcontrol always="true">201</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Background</include>
 		<control type="label">
 			<description>First title</description>
-			<label>Customize</label>
+			<label>Custom Settings</label>
 			<posx>45</posx>
 			<posy>27</posy>
 			<width>1000</width>
@@ -16,55 +16,89 @@
 			<font>homeheader</font>
 			<textcolor>White</textcolor>
 		</control>
-		<control type="grouplist" id="3">
+		<control type="grouplist" id="200">
 			<description>Custom Wraplist</description>
 			<posx>30</posx>
 			<posy>100</posy>
 			<width>300</width>
 			<height>480</height>
-			<itemgap>1</itemgap>
-			<onleft>5</onleft>
-			<onright>5</onright>
-			<onup>3</onup>
-			<ondown>3</ondown>
+			<itemgap>0</itemgap>
+			<onleft>500</onleft>
+			<onright>500</onright>
+			<onup>200</onup>
+			<ondown>200</ondown>
 			<orientation>vertical</orientation>
-			<control type="button" id="1">
+            <!-- general screen -->
+			<control type="selectbutton" id="201">
 				<description>General</description>
 				<label>General</label>
-				<onclick>-</onclick>
+                <include>settingsLeftMenuFormat</include>
+                <visible allowhiddenfocus="true">![Control.HasFocus(2011) | Control.HasFocus(2012) | Control.HasFocus(2013) | Control.HasFocus(2014) | Control.HasFocus(2015) | Control.HasFocus(2016) | Control.HasFocus(2017) | Control.HasFocus(2018)]</visible>
 			</control>
-			<control type="button" id="2">
+			<control type="selectbutton" id="211">
+				<description>diffuse General</description>
+				<label>General</label>
+                <include>settingsLeftMenuFormat2</include>
+                <visible>!Control.IsVisible(201)</visible>
+			</control> -->
+            <!-- home screen -->
+			<control type="selectbutton" id="202">
 				<description>Homescreen</description>
 				<label>Home</label>
-				<onclick>-</onclick>
+                <include>settingsLeftMenuFormat</include>
+                <visible allowhiddenfocus="true">![Control.HasFocus(2021) | Control.HasFocus(2022) | Control.HasFocus(2023) | Control.HasFocus(2024) | Control.HasFocus(2025) | Control.HasFocus(2026) | Control.HasFocus(2027)]</visible>
 			</control>
-			<control type="button" id="12">
-				<description>Flags</description>
+			<control type="selectbutton" id="212">
+				<description>diffuse Homescreen</description>
+				<label>Home</label>
+                <include>settingsLeftMenuFormat2</include>
+                <visible>!Control.IsVisible(202)</visible>
+			</control>
+            <!-- flag screen -->
+			<control type="selectbutton" id="203">
+				<description>Flagscreen</description>
 				<label>Flags</label>
-				<onclick>-</onclick>
+                <include>settingsLeftMenuFormat</include>
+                <visible allowhiddenfocus="true">![Control.HasFocus(2031) | Control.HasFocus(2032) | Control.HasFocus(2033) | Control.HasFocus(2034) | Control.HasFocus(2035) | Control.HasFocus(2036) | Control.HasFocus(2037)]</visible>
 			</control>
-			<control type="button" id="13">
+			<control type="selectbutton" id="213">
+				<description>diffuse Flagscreen</description>
+				<label>Flags</label>
+                <include>settingsLeftMenuFormat2</include>
+                <visible>!Control.IsVisible(203)</visible>
+			</control>
+            <!-- osd screen -->
+			<control type="selectbutton" id="204">
 				<description>OSD</description>
 				<label>OSD</label>
-				<onclick>-</onclick>
-			</control>
-			<control type="button" id="14">
+                <include>settingsLeftMenuFormat</include>
+                <visible allowhiddenfocus="true">![Control.HasFocus(2041) | Control.HasFocus(2042)]</visible>
+            </control>
+			<control type="selectbutton" id="214">
+				<description>diffuse OSD</description>
+				<label>OSD</label>
+                <include>settingsLeftMenuFormat2</include>
+                <visible>!Control.IsVisible(204)</visible>
+            </control>
+            <!-- about screen -->
+			<control type="selectbutton" id="205">
 				<description>About</description>
 				<label>About</label>
-				<onclick>-</onclick>
-			</control>
+                <include>settingsLeftMenuFormat</include>
+            </control>
 		</control>
-		<control type="group" id="200">
-            <control type="grouplist" id="5">
-                <visible>ControlGroup(3).Hasfocus(1)</visible>
+		<control type="group" id="100">
+            <!-- general screen -->
+            <control type="grouplist" id="500">
+                <visible>!Control.HasFocus(300) + ControlGroup(200).Hasfocus(201)</visible>
                 <description>General Control Area</description>
                 <posx>370</posx>
                 <posy>100</posy>
                 <width>900</width>
                 <height>563</height>
-                <itemgap>1</itemgap>
-                <onleft>3</onleft>
-                <onright>3</onright>
+                <itemgap>0</itemgap>
+                <onleft>201</onleft>
+                <onright>201</onright>
                 <orientation>vertical</orientation>
                 <control type="radiobutton" id="2011">
                     <label>Show Fanart as background</label>
@@ -111,117 +145,121 @@
                     <selected>!Skin.HasSetting(WaitShort) + !Skin.HasSetting(NoWait)</selected>
                 </control>
             </control>
-            <control type="grouplist" id="5">
-                <visible>ControlGroup(3).Hasfocus(2)</visible>
+            <!-- home screen -->
+            <control type="grouplist" id="500">
+                <visible>!Control.HasFocus(300) + ControlGroup(200).Hasfocus(202)</visible>
                 <description>Home Control Area</description>
                 <posx>370</posx>
                 <posy>100</posy>
                 <width>900</width>
                 <height>563</height>
-                <itemgap>3</itemgap>
-                <onleft>3</onleft>
-                <onright>3</onright>
+                <itemgap>0</itemgap>
+                <onleft>202</onleft>
+                <onright>202</onright>
                 <orientation>vertical</orientation>
-                <control type="radiobutton" id="2019">
+                <control type="radiobutton" id="2021">
                     <label>Show Favorites in "Media" menu</label>
                     <onclick>Skin.ToggleSetting(Favorites)</onclick>
                     <selected>Skin.HasSetting(Favorites)</selected>
                 </control>
-                <control type="radiobutton" id="2020">
+                <control type="radiobutton" id="2022">
                     <label>Show Weather in "Apps" menu</label>
                     <onclick>Skin.ToggleSetting(ShowMyWeather)</onclick>
                     <selected>Skin.HasSetting(ShowMyWeather)</selected>
                 </control>
-                <control type="radiobutton" id="2021">
+                <control type="radiobutton" id="2023">
                     <label>Show Logo on home screen</label>
                     <onclick>Skin.ToggleSetting(logo)</onclick>
                     <selected>Skin.HasSetting(logo)</selected>
                 </control>
-                <control type="radiobutton" id="2022">
+                <control type="radiobutton" id="2024">
                     <label>Show RSS on home screen</label>
                     <onclick>Skin.ToggleSetting(RSS)</onclick>
                     <selected>Skin.HasSetting(RSS)</selected>
                 </control>
-                 <control type="radiobutton" id="2023">
+                <control type="radiobutton" id="2025">
                     <label>Hide Search in "Media" menu</label>
                     <onclick>Skin.ToggleSetting(Search)</onclick>
                     <selected>Skin.HasSetting(Search)</selected>
                 </control>
-                <control type="radiobutton" id="2024">
+                <control type="radiobutton" id="2026">
                     <label>Hide Time on home screen</label>
                     <onclick>Skin.ToggleSetting(Time)</onclick>
                     <selected>Skin.HasSetting(Time)</selected>
                 </control>
-                <control type="radiobutton" id="2025">
+                <control type="radiobutton" id="2027">
                     <label>Hide Weather on home screen</label>
                     <onclick>Skin.ToggleSetting(Weather)</onclick>
                     <selected>Skin.HasSetting(Weather)</selected>
                 </control>
             </control>
-            <control type="grouplist" id="5">
-                <visible>ControlGroup(3).Hasfocus(12)</visible>
-                <description>Flags</description>
+            <!-- flag screen -->
+            <control type="grouplist" id="500">
+                <visible>!Control.HasFocus(300) + ControlGroup(200).Hasfocus(203)</visible>
+                <description>Flag Control Area</description>
                 <posx>370</posx>
                 <posy>100</posy>
                 <width>900</width>
                 <height>563</height>
-                <itemgap>1</itemgap>
-                <onleft>3</onleft>
-                <onright>3</onright>
+                <itemgap>0</itemgap>
+                <onleft>203</onleft>
+                <onright>203</onright>
                 <orientation>vertical</orientation>
-                <control type="radiobutton" id="2026">
+                <control type="radiobutton" id="2031">
                     <label>Hide Unwatched flags</label>
                     <onclick>Skin.ToggleSetting(NoWatchedFlags)</onclick>
                     <selected>Skin.HasSetting(NoWatchedFlags)</selected>
                 </control>
-                <control type="radiobutton" id="2027">
+                <control type="radiobutton" id="2032">
                     <label>Show Media flags [COLOR=WhiteTrans](movies)[/COLOR]</label>
                     <onclick>Skin.ToggleSetting(Resolution)</onclick>
                     <selected>Skin.HasSetting(Resolution)</selected>
                 </control>
-                <control type="radiobutton" id="2028">
+                <control type="radiobutton" id="2033">
                     <label>Show Media flags[COLOR=WhiteTrans] (episodes)[/COLOR]</label>
                     <onclick>Skin.ToggleSetting(ResolutionEpisodes)</onclick>
                     <selected>Skin.HasSetting(ResolutionEpisodes)</selected>
                 </control>
-                <control type="radiobutton" id="2029">
+                <control type="radiobutton" id="2034">
                     <label>Show Studio flags[COLOR=WhiteTrans] (movies)[/COLOR]</label>
                     <onclick>Skin.ToggleSetting(Studio)</onclick>
                     <selected>Skin.HasSetting(Studio)</selected>
                 </control>
-                <control type="radiobutton" id="2030">
+                <control type="radiobutton" id="2035">
                     <label>Show Studio flags[COLOR=WhiteTrans] (tv shows)[/COLOR]</label>
                     <onclick>Skin.ToggleSetting(StudioTvshows)</onclick>
                     <selected>Skin.HasSetting(StudioTvshows)</selected>
                 </control>
-                <control type="radiobutton" id="2031">
-                    <label>Show MPAA flags[COLOR=WhiteTrans] (movies)[/COLOR]</label>
+                <control type="radiobutton" id="2036">
+                    <label>Show Content Rating flags[COLOR=WhiteTrans] (movies)[/COLOR]</label>
                     <onclick>Skin.ToggleSetting(MPAA)</onclick>
                     <selected>Skin.HasSetting(MPAA)</selected>
                 </control>
-                <control type="radiobutton" id="2032">
-                    <label>Show MPAA flags[COLOR=WhiteTrans] (tv shows)[/COLOR]</label>
+                <control type="radiobutton" id="2037">
+                    <label>Show Content Rating flags[COLOR=WhiteTrans] (tv shows)[/COLOR]</label>
                     <onclick>Skin.ToggleSetting(MPAATvShows)</onclick>
                     <selected>Skin.HasSetting(MPAATvShows)</selected>
                 </control>
             </control>
-            <control type="grouplist" id="5">
-                <visible>ControlGroup(3).Hasfocus(13)</visible>
+            <!-- osd screen -->
+            <control type="grouplist" id="500">
+                <visible>!Control.HasFocus(300) + ControlGroup(200).Hasfocus(204)</visible>
+                <!--<visible>ControlGroup(200).Hasfocus(204)</visible>-->
                 <description>OSD Control Area</description>
                 <posx>370</posx>
                 <posy>100</posy>
                 <width>900</width>
                 <height>563</height>
-                <itemgap>1</itemgap>
-                <onleft>3</onleft>
-                <onright>3</onright>
+                <itemgap>0</itemgap>
+                <onleft>204</onleft>
+                <onright>204</onright>
                 <orientation>vertical</orientation>
-                <control type="radiobutton" id="2033">
+                <control type="radiobutton" id="2041">
                     <label>Change to alternative OSD panel</label>
                     <onclick>Skin.ToggleSetting(ChangeOSD)</onclick>
                     <selected>Skin.HasSetting(ChangeOSD)</selected>
                 </control>
-                <control type="radiobutton" id="2034">
+                <control type="radiobutton" id="2042">
                     <label>Show "Time/Finished at" in alternative OSD</label>
                     <onclick>Skin.ToggleSetting(FinishTime)</onclick>
                     <selected>Skin.HasSetting(FinishTime)</selected>
@@ -234,17 +272,16 @@
 						<textcolor>WhiteTrans</textcolor>
 						<font>info2</font>
                 </control>
-            </control>
-             <control type="grouplist" id="5">
-                <visible>ControlGroup(3).Hasfocus(14)</visible>
-                <description>About</description>
+             </control>
+            <!-- about screen -->
+            <control type="grouplist" id="500">
+                <visible>ControlGroup(200).Hasfocus(205)</visible>
+                <description>About Control Area</description>
                 <posx>370</posx>
                 <posy>100</posy>
                 <width>900</width>
                 <height>563</height>
-                <itemgap>1</itemgap>
-                <onleft>3</onleft>
-                <onright>3</onright>
+                <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <control type="textbox">
 						<label>[COLOR=WhiteTrans]PlexTv is based on FrontSeat. Maintained by [COLOR=White]thomasbruce[/COLOR]. Thanks to [COLOR=White]jaaps[/COLOR] for creating the FrontSeat Skin and letting the skin be modded.[CR][CR][CR]Thanks to all of you who helped with this skin![CR][CR][CR]Credits:[/COLOR] jaaps, se.bastian, kruisje, irishv, Mr Power, someone, gedoode</label>
