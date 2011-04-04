@@ -41,7 +41,7 @@
 				<posy>73</posy>
 				<width>480</width>
 				<height>38</height>
-				<font>font1</font>
+				<font>info1</font>
 				<ondown>52</ondown>
 				<textcolor>White</textcolor>
 				<align>left</align>
